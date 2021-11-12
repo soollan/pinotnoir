@@ -1,7 +1,9 @@
 package com.wine.pinotnoir.controller;
 
 import com.wine.pinotnoir.dto.Wine;
+import com.wine.pinotnoir.entity.WineEntity;
 import com.wine.pinotnoir.service.WineService;
+import javassist.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -25,15 +27,13 @@ public class WineController {
     }
 
     @PostMapping("/wine")
-    public String addWine(@ModelAttribute Wine wine, Model model) {
-        wineService.save(wine);
-        return "redirect:/wine";
-    }
+    public ModelAndView addWine(@ModelAttribute Wine wine) throws NotFoundException {
+        wineService.add(wine);
 
-    @GetMapping("/hello")
-    public ModelAndView hello() {
         ModelAndView model = new ModelAndView();
-        model.setViewName("layout/default_layout");
+        model.addObject("list", wineService.getWines());
+        model.setViewName("wine");
         return model;
     }
+
 }

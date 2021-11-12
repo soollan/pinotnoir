@@ -1,4 +1,3 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"/>
 function add() {
     $.ajax({
         url: '/wine',
@@ -11,4 +10,8 @@ function add() {
             console.error(error);
         }
     });
+}
+
+function reset() {
+    $("table tbody tr").first().children().find("input:text").val("");
 }

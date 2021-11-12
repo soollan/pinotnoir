@@ -6,65 +6,51 @@
 
 <!-- index.html 고유 CSS 추가 -->
 <th:block layout:fragment="css">
-    <link rel="stylesheet" th:href="@{/css/wine.css}" >
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" >
+    <link rel="stylesheet" th:href="@{/css/bootstrap-theme.min.css}" >
 </th:block>
 
 <!-- index.html 고유 스크립트 추가 -->
 <th:block layout:fragment="script">
+    <script th:src="@{/js/jquery-3.6.0.min.js}"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
     <script th:src="@{/js/wine.js}"></script>
-
-<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"/>-->
-<!--    <script>-->
-<!--        function add() {-->
-<!--            $.ajax({-->
-<!--                url: '/wine',-->
-<!--                type: 'POST',-->
-<!--                data: $(".add").serialize(),-->
-<!--                success: function onData (data) {-->
-<!--                    console.log(data);-->
-<!--                },-->
-<!--                error: function onError (error) {-->
-<!--                    console.error(error);-->
-<!--                }-->
-<!--            });-->
-<!--        }-->
-
-<!--    </script>-->
 </th:block>
 
 <div layout:fragment="content">
-
-    <table id="userTable" style="background-color: darkgray;">
-        <thead>
+    <table class="table table-striped" id="userTable">
+        <thead class="thead-dark">
         <tr>
-            <th>와인이름</th>
-            <th>생산년도</th>
-            <th>시음적기 시작연도</th>
-            <th>시음적기 마지막연도</th>
-            <th>생산지역</th>
-            <th>비비노점수</th>
-            <th>세계랭킹</th>
-            <th>생산지역 랭킹</th>
-            <th>추천 페어링</th>
-            <th>이미지</th>
-            <th>등록일</th>
-            <th>수정일</th>
+            <th scope="col">와인이름</th>
+            <th scope="col">생산년도</th>
+            <th scope="col">시음적기 시작연도</th>
+            <th scope="col">시음적기 마지막연도</th>
+            <th scope="col">생산지역</th>
+            <th scope="col">비비노점수</th>
+            <th scope="col">세계랭킹</th>
+            <th scope="col">생산지역 랭킹</th>
+            <th scope="col">추천 페어링</th>
+            <th scope="col">이미지</th>
+            <th scope="col">등록일</th>
+            <th scope="col">수정일</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-            <td><input type="text" class="add" name="name" /></td>
-            <td><input type="text" class="add" name="vintage"/></td>
-            <td><input type="text" class="add" name="startDrink"/></td>
-            <td><input type="text" class="add" name="endDrink" /></td>
-            <td><input type="text" class="add" name="region" /></td>
-            <td><input type="text" class="add" name="vivino" /></td>
-            <td><input type="text" class="add" name="rankingWorld" /></td>
-            <td><input type="text" class="add" name="rankingRegion" /></td>
-            <td><input type="text" class="add" name="pairing" /></td>
-            <td><input type="text" class="add" name="image" /></td>
-            <td><input type="button" onclick="javascript:add();" value="추가"/></td>
-            <td><input type="reset" value="새로 입력하기"/></td>
+            <form action="/wine" method="post">
+                <td><input type="text" class="add" name="name" /></td>
+                <td><input type="text" class="add" name="vintage"/></td>
+                <td><input type="text" class="add" name="startDrink"/></td>
+                <td><input type="text" class="add" name="endDrink" /></td>
+                <td><input type="text" class="add" name="region" /></td>
+                <td><input type="text" class="add" name="vivino" /></td>
+                <td><input type="text" class="add" name="rankingWorld" /></td>
+                <td><input type="text" class="add" name="rankingRegion" /></td>
+                <td><input type="text" class="add" name="pairing" /></td>
+                <td><input type="text" class="add" name="image" /></td>
+                <td><input type="submit" value="추가"/></td>
+                <td><input type="reset" value="새로 입력하기"/></td>
+            </form>
         </tr>
         <tr th:each="item : ${list}">
             <td th:text="${item.name}">와인이름</td>

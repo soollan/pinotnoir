@@ -1,8 +1,10 @@
 package com.wine.pinotnoir.entity;
 
+import com.wine.pinotnoir.dto.Wine;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
+import org.modelmapper.ModelMapper;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -57,4 +59,7 @@ public class WineEntity {
     @Column
     private String image;
 
+    public static WineEntity of(Wine request) {
+        return new ModelMapper().map(request, WineEntity.class);
+    }
 }
