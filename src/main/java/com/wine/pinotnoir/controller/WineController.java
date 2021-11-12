@@ -27,7 +27,7 @@ public class WineController {
     }
 
     @PostMapping("/wine")
-    public String addWine(@ModelAttribute Wine wine) throws NotFoundException {
+    public String addWine(@ModelAttribute Wine wine) {
         wineService.add(wine);
         return "redirect:/wines";
     }
