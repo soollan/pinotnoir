@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="~{fragments/layout}">
+
+<!-- index.html 고유 CSS 추가 -->
+<th:block layout:fragment="css">
+    <link rel="stylesheet" th:href="@{/css/wine.css}" >
+</th:block>
+
+<!-- index.html 고유 스크립트 추가 -->
+<th:block layout:fragment="script">
+    <script th:src="@{/js/wine.js}"></script>
+
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"/>-->
+<!--    <script>-->
+<!--        function add() {-->
+<!--            $.ajax({-->
+<!--                url: '/wine',-->
+<!--                type: 'POST',-->
+<!--                data: $(".add").serialize(),-->
+<!--                success: function onData (data) {-->
+<!--                    console.log(data);-->
+<!--                },-->
+<!--                error: function onError (error) {-->
+<!--                    console.error(error);-->
+<!--                }-->
+<!--            });-->
+<!--        }-->
+
+<!--    </script>-->
+</th:block>
+
+<div layout:fragment="content">
+
+    <table id="userTable" style="background-color: darkgray;">
+        <thead>
+        <tr>
+            <th>와인이름</th>
+            <th>생산년도</th>
+            <th>시음적기 시작연도</th>
+            <th>시음적기 마지막연도</th>
+            <th>생산지역</th>
+            <th>비비노점수</th>
+            <th>세계랭킹</th>
+            <th>생산지역 랭킹</th>
+            <th>추천 페어링</th>
+            <th>이미지</th>
+            <th>등록일</th>
+            <th>수정일</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input type="text" class="add" name="name" /></td>
+            <td><input type="text" class="add" name="vintage"/></td>
+            <td><input type="text" class="add" name="startDrink"/></td>
+            <td><input type="text" class="add" name="endDrink" /></td>
+            <td><input type="text" class="add" name="region" /></td>
+            <td><input type="text" class="add" name="vivino" /></td>
+            <td><input type="text" class="add" name="rankingWorld" /></td>
+            <td><input type="text" class="add" name="rankingRegion" /></td>
+            <td><input type="text" class="add" name="pairing" /></td>
+            <td><input type="text" class="add" name="image" /></td>
+            <td><input type="button" onclick="javascript:add();" value="추가"/></td>
+            <td><input type="reset" value="새로 입력하기"/></td>
+        </tr>
+        <tr th:each="item : ${list}">
+            <td th:text="${item.name}">와인이름</td>
+            <td th:text="${item.vintage}">생산년도</td>
+            <td th:text="${item.startDrink}">시음적기 시작연도</td>
+            <td th:text="${item.endDrink}">시음적기 마지막연도</td>
+            <td th:text="${item.region}">생산지역</td>
+            <td th:text="${item.vivino}">비비노점수</td>
+            <td th:text="${item.rankingWorld}">세계랭킹</td>
+            <td th:text="${item.rankingRegion}">생산지역 랭킹</td>
+            <td th:text="${item.pairing}">추천 페어링</td>
+            <td><img th:src="${item.image}" class="listWine"></td>
+            <td th:text="${item.registrationDate}">등록일</td>
+            <td th:text="${item.updateDate}">수정일</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</html>
