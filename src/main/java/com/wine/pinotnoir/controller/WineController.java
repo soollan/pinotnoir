@@ -27,13 +27,9 @@ public class WineController {
     }
 
     @PostMapping("/wine")
-    public ModelAndView addWine(@ModelAttribute Wine wine) throws NotFoundException {
+    public String addWine(@ModelAttribute Wine wine) throws NotFoundException {
         wineService.add(wine);
-
-        ModelAndView model = new ModelAndView();
-        model.addObject("list", wineService.getWines());
-        model.setViewName("wine");
-        return model;
+        return "redirect:/wines";
     }
 
 }
