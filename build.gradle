@@ -5,9 +5,13 @@ plugins {
 	id 'war'
 }
 
+war {
+	enabled = true
+}
+
 group = 'com.wine'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '8'
+sourceCompatibility = '1.8'
 
 configurations {
 	compileOnly {
@@ -27,10 +31,10 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok'
 	implementation 'com.h2database:h2'
 	annotationProcessor 'org.projectlombok:lombok'
-	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
 	implementation group: 'org.modelmapper', name: 'modelmapper', version: '2.1.1'
+	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat' // 내장톰캣을 사용하지 않음.
 }
 
 test {
