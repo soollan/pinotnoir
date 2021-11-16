@@ -12,8 +12,12 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class WineController {
 
+    private final WineService wineService;
+
     @Autowired
-    WineService wineService;
+    public WineController(WineService wineService) {
+        this.wineService = wineService;
+    }
 
     @GetMapping("/wines")
     public ModelAndView wines() {

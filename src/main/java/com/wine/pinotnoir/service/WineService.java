@@ -15,8 +15,13 @@ import java.util.stream.Collectors;
 
 @Service
 public class WineService {
+
+    private final WineRepository wineRepository;
+
     @Autowired
-    WineRepository wineRepository;
+    public WineService(WineRepository wineRepository) {
+        this.wineRepository = wineRepository;
+    }
 
     @Transactional(readOnly = true)
     public List<Wine> getWines() {
