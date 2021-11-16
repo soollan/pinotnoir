@@ -34,6 +34,7 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
 	implementation group: 'org.modelmapper', name: 'modelmapper', version: '2.1.1'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat' // 내장톰캣을 사용하지 않음.
 }
 
