@@ -5,7 +5,6 @@ import com.wine.pinotnoir.entity.WineEntity;
 import com.wine.pinotnoir.entity.WineID;
 import com.wine.pinotnoir.exception.CustomException;
 import com.wine.pinotnoir.repository.WineRepository;
-import javassist.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -30,7 +29,7 @@ public class WineService {
     public WineEntity add(Wine wine) {
         WineID wineID = new WineID(wine.getName(), wine.getVintage());
         Optional<WineEntity> getWine = wineRepository.findById(wineID);
-        if(getWine.isPresent()) {
+        if (getWine.isPresent()) {
             throw new CustomException();
         }
         return wineRepository.save(WineEntity.of(wine));
