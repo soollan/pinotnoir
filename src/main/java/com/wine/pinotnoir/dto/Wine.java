@@ -1,5 +1,8 @@
 package com.wine.pinotnoir.dto;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
 import com.wine.pinotnoir.entity.WineEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -28,6 +31,8 @@ public class Wine {
 
     private String pairing;
 
+    @JsonSerialize(using = LocalDateTimeSerializer.class)
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime registrationDate;
 
     private LocalDateTime updateDate;
