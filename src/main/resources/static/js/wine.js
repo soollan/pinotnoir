@@ -2,6 +2,7 @@ $(document).ready(function () {
     var as = $('#userTable').DataTable({
         bPaginate: false,
         serverSide: false,
+        fixedHeader: true,
         bInfo: false,
         ajax: {
             "url": "http://localhost:8081/wines",
@@ -10,6 +11,8 @@ $(document).ready(function () {
         columns: [
             {
                 title: "와인이름",
+                id:"와인이름",
+                header:["와인이름", {content: "textFilter"}],
                 data: "name",
                 render: function (data) {
                     return data == null ? "" : data;
@@ -115,6 +118,6 @@ function add() {
     });
 }
 
-function f() {
+function reset() {
     $("table tbody tr").first().children().find("input:text").val("");
 }

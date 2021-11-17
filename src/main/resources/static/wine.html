@@ -2,20 +2,19 @@
 <html>
 <head>
 
-    <link rel="stylesheet" href="/pinotnoir/pinotnoir.main/static/css/bootstrap.min.css" >
-    <link rel="stylesheet" href="/pinotnoir/pinotnoir.main/static/css/bootstrap-theme.min.css" >
-    <link rel="stylesheet" href="/pinotnoir/pinotnoir.main/static/DataTables/datatables.min.css" >
+    <link rel="stylesheet" href="./css/bootstrap.min.css" >
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css" >
+    <link rel="stylesheet" href="./DataTables/datatables.min.css" >
 
-    <script src="/pinotnoir/pinotnoir.main/static/js/jquery-3.6.0.min.js"></script>
-    <script src="/pinotnoir/pinotnoir.main/static/js/bootstrap.min.js"></script>
-    <script src="/pinotnoir/pinotnoir.main/static/DataTables/datatables.min.js"></script>
-    <script src="/pinotnoir/pinotnoir.main/static/js/wine.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./DataTables/datatables.min.js"></script>
+    <script src="./js/wine.js"></script>
 </head>
 
 <body>
-    <table class="display table table-striped" id="userTable"></table>
 
-    <table class="table table-striped" id="userTable2">
+    <table class="table table-striped" id="addWineTable">
         <thead class="thead-dark">
         <tr>
             <th scope="col">와인이름</th>
@@ -48,6 +47,25 @@
             <td><input type="button" value="새로 입력하기" onclick="reset()"/></td>
         </tr>
         </tbody>
+    </table>
+
+    <table class="display table table-striped" id="userTable">
+<!--        <thead >-->
+<!--        <tr>-->
+<!--            <th>와인이름</th>-->
+<!--            <th scope="col">생산년도</th>-->
+<!--            <th scope="col">시음적기 시작연도</th>-->
+<!--            <th scope="col">시음적기 마지막연도</th>-->
+<!--            <th scope="col">생산지역</th>-->
+<!--            <th scope="col">비비노점수</th>-->
+<!--            <th scope="col">세계랭킹</th>-->
+<!--            <th scope="col">생산지역 랭킹</th>-->
+<!--            <th scope="col">추천 페어링</th>-->
+<!--            <th scope="col">이미지</th>-->
+<!--            <th scope="col">등록일</th>-->
+<!--            <th scope="col">수정일</th>-->
+<!--        </tr>-->
+<!--        </thead>-->
     </table>
 </body>
 </html>
