@@ -41,8 +41,14 @@ public class WineController {
     }
 
     @PostMapping("/wine")
-    public String addWine(@ModelAttribute Wine wine) {
-        wineService.add(wine);
+    public String saveWine(@ModelAttribute Wine wine) {
+        wineService.save(wine);
+        return "wine";
+    }
+
+    @DeleteMapping("/wine")
+    public String deleteWine(@ModelAttribute Wine wine) {
+        wineService.delete(wine);
         return "wine";
     }
 

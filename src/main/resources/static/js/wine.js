@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var as = $('#userTable').DataTable({
+    var table = $('#wineTable').DataTable({
         bPaginate: false,
         serverSide: false,
         fixedHeader: true,
@@ -12,8 +12,6 @@ $(document).ready(function () {
         columns: [
             {
                 title: "와인이름",
-                id:"와인이름",
-                header:["와인이름", {content: "textFilter"}],
                 data: "name",
                 render: function (data) {
                     return data == null ? "" : data;
@@ -79,7 +77,7 @@ $(document).ready(function () {
                 title: "이미지",
                 data: "image",
                 render: function (data) {
-                    return data == null ? "" : data;
+                    return '<img src="/file/' + data + '" height="50" width="50"/>';
                 }
             },
             {
@@ -101,10 +99,50 @@ $(document).ready(function () {
             "emptyTable": "No Data"
         }
     });
+
+    $('#wineTable tbody').on('dblclick', 'tr', function () {
+        var data = table.row(this).data();
+        $("#save").val("수정");
+        $("#del").show();
+        popupOpen(data);
+    });
+
 });
 
-
 function add() {
+    $("#save").val("추가");
+    $("#del").hide();
+    popupOpen();
+}
+
+function popupOpen(data) {
+    if (data) {
+        $("[name='name']").val(data.name);
+        $("[name='vintage']").val(data.vintage);
+        $("[name='startDrink']").val(data.startDrink);
+        $("[name='endDrink']").val(data.endDrink);
+        $("[name='region']").val(data.region);
+        $("[name='vivino']").val(data.vivino);
+        $("[name='rankingWorld']").val(data.rankingWorld);
+        $("[name='rankingRegion']").val(data.rankingRegion);
+        $("[name='pairing']").val(data.pairing);
+        $("[name='image']").val(data.image);
+    } else {
+        $(".add").val("");
+    }
+
+    $(".layer_wrap").fadeIn();
+    $(".layer_bg").fadeIn();
+    layer_position();
+    //레이어 영역 외 바탕화면 클릭시 화면 닫기
+    $(".layer_bg").click(function (e) {
+        if (!$(".layer_wrap").has(e.target).length) {
+            layer_close();
+        }
+    });
+}
+
+function saveWine() {
     $.ajax({
         url: 'http://localhost:8081/wine',
         type: 'POST',
@@ -119,6 +157,25 @@ function add() {
     });
 }
 
-function reset() {
-    $("table tbody tr").first().children().find("input:text").val("");
+function deleteWine() {
+    $.ajax({
+        url: 'http://localhost:8081/wine',
+        type: 'DELETE',
+        data: $(".add").serialize(),
+        success: function onData(data) {
+            console.log(data);
+            location.reload();
+        },
+        error: function onError(error) {
+            alert(error.responseJSON.message);
+        }
+    });
+}
+
+function popupClose() {
+    $(".layer_wrap, .layer_bg").fadeOut();
+}
+
+function layer_position() {
+    $(".layer_wrap").css({'left': '30%', 'top': '15%'});
 }

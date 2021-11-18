@@ -45,4 +45,9 @@ public class WineService {
         WineEntity result = wineRepository.save(WineEntity.of(wine));
         return result;
     }
+
+    @Transactional
+    public void delete(Wine wine) {
+        wineRepository.delete(WineEntity.of(wine));
+    }
 }
