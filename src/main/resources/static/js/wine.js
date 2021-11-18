@@ -4,6 +4,7 @@ $(document).ready(function () {
         serverSide: false,
         fixedHeader: true,
         bInfo: false,
+        dom: '<"pull-left"f><"pull-right"l>tip',
         ajax: {
             "url": "http://localhost:8081/wines",
             "type": "GET"
