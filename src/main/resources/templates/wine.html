@@ -33,55 +33,53 @@
     <div id="imageLayer" class="layer_wrap" style="width: 500px; height: 530px; display: none;">
 <!--        <div class="layer_bg"></div>-->
         <div class="content">
-            <a href="javascript:popupClose();" class="layerpop_close">닫기</a><br>
             <img src="" id="imageContent"/><br>
             <input type="button" value="닫기" onclick="popupClose()"/>
         </div>
     </div>
     <div id="layerbox" class="layer_wrap" style="width: 500px; height: 530px; display: none;">
 <!--        <div class="layer_bg"></div>-->
-        <a href="javascript:popupClose();" class="layerpop_close" id="layerbox_close">닫기</a><br>
         <div class="content">
             <table class="table table-striped" id="wineTable2">
                 <tr>
-                    <th>와인이름</th>
-                    <td><input type="text" class="add" name="name" /></td>
+                    <th class="col-md-4">와인이름</th>
+                    <td><input type="text" class="add col-md-12" name="name" /></td>
                 </tr>
                 <tr>
                     <th scope="col">생산년도</th>
-                    <td><input type="text" class="add" name="vintage"/></td>
+                    <td><input type="text" class="add col-md-12" name="vintage"/></td>
                 </tr>
                 <tr>
                     <th scope="col">시음적기 시작연도</th>
-                    <td><input type="text" class="add" name="startDrink"/></td>
+                    <td><input type="text" class="add col-md-12" name="startDrink"/></td>
                 </tr>
                 <tr>
                     <th scope="col">시음적기 마지막연도</th>
-                    <td><input type="text" class="add" name="endDrink" /></td>
+                    <td><input type="text" class="add col-md-12" name="endDrink" /></td>
                 </tr>
                 <tr>
                     <th scope="col">생산지역</th>
-                    <td><input type="text" class="add" name="region" /></td>
+                    <td><input type="text" class="add col-md-12" name="region" /></td>
                 </tr>
                 <tr>
                     <th scope="col">비비노점수</th>
-                    <td><input type="text" class="add" name="vivino" /></td>
+                    <td><input type="text" class="add col-md-12" name="vivino" /></td>
                 </tr>
                 <tr>
                     <th scope="col">세계랭킹</th>
-                    <td><input type="text" class="add" name="rankingWorld" /></td>
+                    <td><input type="text" class="add col-md-12" name="rankingWorld" /></td>
                 </tr>
                 <tr>
                     <th scope="col">생산지역 랭킹</th>
-                    <td><input type="text" class="add" name="rankingRegion" /></td>
+                    <td><input type="text" class="add col-md-12" name="rankingRegion" /></td>
                 </tr>
                 <tr>
                     <th scope="col">추천 페어링</th>
-                    <td><input type="text" class="add" name="pairing" /></td>
+                    <td><input type="text" class="add col-md-12" name="pairing" /></td>
                 </tr>
                 <tr>
                     <th scope="col">이미지</th>
-                    <td><input type="text" class="add" name="image" /> </td>
+                    <td><input type="text" class="add col-md-12" name="image" /> </td>
                 </tr>
             </table>
             <input type="button" id="del" value="삭제" onclick="deleteWine()" style="display: none"/>

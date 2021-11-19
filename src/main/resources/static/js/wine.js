@@ -100,16 +100,34 @@ $(document).ready(function () {
                 }
             },
             {
-                title: "등록일",
-                data: "registrationDate",
+                title: "개수",
+                data: "count",
                 className: 'dt-head-center',
+                className: 'dt-body-center',
                 render: function (data) {
                     return data == null ? "" : data;
                 }
             },
+            // {
+            //     title: "구매<br>장소",
+            //     data: "buyPlace",
+            //     className: 'dt-head-center',
+            //     render: function (data) {
+            //         return data == null ? "" : data;
+            //     }
+            // },
             {
-                title: "수정일",
-                data: "updateDate",
+                title: "구매<br>가격",
+                data: "minPrice",
+                className: 'dt-head-center',
+                className: 'dt-body-right',
+                render: function (data) {
+                    return data == null ? "" : $.fn.dataTable.render.number( ',' ).display(data);
+                }
+            },
+            {
+                title: "구매일",
+                data: "buyDate",
                 className: 'dt-head-center',
                 render: function (data) {
                     return data == null ? "" : data;

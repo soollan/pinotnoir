@@ -1,30 +1,34 @@
 package com.wine.pinotnoir.entity;
 
 import com.wine.pinotnoir.dto.Wine;
-import lombok.*;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 import org.modelmapper.ModelMapper;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Getter
 @Setter
-@Builder
-@AllArgsConstructor
-@NoArgsConstructor
 @Table(name = "wine")
-@IdClass(com.wine.pinotnoir.entity.WineID.class)
+@EqualsAndHashCode(of = "id")
+//@IdClass(WineID.class)
 public class WineEntity {
 
     @Id
-    @Column
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(name = "name")
     private String name;
 
-    @Id
-    @Column
+    @Column(name = "vintage")
     private int vintage;
 
     @Column(name = "drink_between_begin")
@@ -58,6 +62,12 @@ public class WineEntity {
 
     @Column
     private String image;
+
+    @Column
+    private Integer count;
+
+    @OneToMany(mappedBy = "wine")
+    private List<BuyEntity> buyEntities;
 
     public static WineEntity of(Wine request) {
         return new ModelMapper().map(request, WineEntity.class);
