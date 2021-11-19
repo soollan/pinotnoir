@@ -10,6 +10,7 @@ import org.modelmapper.ModelMapper;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -29,7 +30,7 @@ public class WineEntity {
     private String name;
 
     @Column(name = "vintage")
-    private int vintage;
+    private String vintage;
 
     @Column(name = "drink_between_begin")
     private Integer startDrink;
@@ -64,10 +65,10 @@ public class WineEntity {
     private String image;
 
     @Column
-    private Integer count;
+    private int count;
 
-    @OneToMany(mappedBy = "wine")
-    private List<BuyEntity> buyEntities;
+    @OneToMany(mappedBy = "wine", orphanRemoval = true)
+    private List<BuyEntity> buyEntities = new ArrayList<>();
 
     public static WineEntity of(Wine request) {
         return new ModelMapper().map(request, WineEntity.class);

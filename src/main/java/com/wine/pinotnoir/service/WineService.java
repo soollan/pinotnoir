@@ -32,8 +32,8 @@ public class WineService {
 
     @Transactional
     public WineEntity add(Wine wine) {
-        WineID wineID = new WineID(wine.getName(), wine.getVintage());
-        Optional<WineEntity> getWine = wineRepository.findById(wineID);
+//        WineID wineID = new WineID(wine.getName(), wine.getVintage());
+        Optional<WineEntity> getWine = wineRepository.findById(wine.getId());
         if (getWine.isPresent()) {
             throw new CustomException();
         }

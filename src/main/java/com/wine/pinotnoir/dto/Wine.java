@@ -7,20 +7,20 @@ import com.wine.pinotnoir.entity.BuyEntity;
 import com.wine.pinotnoir.entity.WineEntity;
 import lombok.Getter;
 import lombok.Setter;
-import org.modelmapper.*;
+import org.modelmapper.ModelMapper;
 
-import javax.persistence.Column;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.Comparator;
 
 @Getter
 @Setter
 public class Wine {
+
+    private Long id;
+
     private String name;
 
-    private int vintage;
+    private String vintage;
 
     private Integer startDrink;
 
@@ -56,7 +56,7 @@ public class Wine {
         ModelMapper mapper = new ModelMapper();
         Wine wine = mapper.map(request, Wine.class);
 
-        if(request.getBuyEntities().isEmpty()) {
+        if (request.getBuyEntities().isEmpty()) {
             wine.setMinPrice(0);
             wine.setMemo("");
             return wine;

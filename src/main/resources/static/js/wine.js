@@ -11,6 +11,14 @@ $(document).ready(function () {
         },
         columns: [
             {
+                title: "id",
+                data: "id",
+                visible: false,
+                render: function (data) {
+                    return data == null ? "" : data;
+                }
+            },
+            {
                 title: "와인이름",
                 data: "name",
                 className: 'dt-head-center',
@@ -97,7 +105,7 @@ $(document).ready(function () {
                 data: "count",
                 className: 'dt-head-center dt-body-center',
                 render: function (data) {
-                    return data == null ? "" : data;
+                    return data;
                 }
             },
             {
@@ -174,6 +182,7 @@ function imageOpen(data) {
 
 function popupOpen(data) {
     if (data) {
+        $("[name='id']").val(data.id);
         $("[name='name']").val(data.name);
         $("[name='vintage']").val(data.vintage);
         $("[name='startDrink']").val(data.startDrink);
@@ -184,6 +193,7 @@ function popupOpen(data) {
         $("[name='rankingRegion']").val(data.rankingRegion);
         $("[name='pairing']").val(data.pairing);
         $("[name='image']").val(data.image);
+        $("[name='count']").val(data.count);
     } else {
         $(".add").val("");
     }

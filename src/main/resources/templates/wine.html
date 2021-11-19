@@ -35,7 +35,10 @@
             <table class="table table-striped" id="wineTable2">
                 <tr>
                     <th class="col-md-4">와인이름</th>
-                    <td><input type="text" class="add col-md-12" name="name" /></td>
+                    <td>
+                        <input type="hidden" class="add" name="id" />
+                        <input type="text" class="add col-md-12" name="name" />
+                    </td>
                 </tr>
                 <tr>
                     <th scope="col">생산년도</th>
@@ -75,7 +78,7 @@
                 </tr>
                 <tr>
                     <th scope="col">개수</th>
-                    <td><input type="text" class="add col-md-12" name="count" /> </td>
+                    <td><input type="number" class="add col-md-12" name="count" /> </td>
                 </tr>
             </table>
             <input type="button" id="del" value="삭제" onclick="deleteWine()" style="display: none"/>
