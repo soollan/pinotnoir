@@ -108,14 +108,6 @@ $(document).ready(function () {
                     return data == null ? "" : data;
                 }
             },
-            // {
-            //     title: "구매<br>장소",
-            //     data: "buyPlace",
-            //     className: 'dt-head-center',
-            //     render: function (data) {
-            //         return data == null ? "" : data;
-            //     }
-            // },
             {
                 title: "구매<br>가격",
                 data: "minPrice",
@@ -125,14 +117,22 @@ $(document).ready(function () {
                     return data == null ? "" : $.fn.dataTable.render.number( ',' ).display(data);
                 }
             },
-            {
-                title: "구매일",
-                data: "buyDate",
-                className: 'dt-head-center',
-                render: function (data) {
-                    return data == null ? "" : data;
-                }
-            }
+            // {
+            //     title: "구매<br>장소",
+            //     data: "buyPlace",
+            //     className: 'dt-head-center',
+            //     render: function (data) {
+            //         return data == null ? "" : data;
+            //     }
+            // },
+            // {
+            //     title: "구매일",
+            //     data: "buyDate",
+            //     className: 'dt-head-center',
+            //     render: function (data) {
+            //         return data == null ? "" : data;
+            //     }
+            // }
         ],
         "language": {
             "emptyTable": "No Data"
