@@ -12,9 +12,7 @@ import org.modelmapper.*;
 import javax.persistence.Column;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Getter
@@ -52,10 +50,21 @@ public class Wine {
 
     private int minPrice;
 
+    private String memo;
+
     public static Wine of(WineEntity request) {
         ModelMapper mapper = new ModelMapper();
         Wine wine = mapper.map(request, Wine.class);
-        wine.setMinPrice(request.getBuyEntities().stream().mapToInt(b -> b.getBuyPrice()).min().orElse(0));
+
+        if(request.getBuyEntities().isEmpty()) {
+            wine.setMinPrice(0);
+            wine.setMemo("");
+            return wine;
+        }
+
+        BuyEntity minBuy = request.getBuyEntities().stream().min(Comparator.comparingInt(BuyEntity::getBuyPrice)).get();
+        wine.setMinPrice(minBuy.getBuyPrice());
+        wine.setMemo(minBuy.getBuyPriceMemo());
         return wine;
     }
 }

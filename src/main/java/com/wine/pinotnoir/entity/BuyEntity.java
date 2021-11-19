@@ -35,6 +35,9 @@ public class BuyEntity {
     @Column(name = "buy_price")
     private int buyPrice;
 
+    @Column(name = "buy_price_memo")
+    private String buyPriceMemo;
+
     @Column(name = "buy_date")
     private LocalDate buyDate;
 
