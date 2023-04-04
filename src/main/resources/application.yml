@@ -4,7 +4,7 @@ spring:
   datasource:
     hikari:
       driver-class-name: org.h2.Driver
-      jdbcUrl: jdbc:h2:file:/Users/soollan/data/h2/winedb;
+      jdbcUrl: jdbc:h2:file:/Users/user/data/h2/winedb;
       username: soollan
       password: asdf12
   jpa:
@@ -30,6 +30,6 @@ spring:
 
 
 resource:
-  path: 'file:///Users/soollan/Downloads/'
+  path: 'file:///Users/user/Downloads/'
 upload:
   path: '/file/**'
