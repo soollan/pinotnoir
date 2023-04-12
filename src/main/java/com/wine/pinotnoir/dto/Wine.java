@@ -1,26 +1,28 @@
 package com.wine.pinotnoir.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
-import com.wine.pinotnoir.entity.BuyEntity;
 import com.wine.pinotnoir.entity.WineEntity;
 import lombok.Getter;
 import lombok.Setter;
 import org.modelmapper.ModelMapper;
+import org.springframework.format.annotation.DateTimeFormat;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.Comparator;
 
 @Getter
 @Setter
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Wine {
 
     private Long id;
 
     private String name;
 
-    private String vintage;
+    private int vintage;
 
     private Integer startDrink;
 
@@ -36,6 +38,20 @@ public class Wine {
 
     private String pairing;
 
+    private String image;
+
+    private int count;
+
+    private int price;
+
+    private String place;
+
+    private String memo;
+
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd", timezone = "Asia/Seoul")
+    private LocalDate buyDate;
+
     @JsonSerialize(using = LocalDateTimeSerializer.class)
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime registrationDate;
@@ -44,27 +60,10 @@ public class Wine {
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime updateDate;
 
-    private String image;
-
-    private int count;
-
-    private int minPrice;
-
-    private String memo;
-
     public static Wine of(WineEntity request) {
         ModelMapper mapper = new ModelMapper();
         Wine wine = mapper.map(request, Wine.class);
 
-        if (request.getBuyEntities().isEmpty()) {
-            wine.setMinPrice(0);
-            wine.setMemo("");
-            return wine;
-        }
-
-        BuyEntity minBuy = request.getBuyEntities().stream().min(Comparator.comparingInt(BuyEntity::getBuyPrice)).get();
-        wine.setMinPrice(minBuy.getBuyPrice());
-        wine.setMemo(minBuy.getBuyPriceMemo());
         return wine;
     }
 }

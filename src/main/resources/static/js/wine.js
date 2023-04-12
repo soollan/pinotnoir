@@ -7,7 +7,10 @@ $(document).ready(function () {
         dom: '<"pull-left"f><"pull-right"l>tip',
         ajax: {
             "url": "http://localhost:8081/wines",
-            "type": "GET"
+            "type": "GET",
+            "error": function (req, textStatus, errorThrown) {
+                alert('Ooops, something happened: ' + req + ' : ' + textStatus + ' : ' + errorThrown);
+            }
         },
         columns: [
             {
@@ -15,7 +18,7 @@ $(document).ready(function () {
                 data: "id",
                 visible: false,
                 render: function (data) {
-                    return data == null ? "" : data;
+                    return data;
                 }
             },
             {
@@ -23,7 +26,7 @@ $(document).ready(function () {
                 data: "name",
                 className: 'dt-head-center',
                 render: function (data) {
-                    return data == null ? "" : data;
+                    return data;
                 }
             },
             {
@@ -31,7 +34,7 @@ $(document).ready(function () {
                 data: "vintage",
                 className: 'dt-head-center dt-body-center',
                 render: function (data) {
-                    return data == null ? "" : data;
+                    return data;
                 }
             },
             {
@@ -39,7 +42,7 @@ $(document).ready(function () {
                 data: "startDrink",
                 className: 'dt-head-center dt-body-center',
                 render: function (data) {
-                    return data == null ? "" : data;
+                    return data;
                 }
             },
             {
@@ -47,7 +50,7 @@ $(document).ready(function () {
                 data: "endDrink",
                 className: 'dt-head-center dt-body-center',
                 render: function (data) {
-                    return data == null ? "" : data;
+                    return data;
                 }
             },
             {
@@ -55,7 +58,7 @@ $(document).ready(function () {
                 data: "region",
                 className: 'dt-head-center dt-body-center',
                 render: function (data) {
-                    return data == null ? "" : data;
+                    return data;
                 }
             },
             {
@@ -63,23 +66,7 @@ $(document).ready(function () {
                 data: "vivino",
                 className: 'dt-head-center dt-body-center',
                 render: function (data) {
-                    return data == null ? "" : data;
-                }
-            },
-            {
-                title: "세계<br>랭킹",
-                data: "rankingWorld",
-                className: 'dt-head-center dt-body-center',
-                render: function (data) {
-                    return data == null ? "" : data;
-                }
-            },
-            {
-                title: "생산지역<br>랭킹",
-                data: "rankingRegion",
-                className: 'dt-head-center dt-body-center',
-                render: function (data) {
-                    return data == null ? "" : data;
+                    return data;
                 }
             },
             {
@@ -88,7 +75,7 @@ $(document).ready(function () {
                 className: 'dt-head-center',
                 width: '10%',
                 render: function (data) {
-                    return data == null ? "" : data;
+                    return data;
                 }
             },
             {
@@ -97,7 +84,7 @@ $(document).ready(function () {
                 className: 'dt-head-center dt-body-center',
                 className: 'image',
                 render: function (data) {
-                    return '<img src="/file/' + data + '" height="50" width="50"/>';
+                    return '<img src=/image/' + data + ' height="50" width="50"/>';
                 }
             },
             {
@@ -109,11 +96,21 @@ $(document).ready(function () {
                 }
             },
             {
-                title: "최저<br>구매가격",
-                data: "minPrice",
+                title: "최저구매가격",
+                data: "price",
                 className: 'dt-head-center dt-body-right',
                 render: function (data) {
-                    return $.fn.dataTable.render.number(',', '.', 0, '', ' ₩').display(data);
+                    if(data == null) alert("dddd");
+                    return data;
+                    // return $.fn.dataTable.render.number(',', '.', 0, '', ' ₩').display(data);
+                }
+            },
+            {
+                title: "구매장소",
+                data: "place",
+                className: 'dt-head-center',
+                render: function (data) {
+                    return data;
                 }
             },
             {
@@ -124,22 +121,30 @@ $(document).ready(function () {
                     return data;
                 }
             },
-            // {
-            //     title: "구매<br>장소",
-            //     data: "buyPlace",
-            //     className: 'dt-head-center',
-            //     render: function (data) {
-            //         return data == null ? "" : data;
-            //     }
-            // },
-            // {
-            //     title: "구매일",
-            //     data: "buyDate",
-            //     className: 'dt-head-center',
-            //     render: function (data) {
-            //         return data == null ? "" : data;
-            //     }
-            // }
+            {
+                title: "구매일",
+                data: "buyDate",
+                className: 'dt-head-center',
+                render: function (data) {
+                    return data;
+                }
+            },
+            {
+                title: "세계<br>랭킹",
+                data: "rankingWorld",
+                className: 'dt-head-center dt-body-center',
+                render: function (data) {
+                    return data;
+                }
+            },
+            {
+                title: "생산지역<br>랭킹",
+                data: "rankingRegion",
+                className: 'dt-head-center dt-body-center',
+                render: function (data) {
+                    return data;
+                }
+            },
         ],
         "language": {
             "emptyTable": "No Data"
@@ -194,6 +199,8 @@ function popupOpen(data) {
         $("[name='pairing']").val(data.pairing);
         $("[name='image']").val(data.image);
         $("[name='count']").val(data.count);
+        $("[name='place']").val(data.place);
+        $("[name='buyDate']").val(data.buyDate);
     } else {
         $(".add").val("");
     }
@@ -215,7 +222,6 @@ function saveWine() {
         type: 'POST',
         data: $(".add").serialize(),
         success: function onData(data) {
-            console.log(data);
             location.reload();
         },
         error: function onError(error) {

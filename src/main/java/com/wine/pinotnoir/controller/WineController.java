@@ -25,7 +25,6 @@ public class WineController {
     @GetMapping("/wine")
     public ModelAndView winePage() {
         ModelAndView model = new ModelAndView();
-//        model.addObject("list", wineService.getWines());
         model.setViewName("/wine");
         return model;
     }

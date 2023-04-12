@@ -23,7 +23,6 @@
     <table class="display table table-striped" id="wineTable"></table>
 
     <div id="imageLayer" class="layer_wrap" style="width: 500px; height: 530px; display: none;">
-<!--        <div class="layer_bg"></div>-->
         <div class="content">
             <img src="" id="imageContent"/><br>
             <input type="button" value="닫기" onclick="popupClose()"/>
@@ -32,7 +31,7 @@
     <div id="layerbox" class="layer_wrap" style="width: 500px; height: 530px; display: none;">
 <!--        <div class="layer_bg"></div>-->
         <div class="content">
-            <table class="table table-striped" id="wineTable2">
+            <table class="table table-striped" id="inputWine">
                 <tr>
                     <th class="col-md-4">와인이름</th>
                     <td>
@@ -61,14 +60,6 @@
                     <td><input type="text" class="add col-md-12" name="vivino" /></td>
                 </tr>
                 <tr>
-                    <th scope="col">세계랭킹</th>
-                    <td><input type="text" class="add col-md-12" name="rankingWorld" /></td>
-                </tr>
-                <tr>
-                    <th scope="col">생산지역 랭킹</th>
-                    <td><input type="text" class="add col-md-12" name="rankingRegion" /></td>
-                </tr>
-                <tr>
                     <th scope="col">추천 페어링</th>
                     <td><input type="text" class="add col-md-12" name="pairing" /></td>
                 </tr>
@@ -79,6 +70,30 @@
                 <tr>
                     <th scope="col">개수</th>
                     <td><input type="number" class="add col-md-12" name="count" /> </td>
+                </tr>
+                <tr>
+                    <th scope="col">가격</th>
+                    <td><input type="number" class="add col-md-12" name="price" /> </td>
+                </tr>
+                <tr>
+                    <th scope="col">구매 장소</th>
+                    <td><input type="text" class="add col-md-12" name="place" /> </td>
+                </tr>
+                <tr>
+                    <th scope="col">구매일</th>
+                    <td><input type="date" class="add col-md-12" name="buyDate" /> </td>
+                </tr>
+                <tr>
+                    <th scope="col">메모</th>
+                    <td><input type="text" class="add col-md-12" name="memo" /> </td>
+                </tr>
+                <tr>
+                    <th scope="col">세계랭킹</th>
+                    <td><input type="text" class="add col-md-12" name="rankingWorld" /></td>
+                </tr>
+                <tr>
+                    <th scope="col">생산지역 랭킹</th>
+                    <td><input type="text" class="add col-md-12" name="rankingRegion" /></td>
                 </tr>
             </table>
             <input type="button" id="del" value="삭제" onclick="deleteWine()" style="display: none"/>

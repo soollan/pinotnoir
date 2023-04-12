@@ -9,16 +9,14 @@ import org.hibernate.annotations.UpdateTimestamp;
 import org.modelmapper.ModelMapper;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 @Getter
 @Setter
 @Table(name = "wine")
 @EqualsAndHashCode(of = "id")
-//@IdClass(WineID.class)
 public class WineEntity {
 
     @Id
@@ -30,7 +28,7 @@ public class WineEntity {
     private String name;
 
     @Column(name = "vintage")
-    private String vintage;
+    private int vintage;
 
     @Column(name = "drink_between_begin")
     private Integer startDrink;
@@ -52,6 +50,20 @@ public class WineEntity {
 
     @Column
     private String pairing;
+    @Column
+    private String image;
+
+    @Column
+    private int count;
+
+    private String place;
+
+    private int price;
+
+    private String memo;
+
+    @Column(name = "buy_date")
+    private LocalDate buyDate;
 
     @CreationTimestamp
     @Column(name = "registration_date", updatable = false)
@@ -60,15 +72,6 @@ public class WineEntity {
     @UpdateTimestamp
     @Column(name = "update_date", insertable = false)
     private LocalDateTime updateDate;
-
-    @Column
-    private String image;
-
-    @Column
-    private int count;
-
-    @OneToMany(mappedBy = "wine", orphanRemoval = true)
-    private List<BuyEntity> buyEntities = new ArrayList<>();
 
     public static WineEntity of(Wine request) {
         return new ModelMapper().map(request, WineEntity.class);

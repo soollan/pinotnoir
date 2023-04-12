@@ -2,8 +2,6 @@ package com.wine.pinotnoir.service;
 
 import com.wine.pinotnoir.dto.Wine;
 import com.wine.pinotnoir.entity.WineEntity;
-import com.wine.pinotnoir.entity.WineID;
-import com.wine.pinotnoir.exception.CustomException;
 import com.wine.pinotnoir.repository.WineRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -31,19 +29,23 @@ public class WineService {
     }
 
     @Transactional
-    public WineEntity add(Wine wine) {
-//        WineID wineID = new WineID(wine.getName(), wine.getVintage());
-        Optional<WineEntity> getWine = wineRepository.findById(wine.getId());
-        if (getWine.isPresent()) {
-            throw new CustomException();
-        }
-        return wineRepository.save(WineEntity.of(wine));
-    }
-
-    @Transactional
     public WineEntity save(Wine wine) {
-        WineEntity result = wineRepository.save(WineEntity.of(wine));
-        return result;
+        Optional<WineEntity> savedWine = wineRepository.findByNameAndVintage(wine.getName(), wine.getVintage());
+        if (savedWine.isPresent()) {
+            WineEntity getWine = savedWine.get();
+            getWine.setCount(getWine.getCount() + wine.getCount());
+
+            if (wine.getPrice() > getWine.getPrice()) {
+                getWine.setPrice(wine.getPrice());
+                getWine.setPlace((wine.getPlace()));
+                getWine.setMemo(wine.getMemo());
+                getWine.setBuyDate(wine.getBuyDate());
+            }
+
+            return savedWine.get();
+        }
+
+        return wineRepository.save(WineEntity.of(wine));
     }
 
     @Transactional
