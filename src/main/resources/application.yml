@@ -4,7 +4,8 @@ spring:
   datasource:
     hikari:
       driver-class-name: org.h2.Driver
-      jdbcUrl: jdbc:h2:file:/Users/user/data/h2/winedb;MODE=LEGACY
+      jdbcUrl: jdbc:h2:file:/Users/user/workspace/pinotnoir/src/main/resources/static/data/winedb;MODE=LEGACY
+#      jdbcUrl: jdbc:h2:file:/Users/user/data/h2/winedb;MODE=LEGACY
       username: soollan
       password: asdf12
   jpa:
