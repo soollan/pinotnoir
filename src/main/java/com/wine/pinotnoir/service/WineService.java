@@ -29,23 +29,41 @@ public class WineService {
     }
 
     @Transactional
-    public WineEntity save(Wine wine) {
-        Optional<WineEntity> savedWine = wineRepository.findByNameAndVintage(wine.getName(), wine.getVintage());
-        if (savedWine.isPresent()) {
-            WineEntity getWine = savedWine.get();
-            getWine.setCount(getWine.getCount() + wine.getCount());
+    public WineEntity save(Wine inputWine) {
+        return wineRepository.save(WineEntity.of(inputWine));
+    }
 
-            if (wine.getPrice() > getWine.getPrice()) {
-                getWine.setPrice(wine.getPrice());
-                getWine.setPlace((wine.getPlace()));
-                getWine.setMemo(wine.getMemo());
-                getWine.setBuyDate(wine.getBuyDate());
+    @Transactional
+    public WineEntity update(Wine inputWine) {
+        Optional<WineEntity> getWine = wineRepository.findById(inputWine.getId());
+        if (getWine.isPresent()) {
+            WineEntity savedWine = getWine.get();
+            if (savedWine.getCount() != inputWine.getCount()) {
+                savedWine.setCount(inputWine.getCount());
             }
 
-            return savedWine.get();
+            if (inputWine.getPrice() < savedWine.getPrice()) {
+                savedWine.setPrice(inputWine.getPrice());
+            }
+
+            savedWine.setPlace((inputWine.getPlace()));
+            savedWine.setBuyDate(inputWine.getBuyDate());
+            savedWine.setMemo(inputWine.getMemo());
+            savedWine.setImage(inputWine.getImage());
+            savedWine.setName(inputWine.getName());
+            savedWine.setPairing(inputWine.getPairing());
+            savedWine.setRegion(inputWine.getRegion());
+            savedWine.setEndDrink(inputWine.getEndDrink());
+            savedWine.setRankingRegion(inputWine.getRankingRegion());
+            savedWine.setRankingWorld(inputWine.getRankingWorld());
+            savedWine.setStartDrink(inputWine.getStartDrink());
+            savedWine.setVintage(inputWine.getVintage());
+            savedWine.setVivino(inputWine.getVivino());
+
+            return savedWine;
         }
 
-        return wineRepository.save(WineEntity.of(wine));
+        return wineRepository.save(WineEntity.of(inputWine));
     }
 
     @Transactional

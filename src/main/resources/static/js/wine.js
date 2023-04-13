@@ -200,7 +200,9 @@ function popupOpen(data) {
         $("[name='image']").val(data.image);
         $("[name='count']").val(data.count);
         $("[name='place']").val(data.place);
+        $("[name='price']").val(data.price);
         $("[name='buyDate']").val(data.buyDate);
+        $("[name='memo']").val(data.memo);
     } else {
         $(".add").val("");
     }

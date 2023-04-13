@@ -41,7 +41,11 @@ public class WineController {
 
     @PostMapping("/wine")
     public String saveWine(@ModelAttribute Wine wine) {
-        wineService.save(wine);
+        if (wine.getId() == null) {
+            wineService.save(wine);
+        } else {
+            wineService.update(wine);
+        }
         return "wine";
     }
 
