@@ -43,7 +43,7 @@ $(document).ready(function () {
                 data: "startDrink",
                 className: 'dt-head-center dt-body-center',
                 render: function (data) {
-                    return data == undefined ? '' : data;
+                    return data;
                 }
             },
             {
@@ -51,7 +51,7 @@ $(document).ready(function () {
                 data: "endDrink",
                 className: 'dt-head-center dt-body-center',
                 render: function (data) {
-                    return data == undefined ? '' : data;
+                    return data;
                 }
             },
             {
@@ -59,7 +59,7 @@ $(document).ready(function () {
                 data: "region",
                 className: 'dt-head-center dt-body-center',
                 render: function (data) {
-                    return data == undefined ? '' : data;
+                    return data;
                 }
             },
             {
@@ -67,7 +67,7 @@ $(document).ready(function () {
                 data: "vivino",
                 className: 'dt-head-center dt-body-center',
                 render: function (data) {
-                    return data == undefined ? '' : data;
+                    return data;
                 }
             },
             {
@@ -76,7 +76,7 @@ $(document).ready(function () {
                 className: 'dt-head-center',
                 width: '10%',
                 render: function (data) {
-                    return data == undefined ? '' : data;
+                    return data;
                 }
             },
             {
@@ -111,7 +111,7 @@ $(document).ready(function () {
                 data: "place",
                 className: 'dt-head-center',
                 render: function (data) {
-                    return data == undefined ? '' : data;
+                    return data;
                 }
             },
             {
@@ -119,7 +119,7 @@ $(document).ready(function () {
                 data: "memo",
                 className: 'dt-head-center dt-body-left',
                 render: function (data) {
-                    return data == undefined ? '' : data;
+                    return data;
                 }
             },
             {
@@ -127,7 +127,7 @@ $(document).ready(function () {
                 data: "buyDate",
                 className: 'dt-head-center',
                 render: function (data) {
-                    return data == undefined ? '' : data;
+                    return data;
                 }
             },
             {
@@ -135,7 +135,7 @@ $(document).ready(function () {
                 data: "rankingWorld",
                 className: 'dt-head-center dt-body-center',
                 render: function (data) {
-                    return data == undefined ? '' : data;
+                    return data;
                 }
             },
             {
@@ -143,7 +143,7 @@ $(document).ready(function () {
                 data: "rankingRegion",
                 className: 'dt-head-center dt-body-center',
                 render: function (data) {
-                    return data == undefined ? '' : data;
+                    return data;
                 }
             },
         ],

@@ -28,7 +28,7 @@ public class WineEntity {
     private String name;
 
     @Column(name = "vintage")
-    private int vintage;
+    private Integer vintage;
 
     @Column(name = "drink_between_begin")
     private Integer startDrink;
@@ -54,11 +54,11 @@ public class WineEntity {
     private String image;
 
     @Column
-    private int count;
+    private Integer count;
 
     private String place;
 
-    private int price;
+    private Integer price;
 
     private String memo;
 

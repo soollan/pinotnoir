@@ -22,7 +22,7 @@ public class Wine {
 
     private String name;
 
-    private int vintage;
+    private Integer vintage;
 
     private Integer startDrink;
 
@@ -40,9 +40,9 @@ public class Wine {
 
     private String image;
 
-    private int count;
+    private Integer count;
 
-    private int price;
+    private Integer price;
 
     private String place;
 

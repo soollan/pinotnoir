@@ -1,0 +1,1307 @@
+2023-05-24 14:53:20 jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:470)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-05-24 14:53:26 jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:470)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-05-24 14:53:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO WINE
+VALUES
+    (NULL, '2021-05-15', 0, 2025, '', '', '풋볼트 쉬라즈', '', '이마트 와인장터 2021년 상반기', 20000, NULL, NULL, '호주', NOW(), 2022, NULL, 2018, 0),
+    (NULL, '2021-06-17', 0, 2025, '', '', '파머스 립 페서웨이 쉬라즈', '', '와인앤모어 행사', 19000, NULL, NULL, '호주', NOW(), 2022, NULL, 2016, 0),
+    (NULL, '2021-05-13', 0, 2026, '', '', '루피노 모두스', '', '이마트 와인장터 2021년 상반기', 55000, NULL, NULL, '이탈리아', NOW(), 2022, NULL, 2017, 0),
+    (NULL, '2021-05-13', 0, 2027, '', '', '플라네타 샤르도네', '', '이마트 와인장터 2021년 상반기', 39000, NULL, NULL, '이탈리아', NOW(), 2022, NULL, 2019, 0),
+    (NULL, '2021-05-15', 0, 2028, '', '', '킬리카눈 킬러맨스 런 쉬라즈', '', '이마트 와인장터 2021년 상반기', 25000, NULL, NULL, '호주', NOW(), 2022, NULL, 2018, 0),
+    (NULL, '2021-06-12', 0, 2030, '', '', '커클랜드 시그니춰 바롤로', '', '코스트코', 29990, NULL, NULL, '이탈리아', NOW(), 2022, NULL, 2016, 0),
+    (NULL, '2021-05-14', 0, 2031, '', '', '바디아 파시아노', '', '이마트 와인장터 2021년 상반기', 65000, NULL, NULL, '이탈리아', NOW(), 2022, NULL, 2017, 0),
+    (NULL, '2021-05-24', 0, 2031, '', '', '반피 BDM', '', '이마트', 75000, NULL, NULL, '이탈리아', NOW(), 2022, NULL, 2015, 0),
+    (NULL, '2021-06-17', 0, 2031, '', '', '투핸즈 벨라스 쉬라즈', '', '와인앤모어 행사', 159000, NULL, NULL, NULL, NOW(), 2022, NULL, 2018, 0),
+    (NULL, '2021-05-31', 0, 2032, '', '', '트리플씨', '', '세븐일레븐(머지포인트)', 29600, NULL, NULL, '칠레', NOW(), 2022, NULL, 2017, 0),
+    (NULL, '2021-05-08', 0, 2044, '', '', '루이 로드레 크리스탈', '', '제주 면세점', 315800, NULL, NULL, '프랑스', NOW(), 2022, NULL, 2012, 0),
+    (NULL, '2021-05-17', 0, 2027, '', '', '도멘 레미 세겡 쥬브레 샹베르탱', '', '이마트 와인장터 2021년 상반기', 60000, NULL, NULL, '프랑스', NOW(), 2023, NULL, 2018, 0),
+    (NULL, '2021-04-28', 0, 2030, '', '', '토마시 아마로네', '', '참작', 60900, NULL, NULL, '이탈리아', NOW(), 2023, NULL, 2016, 0),
+    (NULL, '2021-06-05', 0, 2031, '', '', '카스텔 지오콘도 BDM', '', '이마트', 105600, NULL, NULL, '이탈리아', NOW(), 2023, NULL, 2015, 0),
+    (NULL, '2021-06-05', 0, 2032, '', '', '이기갈 샤또뇌프 뒤 파프 ', '', '이마트', 59840, NULL, NULL, '프랑스', NOW(), 2023, NULL, 2016, 0),
+    (NULL, '2021-06-26', 0, 2033, '', '', '라 포데리나 브루넬로 디 몬탈치노', '', '이마트', 71840, NULL, NULL, '이탈리아', NOW(), 2023, NULL, 2015, 0),
+    (NULL, '2021-06-17', 0, 2043, '', '', '콜로레', '', '와인앤모어 행사', 350000, NULL, NULL, '이탈리아', NOW(), 2023, NULL, 2018, 0),
+    (NULL, '2021-05-14', 0, 2029, '', '', '라포스톨 뀌베 까르미네르', '', '이마트 와인장터 2021년 상반기', 30000, NULL, NULL, '칠레', NOW(), 2024, NULL, 2019, 0),
+    (NULL, '2021-06-18', 0, 2039, '', '', '테스타마타', '', '와인앤모어 행사', 130000, NULL, NULL, NULL, NOW(), 2024, NULL, 2018, 0),
+    (NULL, NULL, 0, 2030, '', '', '라콜롬비나 브루넬로 디 몬탈치노', '', '뱅가드 와인 머천트', 78000, NULL, NULL, '이탈리아', NOW(), 2025, NULL, 2015, 0),
+    (NULL, '2021-05-13', 0, 2047, '', '', '샤또 레방질', '', '이마트 와인장터 2021년 상반기', 450000, NULL, NULL, '프랑스', NOW(), 2027, NULL, 2015, 0),
+    (NULL, '2021-05-20', 0, 2042, '', '', '샤또 딸보', '', '제주와인창고', 110000, NULL, NULL, '프랑스', NOW(), 2028, NULL, 2018, 0),
+    (NULL, '2021-06-17', 0, 2042, '', '', '샤또 딸보', '', '와인앤모어 행사', 159000, NULL, NULL, NULL, NOW(), 2028, NULL, 2018, 0),
+    (NULL, '2021-06-17', 0, 2044, '', '', '샤또 지스꾸르', '', '와인앤모어 행사', 85000, NULL, NULL, '프랑스', NOW(), 2028, NULL, 2020, 0),
+    (NULL, '2021-06-18', 0, 2045, '', '', '샤또 오브리옹', '', '와인앤모어 행사', 799000, NULL, NULL, '프랑스', NOW(), 2028, NULL, 2017, 0),
+    (NULL, '2021-05-13', 0, 2049, '', '', '샤또 뽕떼 까네', '', '이마트 와인장터 2021년 상반기', 180000, NULL, NULL, '프랑스', NOW(), 2028, NULL, 2018, 0),
+    (NULL, '2021-06-17', 0, 2052, '', '', '샤또 마고', '', '와인앤모어 행사', 899000, NULL, NULL, '프랑스', NOW(), 2030, NULL, 2017, 0),
+    (NULL, '2021-05-13', 0, 2025, '', '', '퀘르체토 치날레', '', '이마트 와인장터 2021년 상반기', 99000, NULL, NULL, '이탈리아', NOW(), 2020, NULL, 2015, 0),
+    (NULL, '2021-05-13', 0, 2028, '', '', '산 펠리체, 키안티 클라시코 리제르바 '일[*] 그리지오'', '', '이마트 와인장터 2021년 상반기', 29800, NULL, NULL, '이탈리아', NOW(), 2021, NULL, 2017, 0),
+    (NULL, '2021-05-13', 0, 2026, '', '', '지라드, 까베르네 소비뇽', '', '이마트 와인장터 2021년 상반기', 65000, NULL, NULL, '미국', NOW(), 2019, NULL, 2017, 0),
+    (NULL, '2021-05-14', 0, 2030, '', '', '투핸즈, 엔젤스 쉐어 쉬라즈', '', '이마트 와인장터 2021년 상반기', 32000, NULL, NULL, '호주', NOW(), 2021, NULL, 2020, 0),
+    (NULL, '2021-05-15', 0, 2026, '', '', '톨라이니 알 파쏘', '', '이마트 와인장터 2021년 상반기', 30000, NULL, NULL, '이탈리아', NOW(), 2021, NULL, 2017, 0),
+    (NULL, NULL, 0, 2021, '', '', '커클랜드 말보로 쇼비뇽블랑', '', '코스트코', 9790, NULL, NULL, '뉴질랜드', NOW(), 2020, NULL, 2020, 0),
+    (NULL, '2021-04-23', 0, 2026, '', '', '자리스', '', '참작', 29900, NULL, NULL, '스페인', NOW(), 2020, NULL, 2016, 0),
+    (NULL, NULL, 0, 2025, '', '', '라 브라체스카, 비노 노빌레 디 몬테풀치아노', '', '비노솔', 0, NULL, NULL, '이탈리아', NOW(), 2020, NULL, 2017, 0),
+    (NULL, NULL, 0, 2029, '', '', '폰토디, 키안티 클라시코', '', '이마트 와인장터 2020년 하반기', 40000, NULL, NULL, '이탈리아', NOW(), 2021, NULL, 2017, 0),
+    (NULL, '2021-05-17', 0, 2025, '', '', '도멘 레미 세겡 쥬브레 샹베르탱', '', '이마트 와인장터 2021년 상반기', 60000, NULL, NULL, '프랑스', NOW(), 2021, NULL, 2017, 0),
+    (NULL, '2021-05-24', 0, 2024, '', '', '생콤 꼬뜨드론', '', '코스트코', 18990, NULL, NULL, '프랑스', NOW(), 2021, NULL, 2020, 0),
+    (NULL, '2021-05-24', 0, 2038, '', '', '돔페리뇽 p2', '', '제주 면세점', 383020, NULL, NULL, '프랑스', NOW(), 2021, NULL, 2002, 0),
+    (NULL, '2021-06-05', 0, 2024, '', '', '도그 포인트 소비뇽', '', '이마트', 34240, NULL, NULL, '뉴질랜드', NOW(), 2020, NULL, 2019, 0),
+    (NULL, '2021-06-10', 0, 2023, '', '', '루이자도 부르고뉴 샤도네이 (하프)', '', '이마트', 12800, NULL, NULL, '프랑스', NOW(), 2021, NULL, 2019, 0),
+    (NULL, '2021-06-10', 0, 2024, '', '', '이기갈 꼬뜨 뒤 론 루즈(하프)', '', '이마트', 9900, NULL, NULL, '프랑스', NOW(), 2019, NULL, 2017, 0),
+    (NULL, '2021-06-12', 0, 2023, '', '', '루이라뚜르 피노누아', '', '코스트코', 26990, NULL, NULL, '프랑스', NOW(), 2021, NULL, 2019, 0),
+    (NULL, '2021-06-17', 0, 2023, '', '', '드보 뀌베 디 브륏', '', '와인앤모어 행사', 49900, NULL, NULL, '프랑스', NOW(), 2020, NULL, 20NULL, 0),
+    (NULL, '2021-06-18', 0, 2048, '', '', '샤또 디켐', '', '와인앤모어 행사', 490000, NULL, NULL, '프랑스', NOW(), 2015, NULL, 2007, 0),
+    (NULL, '2021-05-13', 0, NULL, '', '', '스택스 캐년랜취 스택', '', '이마트 와인장터 2021년 상반기', 80000, NULL, NULL, '미국', NOW(), NULL, NULL, 2016, 0),
+    (NULL, '2021-05-13', 0, 2025, '', '', '란 리제르바', '', '이마트 와인장터 2021년 상반기', 35000, NULL, NULL, '스페인', NOW(), 2021, NULL, 2014, 0),
+    (NULL, NULL, 0, 2027, '', '', '플라네타 샤르도네', '', '이마트 와인장터 2020년 하반기', 39800, NULL, NULL, '이탈리아', NOW(), 2022, NULL, NULL, 0),
+    (NULL, '2021-05-13', 0, 2023, '', '', '그랑 파씨오네', '', '이마트 와인장터 2021년 상반기', 15000, NULL, NULL, '이탈리아', NOW(), 2022, NULL, NULL, 0),
+    (NULL, '2021-05-14', 0, NULL, '', '', '피치니 메모로 로쏘', '', '이마트 와인장터 2021년 상반기', 10000, NULL, NULL, '이탈리아', NOW(), NULL, NULL, 2019, 0),
+    (NULL, '2021-05-14', 0, 2024, '', '', '디아블로 리제르바', '', '이마트 와인장터 2021년 상반기', 19900, NULL, NULL, '칠레', NOW(), 2022, NULL, 2018, 0),
+    (NULL, '2021-05-15', 0, 2023, '', '', '콜럼비아 크레스트', '', '이마트 와인장터 2021년 상반기', 29000, NULL, NULL, '미국', NOW(), 2021, NULL, 2018, 0),
+    (NULL, '2021-05-15', 0, 2024, '', '', '689 레드 나파밸리', '', '이마트 와인장터 2021년 상반기', 25000, NULL, NULL, '미국', NOW(), 2020, NULL, 2018, 0),
+    (NULL, '2021-05-15', 0, NULL, '', '', '에고메이', '', '이마트 와인장터 2021년 상반기', 20000, NULL, NULL, '스페인', NOW(), NULL, NULL, 2018, 0),
+    (NULL, '2021-04-23', 0, NULL, '', '', '무초 마스 (화이트 레이블)', '', '참작', 21900, NULL, NULL, '스페인', NOW(), NULL, NULL, NULL, 0),
+    (NULL, '2021-04-23', 0, NULL, '', '', '무초 마스 (블랙 레이블)', '', '참작', 21900, NULL, NULL, '스페인', NOW(), NULL, NULL, NULL, 0),
+    (NULL, '2021-02-06', 0, 2024, '', '', '몬테니돌리 베르나차 디 산지미냐노 트라디지오날레', '', '뱅가드 와인 머천트', 114000, NULL, NULL, '이탈리아', NOW(), 2019, NULL, 2018, 0),
+    (NULL, '2021-02-06', 0, 2030, '', '', '라콜롬비나 브루넬로 디 몬탈치노', '', '뱅가드 와인 머천트', 114000, NULL, NULL, '이탈리아', NOW(), 2021, NULL, 2013, 0),
+    (NULL, NULL, 0, NULL, '', '', '까테나 말벡', '', NULL, 0, NULL, NULL, '아르헨티나', NOW(), NULL, NULL, 2018, 0),
+    (NULL, NULL, 0, 2021, '', '', '에쎄이 슈냉블랑', '', '뱅가드 와인 머천트', 12900, NULL, NULL, '남아공', NOW(), 2019, NULL, 2018, 0),
+    (NULL, NULL, 0, NULL, '', '', '에쎄이 까베르네 쇼비뇽', '', '뱅가드 와인 머천트', 12900, NULL, NULL, '남아공', NOW(), NULL, NULL, 2018, 0),
+    (NULL, NULL, 0, NULL, '', '', '라 사비나 그랑 리제르바 까베르네 쇼비뇽', '', '비노솔', 38000, NULL, NULL, '스페인', NOW(), NULL, NULL, NULL, 0),
+    (NULL, NULL, 0, NULL, '', '', '아라고니아 셀렉시온 에스페시알', '', '세계주류아울렛.신대방', 0, NULL, NULL, '스페인', NOW(), NULL, NULL, NULL, 0),
+    (NULL, NULL, 0, NULL, '', '', '삐에르 아마디유, 그랑 로마네 지공다스', '', '코스트코', 39990, NULL, NULL, '프랑스', NOW(), NULL, NULL, 2017, 0),
+    (NULL, '2021-05-24', 0, NULL, '', '', '커클랜드 프로세코', '', '코스트코', 7890, NULL, NULL, '이탈리아', NOW(), NULL, NULL, NULL, 0),
+    (NULL, '2021-06-02', 0, NULL, '', '', '카스티요 두카이 블랑코', '', '뱅가드 와인 머천트', 6900, NULL, NULL, '스페인', NOW(), NULL, NULL, 2020, 0),
+    (NULL, '2021-06-02', 0, NULL, '', '', '카스티요 두카이 틴토', '', '뱅가드 와인 머천트', 5900, NULL, NULL, '스페인', NOW(), NULL, NULL, 2019, 0),
+    (NULL, '2021-06-05', 0, NULL, '', '', '파이퍼 하이직 브롯', '', '이마트', 52000, NULL, NULL, '프랑스', NOW(), NULL, NULL, NULL, 0),
+    (NULL, '2021-06-05', 0, 2023, '', '', '콜럼비아 크레스트 H3', '', '이마트', 24000, NULL, NULL, '미국', NOW(), 2021, NULL, 2018, 0),
+    (NULL, '2021-06-10', 0, NULL, '', '', '블랙 매직 쉬라즈', '', '와인공간', 108000, NULL, NULL, '호주', NOW(), NULL, NULL, 2017, 0),
+    (NULL, '2021-06-10', 0, 2023, '', '', '루이자도 부르고뉴 피노누아 (하프)', '', '이마트', 12800, NULL, NULL, '프랑스', NOW(), 2020, NULL, 2018, 0),
+    (NULL, '2021-06-12', 0, NULL, '', '', '라크라사드 시라', '', '코스트코', 8790, NULL, NULL, '프랑스', NOW(), NULL, NULL, 2019, 0),
+    (NULL, '2021-06-12', 0, NULL, '', '', '꽁데 디 깜피아노 프리미터보 디 만두리아', '', '코스트코', 15990, NULL, NULL, '이탈리아', NOW(), NULL, NULL, 2019, 0),
+    (NULL, '2021-06-12', 0, NULL, '', '', '집집 락 쉬라즈', '', '코스트코', 15990, NULL, NULL, '호주', NOW(), NULL, NULL, 2019, 0),
+    (NULL, '2021-06-13', 0, NULL, '', '', '몽제아 뮈네레 르 리베르탱 부르고뉴 빠쓰뚜그랭', '', '쓱닷컴(백화점 수령)', 27000, NULL, NULL, '프랑스', NOW(), NULL, NULL, 2018, 0),
+    (NULL, '2021-06-17', 0, NULL, '', '', '보히가스 까바 리제르바 브륏', '', '와인앤모어 행사', 22000, NULL, NULL, '스페인', NOW(), NULL, NULL, NULL, 0),
+    (NULL, '2021-06-26', 0, NULL, '', '', '로버시 바르바레스코', '', '이마트', 38240, NULL, NULL, '이탈리아', NOW(), NULL, NULL, 2016, 0),
+    (NULL, '2021-06-26', 0, 2028, '', '', '무가', '', '이마트', 40000, NULL, NULL, '스페인', NOW(), 2021, NULL, 2016, 0),
+    (NULL, '2021-06-17', 0, NULL, '', '', '에로이카', '', 'GS25(포인트+쿠폰사용)', 2850, NULL, NULL, '프랑스', NOW(), NULL, NULL, 2018, 0),
+    (NULL, NULL, 0, 2030, '', '', '안티노리 CCR', '', NULL, 29000, NULL, NULL, NULL, NOW(), 2022, NULL, 2016, 0),
+    (NULL, NULL, 0, 2031, '', '', '몬테라포니 끼안티 클라시코 ', '', NULL, 45000, NULL, NULL, NULL, NOW(), 2021, NULL, 2019, 0),
+    (NULL, NULL, 0, 2038, '', '', '일포지오네 BDM', '', NULL, 79000, NULL, NULL, NULL, NOW(), 2025, NULL, 2016, 0),
+    (NULL, NULL, 0, 2036, '', '', '일포지오네 BDM 리저브', '', NULL, 140000, NULL, NULL, NULL, NOW(), 2023, NULL, 2015, 0),
+    (NULL, '2021-07-01', 0, 2030, '', '', '킬리카눈 코브넌트 쉬라즈', '', '이마트(머지2만+핀크2만+카드)', 49800, NULL, NULL, '호주', NOW(), 2020, NULL, 2017, 0),
+    (NULL, '2021-07-02', 0, 2016, '', '', '샤또 그레이삭 메독 크뤼 부르주아', '', '코스트코', 31990, NULL, NULL, '프랑스', NOW(), 2013, NULL, 2006, 0),
+    (NULL, '2021-07-02', 0, 2023, '', '', '페폴리 키안티 클라시코', '', '코스트코', 25950, NULL, NULL, '이탈리아', NOW(), 2020, NULL, 2019, 0),
+    (NULL, '2021-07-02', 0, 2020, '', '', '라 마스코타 말벡', '', '코스트코', 25990, NULL, NULL, '아르헨티나', NOW(), 2019, NULL, 2019, 0),
+    (NULL, '2021-07-02', 0, 2025, '', '', '베라짜노 키안티 클라시코', '', '코스트코', 29590, NULL, NULL, '이탈리아', NOW(), 2022, NULL, 2017, 0),
+    (NULL, '2021-07-02', 0, 2024, '', '', '커클랜드 콜럼비아 밸리 까쇼', '', '코스트코', 15490, NULL, NULL, '미국', NOW(), 2021, NULL, 2019, 0),
+    (NULL, '2021-07-02', 0, 2023, '', '', '생미쉘 드라이 리슬링', '', '코스트코', 12990, NULL, NULL, '미국', NOW(), 2020, NULL, 2020, 0),
+    (NULL, '2021-07-02', 0, 2024, '', '', '티렐 루퍼스 스톤', '', '코스트코', 33990, NULL, NULL, '호주', NOW(), 2021, NULL, 2018, 0),
+    (NULL, '2021-07-02', 0, 2025, '', '', '포스트 마크 나파', '', '코스트코', 29900, NULL, NULL, '미국', NOW(), 2020, NULL, 2018, 0),
+    (NULL, '2021-07-03', 0, 2033, '', '', '오린 스위프트 머큐리 헤드', '', '떼루아', 330000, NULL, NULL, '미국', NOW(), 2022, NULL, 2017, 0),
+    (NULL, '2021-07-03', 0, NULL, '', '', '블랙매직 쉬라즈', '', '떼루아', 330000, NULL, NULL, '호주', NOW(), NULL, NULL, 2016, 0),
+    (NULL, '2021-07-14', 0, NULL, '', '', '루이로드레 브뤼 프리미에', '', '신대방 세계주류', 66500, NULL, NULL, '프랑스', NOW(), NULL, NULL, NULL, 0),
+    (NULL, '2021-07-14', 0, NULL, '', '', '폴로저 브뤼 리저브', '', '신대방 세계주류', 74500, NULL, NULL, '프랑스', NOW(), NULL, NULL, NULL, 0),
+    (NULL, '2021-07-14', 0, NULL, '', '', '찰스 하이직 브뤼', '', '신대방 세계주류', 85000, NULL, NULL, '프랑스', NOW(), NULL, NULL, NULL, 0),
+    (NULL, '2021-07-17', 0, 2022, '', '', '푸나무', '', '해피머니 gs25', 22500, NULL, NULL, NULL, NOW(), 2020, NULL, 2020, 0),
+    (NULL, '2021-07-17', 0, 2023, '', '', '루이자도 피노', '', '해피머니 gs25', 22700, NULL, NULL, NULL, NOW(), 2020, NULL, 2019, 0),
+    (NULL, NULL, 0, 2025, '', '', '루이자도 피노 자코방', '', NULL, 0, NULL, NULL, NULL, NOW(), 2021, NULL, 2019, 0),
+    (NULL, '2021-07-17', 0, 2038, '', '', '일포지오네 BDM', '', '라빈', 139000, NULL, NULL, NULL, NOW(), 2025, NULL, 2016, 0),
+    (NULL, '2021-07-17', 0, 2034, '', '', '산펠리체 깜뽀지오바니 BDM', '', '라빈', 139000, NULL, NULL, NULL, NOW(), 2022, NULL, 2015, 0),
+    (NULL, '2021-07-31', 0, 2024, '', '', '커클랜드 말벡', '', '코스트코', 10900, NULL, NULL, NULL, NOW(), 2021, NULL, 2019, 0),
+    (NULL, '2021-07-31', 0, 2030, '', '', '투핸즈 엔젤스 쉐어', '', '치즈비노(제로페이)', 67500, NULL, NULL, NULL, NOW(), 2021, NULL, 2020, 0),
+    (NULL, '2021-07-31', 0, 2025, '', '', '몰리두커 더 복서', '', '치즈비노(제로페이)', 67500, NULL, NULL, NULL, NOW(), 2022, NULL, 2019, 0),
+    (NULL, '2021-07-31', 0, NULL, '', '', '알타이르', '', '신대방 세계주류(제로페이)', 80100, NULL, NULL, NULL, NOW(), NULL, NULL, 2018, 0),
+    (NULL, '2021-08-03', 0, 2024, '', '', '이기갈 꼬뜨 뒤 론 루즈', '', '이마트24(머지)', 18400, NULL, NULL, NULL, NOW(), 2019, NULL, 2017, 0),
+    (NULL, '2021-08-04', 0, NULL, '', '', '고스트파인 진판델', '', '홈플러스 머지', 25900, NULL, NULL, NULL, NOW(), NULL, NULL, 2018, 0),
+    (NULL, '2021-08-04', 0, 2025, '', '', '고스트 파인 멜롯', '', '홈플러스 머지', 25900, NULL, NULL, NULL, NOW(), 2019, NULL, 2017, 0),
+    (NULL, '2021-08-05', 0, 2027, '', '', '킬리카눈 까쇼', '', '세븐일레븐 머지', 22320, NULL, NULL, NULL, NOW(), 2023, NULL, 2018, 0),
+    (NULL, '2021-08-05', 0, 2028, '', '', '킬리카눈 쉬라', '', '세븐일레븐 머지', 22310, NULL, NULL, NULL, NOW(), 2022, NULL, 2018, 0),
+    (NULL, '2021-08-19', 0, 2028, '', '', '까스텔라레 키안띠 클라시코', '', '현대백화점', 30000, NULL, NULL, NULL, NOW(), 2021, NULL, 2019, 0),
+    (NULL, '2021-08-22', 0, 2028, '', '', '몬테스 퍼플 엔젤', '', '신세계백화점', 96000, NULL, NULL, NULL, NOW(), 2021, NULL, 2017, 0),
+    (NULL, '2021-08-22', 0, 2027, '', '', '몬테스 퍼플 엔젤', '', '신세계백화점', 96000, NULL, NULL, NULL, NOW(), 2021, NULL, 2018, 0),
+    (NULL, '2021-08-25', 0, 2037, '', '', '알마비바', '', 'ga25', 324000, NULL, NULL, NULL, NOW(), 2023, NULL, 2018, 0),
+    (NULL, '2021-09-05', 0, 2037, '', '', '포지오디소토 비디엠', '', '와공방', 285000, NULL, NULL, NULL, NOW(), 2024, NULL, 2016, 0),
+    (NULL, '2021-09-05', 0, 2037, '', '', '가야 비디엠', '', '와공방', 96800, NULL, NULL, NULL, NOW(), 2026, NULL, 2016, 0),
+    (NULL, '2021-09-11', 0, NULL, '', '', '이스까이 매그넘', '', '빅마켓', 89000, NULL, NULL, NULL, NOW(), NULL, NULL, 2018, 0),
+    (NULL, NULL, 0, 2031, '', '', '반피 비디엠', '', NULL, 64900, NULL, NULL, NULL, NOW(), 2022, NULL, 2015, 0),
+    (NULL, NULL, 0, NULL, '', '', '기솔피 바롤로', '', NULL, 39990, NULL, NULL, NULL, NOW(), NULL, NULL, 2017, 0),
+    (NULL, NULL, 0, 2025, '', '', '몬테스 알파 피노누아', '', NULL, 27990, NULL, NULL, NULL, NOW(), 2021, NULL, 2019, 0),
+    (NULL, NULL, 0, NULL, '', '', '몬테스 알파 까르미네르', '', NULL, 26990, NULL, NULL, NULL, NOW(), NULL, NULL, 2019, 0),
+    (NULL, NULL, 0, NULL, '', '', '식스 그레이프', '', NULL, 39990, NULL, NULL, NULL, NOW(), NULL, NULL, NULL, 0),
+    (NULL, NULL, 0, 2028, '', '', '패블레 부르고뉴 피노누아', '', NULL, 19990, NULL, NULL, NULL, NOW(), 2022, NULL, 2019, 0),
+    (NULL, NULL, 0, NULL, '', '', '멈', '', NULL, 49900, NULL, NULL, NULL, NOW(), NULL, NULL, NULL, 0),
+    (NULL, NULL, 0, NULL, '', '', '샤또 라뚜르 피작', '', NULL, 38990, NULL, NULL, NULL, NOW(), NULL, NULL, 2016, 0),
+    (NULL, NULL, 0, NULL, '', '', '커클랜드 말벡', '', NULL, 10900, NULL, NULL, NULL, NOW(), NULL, NULL, 2019, 0),
+    (NULL, NULL, 0, 2033, '', '', '콜로소르보 비디엠', '', '라비', 88000, NULL, NULL, NULL, NOW(), 2021, NULL, 2015, 0),
+    (NULL, NULL, 0, 2037, '', '', '프라텔 레벨로 바롤로', '', '라빈', 77000, NULL, NULL, NULL, NOW(), 2025, NULL, 2016, 0),
+    (NULL, NULL, 0, NULL, '', '', '필리뽀나', '', '라빈', 75000, NULL, NULL, NULL, NOW(), NULL, NULL, NULL, 0),
+    (NULL, NULL, 0, NULL, '', '', '떼땅져 리저브 브뤼', '', '이마트 와인장터 2021년 하반기', 60000, NULL, NULL, NULL, NOW(), NULL, NULL, NULL, 0),
+    (NULL, NULL, 0, 2034, '', '', '하이츠셀라 나파 까쇼', '', '이마트 와인장터 2021년 하반기', 95000, NULL, NULL, NULL, NOW(), 2021, NULL, NULL, 0),
+    (NULL, NULL, 0, 2028, '', '', '산타리타 트리플씨', '', '이마트 와인장터 2021년 하반기', 35000, NULL, NULL, NULL, NOW(), 2023, NULL, 2018, 0),
+    (NULL, NULL, 0, 2028, '', '', '페리에주에 벨에포크', '', '이마트 와인장터 2021년 하반기', 178000, NULL, NULL, NULL, NOW(), 2023, NULL, NULL, 0),
+    (NULL, NULL, 0, 2030, '', '', '몬테스 알파 M', '', '이마트 와인장터 2021년 하반기', 118000, NULL, NULL, NULL, NOW(), 2023, NULL, 2018, 0),
+    (NULL, NULL, 0, NULL, '', '', '그롱네 샴페인', '', '이마트 와인장터 2021년 하반기', 40000, NULL, NULL, NULL, NOW(), NULL, NULL, NULL, 0),
+    (NULL, NULL, 0, NULL, '', '', '에스쿠도 로호 ', '', '이마트 와인장터 2021년 하반기', 19800, NULL, NULL, NULL, NOW(), NULL, NULL, 2019, 0),
+    (NULL, NULL, 0, 2043, '', '', '샤또 피숑 롱그빌 꼼떼스 드 라랑드', '', '이마트 와인장터 2021년 하반기', 190000, NULL, NULL, NULL, NOW(), 2025, NULL, 2017, 0),
+    (NULL, NULL, 0, 2033, '', '', '샤또 라퐁 로쉐', '', '이마트 와인장터 2021년 하반기', 68000, NULL, NULL, NULL, NOW(), 2021, NULL, 2014, 0),
+    (NULL, NULL, 0, 2040, '', '', '테스타마타', '', '이마트 와인장터 2021년 하반기', 99000, NULL, NULL, NULL, NOW(), 2024, NULL, 2018, 0),
+    (NULL, NULL, 0, 2034, '', '', '라포스톨 아팔타', '', '이마트 와인장터 2021년 하반기', 19800, NULL, NULL, NULL, NOW(), 2023, NULL, 2017, 0),
+    (NULL, NULL, 0, 2050, '', '', '샤또 팔머', '', '이마트 와인장터 2021년 하반기', 390000, NULL, NULL, NULL, NOW(), 2028, NULL, 2017, 0),
+    (NULL, NULL, 0, NULL, '', '', '카자노브 샴페인', '', '이마트 와인장터 2021년 하반기', 50000, NULL, NULL, NULL, NOW(), NULL, NULL, 2007, 0),
+    (NULL, NULL, 0, 2029, '', '', '세냐', '', '이마트 와인장터 2021년 하반기', 170000, NULL, NULL, NULL, NOW(), 2020, NULL, 2017, 0),
+    (NULL, NULL, 0, 2027, '', '', '라포스톨 알렉상드레 까쇼', '', '이마트 와인장터 2021년 하반기', 30000, NULL, NULL, NULL, NOW(), 2022, NULL, 2019, 0),
+    (NULL, NULL, 0, 2033, '', '', '산 귀도 귀달베르토', '', '와인앤모어', 59900, NULL, NULL, NULL, NOW(), 2023, NULL, 2019, 0),
+    (NULL, '2021-10-23', 0, 2029, '', '', '케이머스', '', '코스트코 광명', 129900, NULL, NULL, '미국', NOW(), 2022, NULL, 2019, 0),
+    (NULL, '2021-10-23', 0, 2044, '', '', '샤또 린쉬 바쥐', '', '코스트코 광명', 179900, NULL, NULL, NULL, NOW(), 2025, NULL, 2017, 0),
+    (NULL, '2023-05-19', 0, 2028, '', '', '트라피체 싱글빈야드 말벡 암브로시아', '', '이마트 와인장터 2023년 상반기', 35000, NULL, NULL, NULL, NOW(), 2021, NULL, 2018, 0),
+    (NULL, '2023-05-20', 0, 2031, '', '', '알타이르', '', '이마트 와인장터 2023년 상반기', 89000, NULL, NULL, NULL, NOW(), 2023, NULL, 2019, 0),
+    (NULL, '2023-05-20', 0, 2031, '', '', '케이머스', '', '이마트 와인장터 2023년 상반기', 118000, NULL, NULL, NULL, NOW(), 2024, NULL, 2020, 0),
+    (NULL, '2023-05-20', 0, NULL, '', '', '알렉스 감발 피노누아 뀌베 레 두 빠삐', '', '이마트 와인장터 2023년 상반기', 49800, NULL, NULL, NULL, NOW(), NULL, NULL, 2020, 0)"; expected "[, ::, AT, FORMAT, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+insert into WINE
+values
+    (null, '2021-05-15', 0, 2025, '', '', '풋볼트 쉬라즈', '', '이마트 와인장터 2021년 상반기', 20000, null, null, '호주', now(), 2022, null, 2018, 0),
+    (null, '2021-06-17', 0, 2025, '', '', '파머스 립 페서웨이 쉬라즈', '', '와인앤모어 행사', 19000, null, null, '호주', now(), 2022, null, 2016, 0),
+    (null, '2021-05-13', 0, 2026, '', '', '루피노 모두스', '', '이마트 와인장터 2021년 상반기', 55000, null, null, '이탈리아', now(), 2022, null, 2017, 0),
+    (null, '2021-05-13', 0, 2027, '', '', '플라네타 샤르도네', '', '이마트 와인장터 2021년 상반기', 39000, null, null, '이탈리아', now(), 2022, null, 2019, 0),
+    (null, '2021-05-15', 0, 2028, '', '', '킬리카눈 킬러맨스 런 쉬라즈', '', '이마트 와인장터 2021년 상반기', 25000, null, null, '호주', now(), 2022, null, 2018, 0),
+    (null, '2021-06-12', 0, 2030, '', '', '커클랜드 시그니춰 바롤로', '', '코스트코', 29990, null, null, '이탈리아', now(), 2022, null, 2016, 0),
+    (null, '2021-05-14', 0, 2031, '', '', '바디아 파시아노', '', '이마트 와인장터 2021년 상반기', 65000, null, null, '이탈리아', now(), 2022, null, 2017, 0),
+    (null, '2021-05-24', 0, 2031, '', '', '반피 BDM', '', '이마트', 75000, null, null, '이탈리아', now(), 2022, null, 2015, 0),
+    (null, '2021-06-17', 0, 2031, '', '', '투핸즈 벨라스 쉬라즈', '', '와인앤모어 행사', 159000, null, null, null, now(), 2022, null, 2018, 0),
+    (null, '2021-05-31', 0, 2032, '', '', '트리플씨', '', '세븐일레븐(머지포인트)', 29600, null, null, '칠레', now(), 2022, null, 2017, 0),
+    (null, '2021-05-08', 0, 2044, '', '', '루이 로드레 크리스탈', '', '제주 면세점', 315800, null, null, '프랑스', now(), 2022, null, 2012, 0),
+    (null, '2021-05-17', 0, 2027, '', '', '도멘 레미 세겡 쥬브레 샹베르탱', '', '이마트 와인장터 2021년 상반기', 60000, null, null, '프랑스', now(), 2023, null, 2018, 0),
+    (null, '2021-04-28', 0, 2030, '', '', '토마시 아마로네', '', '참작', 60900, null, null, '이탈리아', now(), 2023, null, 2016, 0),
+    (null, '2021-06-05', 0, 2031, '', '', '카스텔 지오콘도 BDM', '', '이마트', 105600, null, null, '이탈리아', now(), 2023, null, 2015, 0),
+    (null, '2021-06-05', 0, 2032, '', '', '이기갈 샤또뇌프 뒤 파프 ', '', '이마트', 59840, null, null, '프랑스', now(), 2023, null, 2016, 0),
+    (null, '2021-06-26', 0, 2033, '', '', '라 포데리나 브루넬로 디 몬탈치노', '', '이마트', 71840, null, null, '이탈리아', now(), 2023, null, 2015, 0),
+    (null, '2021-06-17', 0, 2043, '', '', '콜로레', '', '와인앤모어 행사', 350000, null, null, '이탈리아', now(), 2023, null, 2018, 0),
+    (null, '2021-05-14', 0, 2029, '', '', '라포스톨 뀌베 까르미네르', '', '이마트 와인장터 2021년 상반기', 30000, null, null, '칠레', now(), 2024, null, 2019, 0),
+    (null, '2021-06-18', 0, 2039, '', '', '테스타마타', '', '와인앤모어 행사', 130000, null, null, null, now(), 2024, null, 2018, 0),
+    (null, null, 0, 2030, '', '', '라콜롬비나 브루넬로 디 몬탈치노', '', '뱅가드 와인 머천트', 78000, null, null, '이탈리아', now(), 2025, null, 2015, 0),
+    (null, '2021-05-13', 0, 2047, '', '', '샤또 레방질', '', '이마트 와인장터 2021년 상반기', 450000, null, null, '프랑스', now(), 2027, null, 2015, 0),
+    (null, '2021-05-20', 0, 2042, '', '', '샤또 딸보', '', '제주와인창고', 110000, null, null, '프랑스', now(), 2028, null, 2018, 0),
+    (null, '2021-06-17', 0, 2042, '', '', '샤또 딸보', '', '와인앤모어 행사', 159000, null, null, null, now(), 2028, null, 2018, 0),
+    (null, '2021-06-17', 0, 2044, '', '', '샤또 지스꾸르', '', '와인앤모어 행사', 85000, null, null, '프랑스', now(), 2028, null, 2020, 0),
+    (null, '2021-06-18', 0, 2045, '', '', '샤또 오브리옹', '', '와인앤모어 행사', 799000, null, null, '프랑스', now(), 2028, null, 2017, 0),
+    (null, '2021-05-13', 0, 2049, '', '', '샤또 뽕떼 까네', '', '이마트 와인장터 2021년 상반기', 180000, null, null, '프랑스', now(), 2028, null, 2018, 0),
+    (null, '2021-06-17', 0, 2052, '', '', '샤또 마고', '', '와인앤모어 행사', 899000, null, null, '프랑스', now(), 2030, null, 2017, 0),
+    (null, '2021-05-13', 0, 2025, '', '', '퀘르체토 치날레', '', '이마트 와인장터 2021년 상반기', 99000, null, null, '이탈리아', now(), 2020, null, 2015, 0),
+    (null, '2021-05-13', 0, 2028, '', '', '산 펠리체, 키안티 클라시코 리제르바 '일 그리지오'', '', '이마트 와인장터 2021년 상반기', 29800, null, null, '이탈리아', now(), 2021, null, 2017, 0),
+    (null, '2021-05-13', 0, 2026, '', '', '지라드, 까베르네 소비뇽', '', '이마트 와인장터 2021년 상반기', 65000, null, null, '미국', now(), 2019, null, 2017, 0),
+    (null, '2021-05-14', 0, 2030, '', '', '투핸즈, 엔젤스 쉐어 쉬라즈', '', '이마트 와인장터 2021년 상반기', 32000, null, null, '호주', now(), 2021, null, 2020, 0),
+    (null, '2021-05-15', 0, 2026, '', '', '톨라이니 알 파쏘', '', '이마트 와인장터 2021년 상반기', 30000, null, null, '이탈리아', now(), 2021, null, 2017, 0),
+    (null, null, 0, 2021, '', '', '커클랜드 말보로 쇼비뇽블랑', '', '코스트코', 9790, null, null, '뉴질랜드', now(), 2020, null, 2020, 0),
+    (null, '2021-04-23', 0, 2026, '', '', '자리스', '', '참작', 29900, null, null, '스페인', now(), 2020, null, 2016, 0),
+    (null, null, 0, 2025, '', '', '라 브라체스카, 비노 노빌레 디 몬테풀치아노', '', '비노솔', 0, null, null, '이탈리아', now(), 2020, null, 2017, 0),
+    (null, null, 0, 2029, '', '', '폰토디, 키안티 클라시코', '', '이마트 와인장터 2020년 하반기', 40000, null, null, '이탈리아', now(), 2021, null, 2017, 0),
+    (null, '2021-05-17', 0, 2025, '', '', '도멘 레미 세겡 쥬브레 샹베르탱', '', '이마트 와인장터 2021년 상반기', 60000, null, null, '프랑스', now(), 2021, null, 2017, 0),
+    (null, '2021-05-24', 0, 2024, '', '', '생콤 꼬뜨드론', '', '코스트코', 18990, null, null, '프랑스', now(), 2021, null, 2020, 0),
+    (null, '2021-05-24', 0, 2038, '', '', '돔페리뇽 p2', '', '제주 면세점', 383020, null, null, '프랑스', now(), 2021, null, 2002, 0),
+    (null, '2021-06-05', 0, 2024, '', '', '도그 포인트 소비뇽', '', '이마트', 34240, null, null, '뉴질랜드', now(), 2020, null, 2019, 0),
+    (null, '2021-06-10', 0, 2023, '', '', '루이자도 부르고뉴 샤도네이 (하프)', '', '이마트', 12800, null, null, '프랑스', now(), 2021, null, 2019, 0),
+    (null, '2021-06-10', 0, 2024, '', '', '이기갈 꼬뜨 뒤 론 루즈(하프)', '', '이마트', 9900, null, null, '프랑스', now(), 2019, null, 2017, 0),
+    (null, '2021-06-12', 0, 2023, '', '', '루이라뚜르 피노누아', '', '코스트코', 26990, null, null, '프랑스', now(), 2021, null, 2019, 0),
+    (null, '2021-06-17', 0, 2023, '', '', '드보 뀌베 디 브륏', '', '와인앤모어 행사', 49900, null, null, '프랑스', now(), 2020, null, 20null, 0),
+    (null, '2021-06-18', 0, 2048, '', '', '샤또 디켐', '', '와인앤모어 행사', 490000, null, null, '프랑스', now(), 2015, null, 2007, 0),
+    (null, '2021-05-13', 0, null, '', '', '스택스 캐년랜취 스택', '', '이마트 와인장터 2021년 상반기', 80000, null, null, '미국', now(), null, null, 2016, 0),
+    (null, '2021-05-13', 0, 2025, '', '', '란 리제르바', '', '이마트 와인장터 2021년 상반기', 35000, null, null, '스페인', now(), 2021, null, 2014, 0),
+    (null, null, 0, 2027, '', '', '플라네타 샤르도네', '', '이마트 와인장터 2020년 하반기', 39800, null, null, '이탈리아', now(), 2022, null, null, 0),
+    (null, '2021-05-13', 0, 2023, '', '', '그랑 파씨오네', '', '이마트 와인장터 2021년 상반기', 15000, null, null, '이탈리아', now(), 2022, null, null, 0),
+    (null, '2021-05-14', 0, null, '', '', '피치니 메모로 로쏘', '', '이마트 와인장터 2021년 상반기', 10000, null, null, '이탈리아', now(), null, null, 2019, 0),
+    (null, '2021-05-14', 0, 2024, '', '', '디아블로 리제르바', '', '이마트 와인장터 2021년 상반기', 19900, null, null, '칠레', now(), 2022, null, 2018, 0),
+    (null, '2021-05-15', 0, 2023, '', '', '콜럼비아 크레스트', '', '이마트 와인장터 2021년 상반기', 29000, null, null, '미국', now(), 2021, null, 2018, 0),
+    (null, '2021-05-15', 0, 2024, '', '', '689 레드 나파밸리', '', '이마트 와인장터 2021년 상반기', 25000, null, null, '미국', now(), 2020, null, 2018, 0),
+    (null, '2021-05-15', 0, null, '', '', '에고메이', '', '이마트 와인장터 2021년 상반기', 20000, null, null, '스페인', now(), null, null, 2018, 0),
+    (null, '2021-04-23', 0, null, '', '', '무초 마스 (화이트 레이블)', '', '참작', 21900, null, null, '스페인', now(), null, null, null, 0),
+    (null, '2021-04-23', 0, null, '', '', '무초 마스 (블랙 레이블)', '', '참작', 21900, null, null, '스페인', now(), null, null, null, 0),
+    (null, '2021-02-06', 0, 2024, '', '', '몬테니돌리 베르나차 디 산지미냐노 트라디지오날레', '', '뱅가드 와인 머천트', 114000, null, null, '이탈리아', now(), 2019, null, 2018, 0),
+    (null, '2021-02-06', 0, 2030, '', '', '라콜롬비나 브루넬로 디 몬탈치노', '', '뱅가드 와인 머천트', 114000, null, null, '이탈리아', now(), 2021, null, 2013, 0),
+    (null, null, 0, null, '', '', '까테나 말벡', '', null, 0, null, null, '아르헨티나', now(), null, null, 2018, 0),
+    (null, null, 0, 2021, '', '', '에쎄이 슈냉블랑', '', '뱅가드 와인 머천트', 12900, null, null, '남아공', now(), 2019, null, 2018, 0),
+    (null, null, 0, null, '', '', '에쎄이 까베르네 쇼비뇽', '', '뱅가드 와인 머천트', 12900, null, null, '남아공', now(), null, null, 2018, 0),
+    (null, null, 0, null, '', '', '라 사비나 그랑 리제르바 까베르네 쇼비뇽', '', '비노솔', 38000, null, null, '스페인', now(), null, null, null, 0),
+    (null, null, 0, null, '', '', '아라고니아 셀렉시온 에스페시알', '', '세계주류아울렛.신대방', 0, null, null, '스페인', now(), null, null, null, 0),
+    (null, null, 0, null, '', '', '삐에르 아마디유, 그랑 로마네 지공다스', '', '코스트코', 39990, null, null, '프랑스', now(), null, null, 2017, 0),
+    (null, '2021-05-24', 0, null, '', '', '커클랜드 프로세코', '', '코스트코', 7890, null, null, '이탈리아', now(), null, null, null, 0),
+    (null, '2021-06-02', 0, null, '', '', '카스티요 두카이 블랑코', '', '뱅가드 와인 머천트', 6900, null, null, '스페인', now(), null, null, 2020, 0),
+    (null, '2021-06-02', 0, null, '', '', '카스티요 두카이 틴토', '', '뱅가드 와인 머천트', 5900, null, null, '스페인', now(), null, null, 2019, 0),
+    (null, '2021-06-05', 0, null, '', '', '파이퍼 하이직 브롯', '', '이마트', 52000, null, null, '프랑스', now(), null, null, null, 0),
+    (null, '2021-06-05', 0, 2023, '', '', '콜럼비아 크레스트 H3', '', '이마트', 24000, null, null, '미국', now(), 2021, null, 2018, 0),
+    (null, '2021-06-10', 0, null, '', '', '블랙 매직 쉬라즈', '', '와인공간', 108000, null, null, '호주', now(), null, null, 2017, 0),
+    (null, '2021-06-10', 0, 2023, '', '', '루이자도 부르고뉴 피노누아 (하프)', '', '이마트', 12800, null, null, '프랑스', now(), 2020, null, 2018, 0),
+    (null, '2021-06-12', 0, null, '', '', '라크라사드 시라', '', '코스트코', 8790, null, null, '프랑스', now(), null, null, 2019, 0),
+    (null, '2021-06-12', 0, null, '', '', '꽁데 디 깜피아노 프리미터보 디 만두리아', '', '코스트코', 15990, null, null, '이탈리아', now(), null, null, 2019, 0),
+    (null, '2021-06-12', 0, null, '', '', '집집 락 쉬라즈', '', '코스트코', 15990, null, null, '호주', now(), null, null, 2019, 0),
+    (null, '2021-06-13', 0, null, '', '', '몽제아 뮈네레 르 리베르탱 부르고뉴 빠쓰뚜그랭', '', '쓱닷컴(백화점 수령)', 27000, null, null, '프랑스', now(), null, null, 2018, 0),
+    (null, '2021-06-17', 0, null, '', '', '보히가스 까바 리제르바 브륏', '', '와인앤모어 행사', 22000, null, null, '스페인', now(), null, null, null, 0),
+    (null, '2021-06-26', 0, null, '', '', '로버시 바르바레스코', '', '이마트', 38240, null, null, '이탈리아', now(), null, null, 2016, 0),
+    (null, '2021-06-26', 0, 2028, '', '', '무가', '', '이마트', 40000, null, null, '스페인', now(), 2021, null, 2016, 0),
+    (null, '2021-06-17', 0, null, '', '', '에로이카', '', 'GS25(포인트+쿠폰사용)', 2850, null, null, '프랑스', now(), null, null, 2018, 0),
+    (null, null, 0, 2030, '', '', '안티노리 CCR', '', null, 29000, null, null, null, now(), 2022, null, 2016, 0),
+    (null, null, 0, 2031, '', '', '몬테라포니 끼안티 클라시코 ', '', null, 45000, null, null, null, now(), 2021, null, 2019, 0),
+    (null, null, 0, 2038, '', '', '일포지오네 BDM', '', null, 79000, null, null, null, now(), 2025, null, 2016, 0),
+    (null, null, 0, 2036, '', '', '일포지오네 BDM 리저브', '', null, 140000, null, null, null, now(), 2023, null, 2015, 0),
+    (null, '2021-07-01', 0, 2030, '', '', '킬리카눈 코브넌트 쉬라즈', '', '이마트(머지2만+핀크2만+카드)', 49800, null, null, '호주', now(), 2020, null, 2017, 0),
+    (null, '2021-07-02', 0, 2016, '', '', '샤또 그레이삭 메독 크뤼 부르주아', '', '코스트코', 31990, null, null, '프랑스', now(), 2013, null, 2006, 0),
+    (null, '2021-07-02', 0, 2023, '', '', '페폴리 키안티 클라시코', '', '코스트코', 25950, null, null, '이탈리아', now(), 2020, null, 2019, 0),
+    (null, '2021-07-02', 0, 2020, '', '', '라 마스코타 말벡', '', '코스트코', 25990, null, null, '아르헨티나', now(), 2019, null, 2019, 0),
+    (null, '2021-07-02', 0, 2025, '', '', '베라짜노 키안티 클라시코', '', '코스트코', 29590, null, null, '이탈리아', now(), 2022, null, 2017, 0),
+    (null, '2021-07-02', 0, 2024, '', '', '커클랜드 콜럼비아 밸리 까쇼', '', '코스트코', 15490, null, null, '미국', now(), 2021, null, 2019, 0),
+    (null, '2021-07-02', 0, 2023, '', '', '생미쉘 드라이 리슬링', '', '코스트코', 12990, null, null, '미국', now(), 2020, null, 2020, 0),
+    (null, '2021-07-02', 0, 2024, '', '', '티렐 루퍼스 스톤', '', '코스트코', 33990, null, null, '호주', now(), 2021, null, 2018, 0),
+    (null, '2021-07-02', 0, 2025, '', '', '포스트 마크 나파', '', '코스트코', 29900, null, null, '미국', now(), 2020, null, 2018, 0),
+    (null, '2021-07-03', 0, 2033, '', '', '오린 스위프트 머큐리 헤드', '', '떼루아', 330000, null, null, '미국', now(), 2022, null, 2017, 0),
+    (null, '2021-07-03', 0, null, '', '', '블랙매직 쉬라즈', '', '떼루아', 330000, null, null, '호주', now(), null, null, 2016, 0),
+    (null, '2021-07-14', 0, null, '', '', '루이로드레 브뤼 프리미에', '', '신대방 세계주류', 66500, null, null, '프랑스', now(), null, null, null, 0),
+    (null, '2021-07-14', 0, null, '', '', '폴로저 브뤼 리저브', '', '신대방 세계주류', 74500, null, null, '프랑스', now(), null, null, null, 0),
+    (null, '2021-07-14', 0, null, '', '', '찰스 하이직 브뤼', '', '신대방 세계주류', 85000, null, null, '프랑스', now(), null, null, null, 0),
+    (null, '2021-07-17', 0, 2022, '', '', '푸나무', '', '해피머니 gs25', 22500, null, null, null, now(), 2020, null, 2020, 0),
+    (null, '2021-07-17', 0, 2023, '', '', '루이자도 피노', '', '해피머니 gs25', 22700, null, null, null, now(), 2020, null, 2019, 0),
+    (null, null, 0, 2025, '', '', '루이자도 피노 자코방', '', null, 0, null, null, null, now(), 2021, null, 2019, 0),
+    (null, '2021-07-17', 0, 2038, '', '', '일포지오네 BDM', '', '라빈', 139000, null, null, null, now(), 2025, null, 2016, 0),
+    (null, '2021-07-17', 0, 2034, '', '', '산펠리체 깜뽀지오바니 BDM', '', '라빈', 139000, null, null, null, now(), 2022, null, 2015, 0),
+    (null, '2021-07-31', 0, 2024, '', '', '커클랜드 말벡', '', '코스트코', 10900, null, null, null, now(), 2021, null, 2019, 0),
+    (null, '2021-07-31', 0, 2030, '', '', '투핸즈 엔젤스 쉐어', '', '치즈비노(제로페이)', 67500, null, null, null, now(), 2021, null, 2020, 0),
+    (null, '2021-07-31', 0, 2025, '', '', '몰리두커 더 복서', '', '치즈비노(제로페이)', 67500, null, null, null, now(), 2022, null, 2019, 0),
+    (null, '2021-07-31', 0, null, '', '', '알타이르', '', '신대방 세계주류(제로페이)', 80100, null, null, null, now(), null, null, 2018, 0),
+    (null, '2021-08-03', 0, 2024, '', '', '이기갈 꼬뜨 뒤 론 루즈', '', '이마트24(머지)', 18400, null, null, null, now(), 2019, null, 2017, 0),
+    (null, '2021-08-04', 0, null, '', '', '고스트파인 진판델', '', '홈플러스 머지', 25900, null, null, null, now(), null, null, 2018, 0),
+    (null, '2021-08-04', 0, 2025, '', '', '고스트 파인 멜롯', '', '홈플러스 머지', 25900, null, null, null, now(), 2019, null, 2017, 0),
+    (null, '2021-08-05', 0, 2027, '', '', '킬리카눈 까쇼', '', '세븐일레븐 머지', 22320, null, null, null, now(), 2023, null, 2018, 0),
+    (null, '2021-08-05', 0, 2028, '', '', '킬리카눈 쉬라', '', '세븐일레븐 머지', 22310, null, null, null, now(), 2022, null, 2018, 0),
+    (null, '2021-08-19', 0, 2028, '', '', '까스텔라레 키안띠 클라시코', '', '현대백화점', 30000, null, null, null, now(), 2021, null, 2019, 0),
+    (null, '2021-08-22', 0, 2028, '', '', '몬테스 퍼플 엔젤', '', '신세계백화점', 96000, null, null, null, now(), 2021, null, 2017, 0),
+    (null, '2021-08-22', 0, 2027, '', '', '몬테스 퍼플 엔젤', '', '신세계백화점', 96000, null, null, null, now(), 2021, null, 2018, 0),
+    (null, '2021-08-25', 0, 2037, '', '', '알마비바', '', 'ga25', 324000, null, null, null, now(), 2023, null, 2018, 0),
+    (null, '2021-09-05', 0, 2037, '', '', '포지오디소토 비디엠', '', '와공방', 285000, null, null, null, now(), 2024, null, 2016, 0),
+    (null, '2021-09-05', 0, 2037, '', '', '가야 비디엠', '', '와공방', 96800, null, null, null, now(), 2026, null, 2016, 0),
+    (null, '2021-09-11', 0, null, '', '', '이스까이 매그넘', '', '빅마켓', 89000, null, null, null, now(), null, null, 2018, 0),
+    (null, null, 0, 2031, '', '', '반피 비디엠', '', null, 64900, null, null, null, now(), 2022, null, 2015, 0),
+    (null, null, 0, null, '', '', '기솔피 바롤로', '', null, 39990, null, null, null, now(), null, null, 2017, 0),
+    (null, null, 0, 2025, '', '', '몬테스 알파 피노누아', '', null, 27990, null, null, null, now(), 2021, null, 2019, 0),
+    (null, null, 0, null, '', '', '몬테스 알파 까르미네르', '', null, 26990, null, null, null, now(), null, null, 2019, 0),
+    (null, null, 0, null, '', '', '식스 그레이프', '', null, 39990, null, null, null, now(), null, null, null, 0),
+    (null, null, 0, 2028, '', '', '패블레 부르고뉴 피노누아', '', null, 19990, null, null, null, now(), 2022, null, 2019, 0),
+    (null, null, 0, null, '', '', '멈', '', null, 49900, null, null, null, now(), null, null, null, 0),
+    (null, null, 0, null, '', '', '샤또 라뚜르 피작', '', null, 38990, null, null, null, now(), null, null, 2016, 0),
+    (null, null, 0, null, '', '', '커클랜드 말벡', '', null, 10900, null, null, null, now(), null, null, 2019, 0),
+    (null, null, 0, 2033, '', '', '콜로소르보 비디엠', '', '라비', 88000, null, null, null, now(), 2021, null, 2015, 0),
+    (null, null, 0, 2037, '', '', '프라텔 레벨로 바롤로', '', '라빈', 77000, null, null, null, now(), 2025, null, 2016, 0),
+    (null, null, 0, null, '', '', '필리뽀나', '', '라빈', 75000, null, null, null, now(), null, null, null, 0),
+    (null, null, 0, null, '', '', '떼땅져 리저브 브뤼', '', '이마트 와인장터 2021년 하반기', 60000, null, null, null, now(), null, null, null, 0),
+    (null, null, 0, 2034, '', '', '하이츠셀라 나파 까쇼', '', '이마트 와인장터 2021년 하반기', 95000, null, null, null, now(), 2021, null, null, 0),
+    (null, null, 0, 2028, '', '', '산타리타 트리플씨', '', '이마트 와인장터 2021년 하반기', 35000, null, null, null, now(), 2023, null, 2018, 0),
+    (null, null, 0, 2028, '', '', '페리에주에 벨에포크', '', '이마트 와인장터 2021년 하반기', 178000, null, null, null, now(), 2023, null, null, 0),
+    (null, null, 0, 2030, '', '', '몬테스 알파 M', '', '이마트 와인장터 2021년 하반기', 118000, null, null, null, now(), 2023, null, 2018, 0),
+    (null, null, 0, null, '', '', '그롱네 샴페인', '', '이마트 와인장터 2021년 하반기', 40000, null, null, null, now(), null, null, null, 0),
+    (null, null, 0, null, '', '', '에스쿠도 로호 ', '', '이마트 와인장터 2021년 하반기', 19800, null, null, null, now(), null, null, 2019, 0),
+    (null, null, 0, 2043, '', '', '샤또 피숑 롱그빌 꼼떼스 드 라랑드', '', '이마트 와인장터 2021년 하반기', 190000, null, null, null, now(), 2025, null, 2017, 0),
+    (null, null, 0, 2033, '', '', '샤또 라퐁 로쉐', '', '이마트 와인장터 2021년 하반기', 68000, null, null, null, now(), 2021, null, 2014, 0),
+    (null, null, 0, 2040, '', '', '테스타마타', '', '이마트 와인장터 2021년 하반기', 99000, null, null, null, now(), 2024, null, 2018, 0),
+    (null, null, 0, 2034, '', '', '라포스톨 아팔타', '', '이마트 와인장터 2021년 하반기', 19800, null, null, null, now(), 2023, null, 2017, 0),
+    (null, null, 0, 2050, '', '', '샤또 팔머', '', '이마트 와인장터 2021년 하반기', 390000, null, null, null, now(), 2028, null, 2017, 0),
+    (null, null, 0, null, '', '', '카자노브 샴페인', '', '이마트 와인장터 2021년 하반기', 50000, null, null, null, now(), null, null, 2007, 0),
+    (null, null, 0, 2029, '', '', '세냐', '', '이마트 와인장터 2021년 하반기', 170000, null, null, null, now(), 2020, null, 2017, 0),
+    (null, null, 0, 2027, '', '', '라포스톨 알렉상드레 까쇼', '', '이마트 와인장터 2021년 하반기', 30000, null, null, null, now(), 2022, null, 2019, 0),
+    (null, null, 0, 2033, '', '', '산 귀도 귀달베르토', '', '와인앤모어', 59900, null, null, null, now(), 2023, null, 2019, 0),
+    (null, '2021-10-23', 0, 2029, '', '', '케이머스', '', '코스트코 광명', 129900, null, null, '미국', now(), 2022, null, 2019, 0),
+    (null, '2021-10-23', 0, 2044, '', '', '샤또 린쉬 바쥐', '', '코스트코 광명', 179900, null, null, null, now(), 2025, null, 2017, 0),
+    (null, '2023-05-19', 0, 2028, '', '', '트라피체 싱글빈야드 말벡 암브로시아', '', '이마트 와인장터 2023년 상반기', 35000, null, null, null, now(), 2021, null, 2018, 0),
+    (null, '2023-05-20', 0, 2031, '', '', '알타이르', '', '이마트 와인장터 2023년 상반기', 89000, null, null, null, now(), 2023, null, 2019, 0),
+    (null, '2023-05-20', 0, 2031, '', '', '케이머스', '', '이마트 와인장터 2023년 상반기', 118000, null, null, null, now(), 2024, null, 2020, 0),
+    (null, '2023-05-20', 0, null, '', '', '알렉스 감발 피노누아 뀌베 레 두 빠삐', '', '이마트 와인장터 2023년 상반기', 49800, null, null, null, now(), null, null, 2020, 0) [42001-200]
+2023-05-24 14:55:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO WINE
+VALUES
+    (NULL, '2021-06-17', 0, 2025, '', '', '파머스 립 페서웨이 쉬라즈', '', '와인앤모어 행사', 19000, NULL, NULL, '호주', NOW(), 2022, NULL, 2016, 0),
+    (NULL, '2021-05-13', 0, 2026, '', '', '루피노 모두스', '', '이마트 와인장터 2021년 상반기', 55000, NULL, NULL, '이탈리아', NOW(), 2022, NULL, 2017, 0),
+    (NULL, '2021-05-13', 0, 2027, '', '', '플라네타 샤르도네', '', '이마트 와인장터 2021년 상반기', 39000, NULL, NULL, '이탈리아', NOW(), 2022, NULL, 2019, 0),
+    (NULL, '2021-05-15', 0, 2028, '', '', '킬리카눈 킬러맨스 런 쉬라즈', '', '이마트 와인장터 2021년 상반기', 25000, NULL, NULL, '호주', NOW(), 2022, NULL, 2018, 0),
+    (NULL, '2021-06-12', 0, 2030, '', '', '커클랜드 시그니춰 바롤로', '', '코스트코', 29990, NULL, NULL, '이탈리아', NOW(), 2022, NULL, 2016, 0),
+    (NULL, '2021-05-14', 0, 2031, '', '', '바디아 파시아노', '', '이마트 와인장터 2021년 상반기', 65000, NULL, NULL, '이탈리아', NOW(), 2022, NULL, 2017, 0),
+    (NULL, '2021-05-24', 0, 2031, '', '', '반피 BDM', '', '이마트', 75000, NULL, NULL, '이탈리아', NOW(), 2022, NULL, 2015, 0),
+    (NULL, '2021-06-17', 0, 2031, '', '', '투핸즈 벨라스 쉬라즈', '', '와인앤모어 행사', 159000, NULL, NULL, NULL, NOW(), 2022, NULL, 2018, 0),
+    (NULL, '2021-05-31', 0, 2032, '', '', '트리플씨', '', '세븐일레븐(머지포인트)', 29600, NULL, NULL, '칠레', NOW(), 2022, NULL, 2017, 0),
+    (NULL, '2021-05-08', 0, 2044, '', '', '루이 로드레 크리스탈', '', '제주 면세점', 315800, NULL, NULL, '프랑스', NOW(), 2022, NULL, 2012, 0),
+    (NULL, '2021-05-17', 0, 2027, '', '', '도멘 레미 세겡 쥬브레 샹베르탱', '', '이마트 와인장터 2021년 상반기', 60000, NULL, NULL, '프랑스', NOW(), 2023, NULL, 2018, 0),
+    (NULL, '2021-04-28', 0, 2030, '', '', '토마시 아마로네', '', '참작', 60900, NULL, NULL, '이탈리아', NOW(), 2023, NULL, 2016, 0),
+    (NULL, '2021-06-05', 0, 2031, '', '', '카스텔 지오콘도 BDM', '', '이마트', 105600, NULL, NULL, '이탈리아', NOW(), 2023, NULL, 2015, 0),
+    (NULL, '2021-06-05', 0, 2032, '', '', '이기갈 샤또뇌프 뒤 파프 ', '', '이마트', 59840, NULL, NULL, '프랑스', NOW(), 2023, NULL, 2016, 0),
+    (NULL, '2021-06-26', 0, 2033, '', '', '라 포데리나 브루넬로 디 몬탈치노', '', '이마트', 71840, NULL, NULL, '이탈리아', NOW(), 2023, NULL, 2015, 0),
+    (NULL, '2021-06-17', 0, 2043, '', '', '콜로레', '', '와인앤모어 행사', 350000, NULL, NULL, '이탈리아', NOW(), 2023, NULL, 2018, 0),
+    (NULL, '2021-05-14', 0, 2029, '', '', '라포스톨 뀌베 까르미네르', '', '이마트 와인장터 2021년 상반기', 30000, NULL, NULL, '칠레', NOW(), 2024, NULL, 2019, 0),
+    (NULL, '2021-06-18', 0, 2039, '', '', '테스타마타', '', '와인앤모어 행사', 130000, NULL, NULL, NULL, NOW(), 2024, NULL, 2018, 0),
+    (NULL, NULL, 0, 2030, '', '', '라콜롬비나 브루넬로 디 몬탈치노', '', '뱅가드 와인 머천트', 78000, NULL, NULL, '이탈리아', NOW(), 2025, NULL, 2015, 0),
+    (NULL, '2021-05-13', 0, 2047, '', '', '샤또 레방질', '', '이마트 와인장터 2021년 상반기', 450000, NULL, NULL, '프랑스', NOW(), 2027, NULL, 2015, 0),
+    (NULL, '2021-05-20', 0, 2042, '', '', '샤또 딸보', '', '제주와인창고', 110000, NULL, NULL, '프랑스', NOW(), 2028, NULL, 2018, 0),
+    (NULL, '2021-06-17', 0, 2042, '', '', '샤또 딸보', '', '와인앤모어 행사', 159000, NULL, NULL, NULL, NOW(), 2028, NULL, 2018, 0),
+    (NULL, '2021-06-17', 0, 2044, '', '', '샤또 지스꾸르', '', '와인앤모어 행사', 85000, NULL, NULL, '프랑스', NOW(), 2028, NULL, 2020, 0),
+    (NULL, '2021-06-18', 0, 2045, '', '', '샤또 오브리옹', '', '와인앤모어 행사', 799000, NULL, NULL, '프랑스', NOW(), 2028, NULL, 2017, 0),
+    (NULL, '2021-05-13', 0, 2049, '', '', '샤또 뽕떼 까네', '', '이마트 와인장터 2021년 상반기', 180000, NULL, NULL, '프랑스', NOW(), 2028, NULL, 2018, 0),
+    (NULL, '2021-06-17', 0, 2052, '', '', '샤또 마고', '', '와인앤모어 행사', 899000, NULL, NULL, '프랑스', NOW(), 2030, NULL, 2017, 0),
+    (NULL, '2021-05-13', 0, 2025, '', '', '퀘르체토 치날레', '', '이마트 와인장터 2021년 상반기', 99000, NULL, NULL, '이탈리아', NOW(), 2020, NULL, 2015, 0),
+    (NULL, '2021-05-13', 0, 2028, '', '', '산 펠리체, 키안티 클라시코 리제르바 '일[*] 그리지오'', '', '이마트 와인장터 2021년 상반기', 29800, NULL, NULL, '이탈리아', NOW(), 2021, NULL, 2017, 0),
+    (NULL, '2021-05-13', 0, 2026, '', '', '지라드, 까베르네 소비뇽', '', '이마트 와인장터 2021년 상반기', 65000, NULL, NULL, '미국', NOW(), 2019, NULL, 2017, 0),
+    (NULL, '2021-05-14', 0, 2030, '', '', '투핸즈, 엔젤스 쉐어 쉬라즈', '', '이마트 와인장터 2021년 상반기', 32000, NULL, NULL, '호주', NOW(), 2021, NULL, 2020, 0),
+    (NULL, '2021-05-15', 0, 2026, '', '', '톨라이니 알 파쏘', '', '이마트 와인장터 2021년 상반기', 30000, NULL, NULL, '이탈리아', NOW(), 2021, NULL, 2017, 0),
+    (NULL, NULL, 0, 2021, '', '', '커클랜드 말보로 쇼비뇽블랑', '', '코스트코', 9790, NULL, NULL, '뉴질랜드', NOW(), 2020, NULL, 2020, 0),
+    (NULL, '2021-04-23', 0, 2026, '', '', '자리스', '', '참작', 29900, NULL, NULL, '스페인', NOW(), 2020, NULL, 2016, 0),
+    (NULL, NULL, 0, 2025, '', '', '라 브라체스카, 비노 노빌레 디 몬테풀치아노', '', '비노솔', 0, NULL, NULL, '이탈리아', NOW(), 2020, NULL, 2017, 0),
+    (NULL, NULL, 0, 2029, '', '', '폰토디, 키안티 클라시코', '', '이마트 와인장터 2020년 하반기', 40000, NULL, NULL, '이탈리아', NOW(), 2021, NULL, 2017, 0),
+    (NULL, '2021-05-17', 0, 2025, '', '', '도멘 레미 세겡 쥬브레 샹베르탱', '', '이마트 와인장터 2021년 상반기', 60000, NULL, NULL, '프랑스', NOW(), 2021, NULL, 2017, 0),
+    (NULL, '2021-05-24', 0, 2024, '', '', '생콤 꼬뜨드론', '', '코스트코', 18990, NULL, NULL, '프랑스', NOW(), 2021, NULL, 2020, 0),
+    (NULL, '2021-05-24', 0, 2038, '', '', '돔페리뇽 p2', '', '제주 면세점', 383020, NULL, NULL, '프랑스', NOW(), 2021, NULL, 2002, 0),
+    (NULL, '2021-06-05', 0, 2024, '', '', '도그 포인트 소비뇽', '', '이마트', 34240, NULL, NULL, '뉴질랜드', NOW(), 2020, NULL, 2019, 0),
+    (NULL, '2021-06-10', 0, 2023, '', '', '루이자도 부르고뉴 샤도네이 (하프)', '', '이마트', 12800, NULL, NULL, '프랑스', NOW(), 2021, NULL, 2019, 0),
+    (NULL, '2021-06-10', 0, 2024, '', '', '이기갈 꼬뜨 뒤 론 루즈(하프)', '', '이마트', 9900, NULL, NULL, '프랑스', NOW(), 2019, NULL, 2017, 0),
+    (NULL, '2021-06-12', 0, 2023, '', '', '루이라뚜르 피노누아', '', '코스트코', 26990, NULL, NULL, '프랑스', NOW(), 2021, NULL, 2019, 0),
+    (NULL, '2021-06-17', 0, 2023, '', '', '드보 뀌베 디 브륏', '', '와인앤모어 행사', 49900, NULL, NULL, '프랑스', NOW(), 2020, NULL, 20NULL, 0),
+    (NULL, '2021-06-18', 0, 2048, '', '', '샤또 디켐', '', '와인앤모어 행사', 490000, NULL, NULL, '프랑스', NOW(), 2015, NULL, 2007, 0),
+    (NULL, '2021-05-13', 0, NULL, '', '', '스택스 캐년랜취 스택', '', '이마트 와인장터 2021년 상반기', 80000, NULL, NULL, '미국', NOW(), NULL, NULL, 2016, 0),
+    (NULL, '2021-05-13', 0, 2025, '', '', '란 리제르바', '', '이마트 와인장터 2021년 상반기', 35000, NULL, NULL, '스페인', NOW(), 2021, NULL, 2014, 0),
+    (NULL, NULL, 0, 2027, '', '', '플라네타 샤르도네', '', '이마트 와인장터 2020년 하반기', 39800, NULL, NULL, '이탈리아', NOW(), 2022, NULL, NULL, 0),
+    (NULL, '2021-05-13', 0, 2023, '', '', '그랑 파씨오네', '', '이마트 와인장터 2021년 상반기', 15000, NULL, NULL, '이탈리아', NOW(), 2022, NULL, NULL, 0),
+    (NULL, '2021-05-14', 0, NULL, '', '', '피치니 메모로 로쏘', '', '이마트 와인장터 2021년 상반기', 10000, NULL, NULL, '이탈리아', NOW(), NULL, NULL, 2019, 0),
+    (NULL, '2021-05-14', 0, 2024, '', '', '디아블로 리제르바', '', '이마트 와인장터 2021년 상반기', 19900, NULL, NULL, '칠레', NOW(), 2022, NULL, 2018, 0),
+    (NULL, '2021-05-15', 0, 2023, '', '', '콜럼비아 크레스트', '', '이마트 와인장터 2021년 상반기', 29000, NULL, NULL, '미국', NOW(), 2021, NULL, 2018, 0),
+    (NULL, '2021-05-15', 0, 2024, '', '', '689 레드 나파밸리', '', '이마트 와인장터 2021년 상반기', 25000, NULL, NULL, '미국', NOW(), 2020, NULL, 2018, 0),
+    (NULL, '2021-05-15', 0, NULL, '', '', '에고메이', '', '이마트 와인장터 2021년 상반기', 20000, NULL, NULL, '스페인', NOW(), NULL, NULL, 2018, 0),
+    (NULL, '2021-04-23', 0, NULL, '', '', '무초 마스 (화이트 레이블)', '', '참작', 21900, NULL, NULL, '스페인', NOW(), NULL, NULL, NULL, 0),
+    (NULL, '2021-04-23', 0, NULL, '', '', '무초 마스 (블랙 레이블)', '', '참작', 21900, NULL, NULL, '스페인', NOW(), NULL, NULL, NULL, 0),
+    (NULL, '2021-02-06', 0, 2024, '', '', '몬테니돌리 베르나차 디 산지미냐노 트라디지오날레', '', '뱅가드 와인 머천트', 114000, NULL, NULL, '이탈리아', NOW(), 2019, NULL, 2018, 0),
+    (NULL, '2021-02-06', 0, 2030, '', '', '라콜롬비나 브루넬로 디 몬탈치노', '', '뱅가드 와인 머천트', 114000, NULL, NULL, '이탈리아', NOW(), 2021, NULL, 2013, 0),
+    (NULL, NULL, 0, NULL, '', '', '까테나 말벡', '', NULL, 0, NULL, NULL, '아르헨티나', NOW(), NULL, NULL, 2018, 0),
+    (NULL, NULL, 0, 2021, '', '', '에쎄이 슈냉블랑', '', '뱅가드 와인 머천트', 12900, NULL, NULL, '남아공', NOW(), 2019, NULL, 2018, 0),
+    (NULL, NULL, 0, NULL, '', '', '에쎄이 까베르네 쇼비뇽', '', '뱅가드 와인 머천트', 12900, NULL, NULL, '남아공', NOW(), NULL, NULL, 2018, 0),
+    (NULL, NULL, 0, NULL, '', '', '라 사비나 그랑 리제르바 까베르네 쇼비뇽', '', '비노솔', 38000, NULL, NULL, '스페인', NOW(), NULL, NULL, NULL, 0),
+    (NULL, NULL, 0, NULL, '', '', '아라고니아 셀렉시온 에스페시알', '', '세계주류아울렛.신대방', 0, NULL, NULL, '스페인', NOW(), NULL, NULL, NULL, 0),
+    (NULL, NULL, 0, NULL, '', '', '삐에르 아마디유, 그랑 로마네 지공다스', '', '코스트코', 39990, NULL, NULL, '프랑스', NOW(), NULL, NULL, 2017, 0),
+    (NULL, '2021-05-24', 0, NULL, '', '', '커클랜드 프로세코', '', '코스트코', 7890, NULL, NULL, '이탈리아', NOW(), NULL, NULL, NULL, 0),
+    (NULL, '2021-06-02', 0, NULL, '', '', '카스티요 두카이 블랑코', '', '뱅가드 와인 머천트', 6900, NULL, NULL, '스페인', NOW(), NULL, NULL, 2020, 0),
+    (NULL, '2021-06-02', 0, NULL, '', '', '카스티요 두카이 틴토', '', '뱅가드 와인 머천트', 5900, NULL, NULL, '스페인', NOW(), NULL, NULL, 2019, 0),
+    (NULL, '2021-06-05', 0, NULL, '', '', '파이퍼 하이직 브롯', '', '이마트', 52000, NULL, NULL, '프랑스', NOW(), NULL, NULL, NULL, 0),
+    (NULL, '2021-06-05', 0, 2023, '', '', '콜럼비아 크레스트 H3', '', '이마트', 24000, NULL, NULL, '미국', NOW(), 2021, NULL, 2018, 0),
+    (NULL, '2021-06-10', 0, NULL, '', '', '블랙 매직 쉬라즈', '', '와인공간', 108000, NULL, NULL, '호주', NOW(), NULL, NULL, 2017, 0),
+    (NULL, '2021-06-10', 0, 2023, '', '', '루이자도 부르고뉴 피노누아 (하프)', '', '이마트', 12800, NULL, NULL, '프랑스', NOW(), 2020, NULL, 2018, 0),
+    (NULL, '2021-06-12', 0, NULL, '', '', '라크라사드 시라', '', '코스트코', 8790, NULL, NULL, '프랑스', NOW(), NULL, NULL, 2019, 0),
+    (NULL, '2021-06-12', 0, NULL, '', '', '꽁데 디 깜피아노 프리미터보 디 만두리아', '', '코스트코', 15990, NULL, NULL, '이탈리아', NOW(), NULL, NULL, 2019, 0),
+    (NULL, '2021-06-12', 0, NULL, '', '', '집집 락 쉬라즈', '', '코스트코', 15990, NULL, NULL, '호주', NOW(), NULL, NULL, 2019, 0),
+    (NULL, '2021-06-13', 0, NULL, '', '', '몽제아 뮈네레 르 리베르탱 부르고뉴 빠쓰뚜그랭', '', '쓱닷컴(백화점 수령)', 27000, NULL, NULL, '프랑스', NOW(), NULL, NULL, 2018, 0),
+    (NULL, '2021-06-17', 0, NULL, '', '', '보히가스 까바 리제르바 브륏', '', '와인앤모어 행사', 22000, NULL, NULL, '스페인', NOW(), NULL, NULL, NULL, 0),
+    (NULL, '2021-06-26', 0, NULL, '', '', '로버시 바르바레스코', '', '이마트', 38240, NULL, NULL, '이탈리아', NOW(), NULL, NULL, 2016, 0),
+    (NULL, '2021-06-26', 0, 2028, '', '', '무가', '', '이마트', 40000, NULL, NULL, '스페인', NOW(), 2021, NULL, 2016, 0),
+    (NULL, '2021-06-17', 0, NULL, '', '', '에로이카', '', 'GS25(포인트+쿠폰사용)', 2850, NULL, NULL, '프랑스', NOW(), NULL, NULL, 2018, 0),
+    (NULL, NULL, 0, 2030, '', '', '안티노리 CCR', '', NULL, 29000, NULL, NULL, NULL, NOW(), 2022, NULL, 2016, 0),
+    (NULL, NULL, 0, 2031, '', '', '몬테라포니 끼안티 클라시코 ', '', NULL, 45000, NULL, NULL, NULL, NOW(), 2021, NULL, 2019, 0),
+    (NULL, NULL, 0, 2038, '', '', '일포지오네 BDM', '', NULL, 79000, NULL, NULL, NULL, NOW(), 2025, NULL, 2016, 0),
+    (NULL, NULL, 0, 2036, '', '', '일포지오네 BDM 리저브', '', NULL, 140000, NULL, NULL, NULL, NOW(), 2023, NULL, 2015, 0),
+    (NULL, '2021-07-01', 0, 2030, '', '', '킬리카눈 코브넌트 쉬라즈', '', '이마트(머지2만+핀크2만+카드)', 49800, NULL, NULL, '호주', NOW(), 2020, NULL, 2017, 0),
+    (NULL, '2021-07-02', 0, 2016, '', '', '샤또 그레이삭 메독 크뤼 부르주아', '', '코스트코', 31990, NULL, NULL, '프랑스', NOW(), 2013, NULL, 2006, 0),
+    (NULL, '2021-07-02', 0, 2023, '', '', '페폴리 키안티 클라시코', '', '코스트코', 25950, NULL, NULL, '이탈리아', NOW(), 2020, NULL, 2019, 0),
+    (NULL, '2021-07-02', 0, 2020, '', '', '라 마스코타 말벡', '', '코스트코', 25990, NULL, NULL, '아르헨티나', NOW(), 2019, NULL, 2019, 0),
+    (NULL, '2021-07-02', 0, 2025, '', '', '베라짜노 키안티 클라시코', '', '코스트코', 29590, NULL, NULL, '이탈리아', NOW(), 2022, NULL, 2017, 0),
+    (NULL, '2021-07-02', 0, 2024, '', '', '커클랜드 콜럼비아 밸리 까쇼', '', '코스트코', 15490, NULL, NULL, '미국', NOW(), 2021, NULL, 2019, 0),
+    (NULL, '2021-07-02', 0, 2023, '', '', '생미쉘 드라이 리슬링', '', '코스트코', 12990, NULL, NULL, '미국', NOW(), 2020, NULL, 2020, 0),
+    (NULL, '2021-07-02', 0, 2024, '', '', '티렐 루퍼스 스톤', '', '코스트코', 33990, NULL, NULL, '호주', NOW(), 2021, NULL, 2018, 0),
+    (NULL, '2021-07-02', 0, 2025, '', '', '포스트 마크 나파', '', '코스트코', 29900, NULL, NULL, '미국', NOW(), 2020, NULL, 2018, 0),
+    (NULL, '2021-07-03', 0, 2033, '', '', '오린 스위프트 머큐리 헤드', '', '떼루아', 330000, NULL, NULL, '미국', NOW(), 2022, NULL, 2017, 0),
+    (NULL, '2021-07-03', 0, NULL, '', '', '블랙매직 쉬라즈', '', '떼루아', 330000, NULL, NULL, '호주', NOW(), NULL, NULL, 2016, 0),
+    (NULL, '2021-07-14', 0, NULL, '', '', '루이로드레 브뤼 프리미에', '', '신대방 세계주류', 66500, NULL, NULL, '프랑스', NOW(), NULL, NULL, NULL, 0),
+    (NULL, '2021-07-14', 0, NULL, '', '', '폴로저 브뤼 리저브', '', '신대방 세계주류', 74500, NULL, NULL, '프랑스', NOW(), NULL, NULL, NULL, 0),
+    (NULL, '2021-07-14', 0, NULL, '', '', '찰스 하이직 브뤼', '', '신대방 세계주류', 85000, NULL, NULL, '프랑스', NOW(), NULL, NULL, NULL, 0),
+    (NULL, '2021-07-17', 0, 2022, '', '', '푸나무', '', '해피머니 gs25', 22500, NULL, NULL, NULL, NOW(), 2020, NULL, 2020, 0),
+    (NULL, '2021-07-17', 0, 2023, '', '', '루이자도 피노', '', '해피머니 gs25', 22700, NULL, NULL, NULL, NOW(), 2020, NULL, 2019, 0),
+    (NULL, NULL, 0, 2025, '', '', '루이자도 피노 자코방', '', NULL, 0, NULL, NULL, NULL, NOW(), 2021, NULL, 2019, 0),
+    (NULL, '2021-07-17', 0, 2038, '', '', '일포지오네 BDM', '', '라빈', 139000, NULL, NULL, NULL, NOW(), 2025, NULL, 2016, 0),
+    (NULL, '2021-07-17', 0, 2034, '', '', '산펠리체 깜뽀지오바니 BDM', '', '라빈', 139000, NULL, NULL, NULL, NOW(), 2022, NULL, 2015, 0),
+    (NULL, '2021-07-31', 0, 2024, '', '', '커클랜드 말벡', '', '코스트코', 10900, NULL, NULL, NULL, NOW(), 2021, NULL, 2019, 0),
+    (NULL, '2021-07-31', 0, 2030, '', '', '투핸즈 엔젤스 쉐어', '', '치즈비노(제로페이)', 67500, NULL, NULL, NULL, NOW(), 2021, NULL, 2020, 0),
+    (NULL, '2021-07-31', 0, 2025, '', '', '몰리두커 더 복서', '', '치즈비노(제로페이)', 67500, NULL, NULL, NULL, NOW(), 2022, NULL, 2019, 0),
+    (NULL, '2021-07-31', 0, NULL, '', '', '알타이르', '', '신대방 세계주류(제로페이)', 80100, NULL, NULL, NULL, NOW(), NULL, NULL, 2018, 0),
+    (NULL, '2021-08-03', 0, 2024, '', '', '이기갈 꼬뜨 뒤 론 루즈', '', '이마트24(머지)', 18400, NULL, NULL, NULL, NOW(), 2019, NULL, 2017, 0),
+    (NULL, '2021-08-04', 0, NULL, '', '', '고스트파인 진판델', '', '홈플러스 머지', 25900, NULL, NULL, NULL, NOW(), NULL, NULL, 2018, 0),
+    (NULL, '2021-08-04', 0, 2025, '', '', '고스트 파인 멜롯', '', '홈플러스 머지', 25900, NULL, NULL, NULL, NOW(), 2019, NULL, 2017, 0),
+    (NULL, '2021-08-05', 0, 2027, '', '', '킬리카눈 까쇼', '', '세븐일레븐 머지', 22320, NULL, NULL, NULL, NOW(), 2023, NULL, 2018, 0),
+    (NULL, '2021-08-05', 0, 2028, '', '', '킬리카눈 쉬라', '', '세븐일레븐 머지', 22310, NULL, NULL, NULL, NOW(), 2022, NULL, 2018, 0),
+    (NULL, '2021-08-19', 0, 2028, '', '', '까스텔라레 키안띠 클라시코', '', '현대백화점', 30000, NULL, NULL, NULL, NOW(), 2021, NULL, 2019, 0),
+    (NULL, '2021-08-22', 0, 2028, '', '', '몬테스 퍼플 엔젤', '', '신세계백화점', 96000, NULL, NULL, NULL, NOW(), 2021, NULL, 2017, 0),
+    (NULL, '2021-08-22', 0, 2027, '', '', '몬테스 퍼플 엔젤', '', '신세계백화점', 96000, NULL, NULL, NULL, NOW(), 2021, NULL, 2018, 0),
+    (NULL, '2021-08-25', 0, 2037, '', '', '알마비바', '', 'ga25', 324000, NULL, NULL, NULL, NOW(), 2023, NULL, 2018, 0),
+    (NULL, '2021-09-05', 0, 2037, '', '', '포지오디소토 비디엠', '', '와공방', 285000, NULL, NULL, NULL, NOW(), 2024, NULL, 2016, 0),
+    (NULL, '2021-09-05', 0, 2037, '', '', '가야 비디엠', '', '와공방', 96800, NULL, NULL, NULL, NOW(), 2026, NULL, 2016, 0),
+    (NULL, '2021-09-11', 0, NULL, '', '', '이스까이 매그넘', '', '빅마켓', 89000, NULL, NULL, NULL, NOW(), NULL, NULL, 2018, 0),
+    (NULL, NULL, 0, 2031, '', '', '반피 비디엠', '', NULL, 64900, NULL, NULL, NULL, NOW(), 2022, NULL, 2015, 0),
+    (NULL, NULL, 0, NULL, '', '', '기솔피 바롤로', '', NULL, 39990, NULL, NULL, NULL, NOW(), NULL, NULL, 2017, 0),
+    (NULL, NULL, 0, 2025, '', '', '몬테스 알파 피노누아', '', NULL, 27990, NULL, NULL, NULL, NOW(), 2021, NULL, 2019, 0),
+    (NULL, NULL, 0, NULL, '', '', '몬테스 알파 까르미네르', '', NULL, 26990, NULL, NULL, NULL, NOW(), NULL, NULL, 2019, 0),
+    (NULL, NULL, 0, NULL, '', '', '식스 그레이프', '', NULL, 39990, NULL, NULL, NULL, NOW(), NULL, NULL, NULL, 0),
+    (NULL, NULL, 0, 2028, '', '', '패블레 부르고뉴 피노누아', '', NULL, 19990, NULL, NULL, NULL, NOW(), 2022, NULL, 2019, 0),
+    (NULL, NULL, 0, NULL, '', '', '멈', '', NULL, 49900, NULL, NULL, NULL, NOW(), NULL, NULL, NULL, 0),
+    (NULL, NULL, 0, NULL, '', '', '샤또 라뚜르 피작', '', NULL, 38990, NULL, NULL, NULL, NOW(), NULL, NULL, 2016, 0),
+    (NULL, NULL, 0, NULL, '', '', '커클랜드 말벡', '', NULL, 10900, NULL, NULL, NULL, NOW(), NULL, NULL, 2019, 0),
+    (NULL, NULL, 0, 2033, '', '', '콜로소르보 비디엠', '', '라비', 88000, NULL, NULL, NULL, NOW(), 2021, NULL, 2015, 0),
+    (NULL, NULL, 0, 2037, '', '', '프라텔 레벨로 바롤로', '', '라빈', 77000, NULL, NULL, NULL, NOW(), 2025, NULL, 2016, 0),
+    (NULL, NULL, 0, NULL, '', '', '필리뽀나', '', '라빈', 75000, NULL, NULL, NULL, NOW(), NULL, NULL, NULL, 0),
+    (NULL, NULL, 0, NULL, '', '', '떼땅져 리저브 브뤼', '', '이마트 와인장터 2021년 하반기', 60000, NULL, NULL, NULL, NOW(), NULL, NULL, NULL, 0),
+    (NULL, NULL, 0, 2034, '', '', '하이츠셀라 나파 까쇼', '', '이마트 와인장터 2021년 하반기', 95000, NULL, NULL, NULL, NOW(), 2021, NULL, NULL, 0),
+    (NULL, NULL, 0, 2028, '', '', '산타리타 트리플씨', '', '이마트 와인장터 2021년 하반기', 35000, NULL, NULL, NULL, NOW(), 2023, NULL, 2018, 0),
+    (NULL, NULL, 0, 2028, '', '', '페리에주에 벨에포크', '', '이마트 와인장터 2021년 하반기', 178000, NULL, NULL, NULL, NOW(), 2023, NULL, NULL, 0),
+    (NULL, NULL, 0, 2030, '', '', '몬테스 알파 M', '', '이마트 와인장터 2021년 하반기', 118000, NULL, NULL, NULL, NOW(), 2023, NULL, 2018, 0),
+    (NULL, NULL, 0, NULL, '', '', '그롱네 샴페인', '', '이마트 와인장터 2021년 하반기', 40000, NULL, NULL, NULL, NOW(), NULL, NULL, NULL, 0),
+    (NULL, NULL, 0, NULL, '', '', '에스쿠도 로호 ', '', '이마트 와인장터 2021년 하반기', 19800, NULL, NULL, NULL, NOW(), NULL, NULL, 2019, 0),
+    (NULL, NULL, 0, 2043, '', '', '샤또 피숑 롱그빌 꼼떼스 드 라랑드', '', '이마트 와인장터 2021년 하반기', 190000, NULL, NULL, NULL, NOW(), 2025, NULL, 2017, 0),
+    (NULL, NULL, 0, 2033, '', '', '샤또 라퐁 로쉐', '', '이마트 와인장터 2021년 하반기', 68000, NULL, NULL, NULL, NOW(), 2021, NULL, 2014, 0),
+    (NULL, NULL, 0, 2040, '', '', '테스타마타', '', '이마트 와인장터 2021년 하반기', 99000, NULL, NULL, NULL, NOW(), 2024, NULL, 2018, 0),
+    (NULL, NULL, 0, 2034, '', '', '라포스톨 아팔타', '', '이마트 와인장터 2021년 하반기', 19800, NULL, NULL, NULL, NOW(), 2023, NULL, 2017, 0),
+    (NULL, NULL, 0, 2050, '', '', '샤또 팔머', '', '이마트 와인장터 2021년 하반기', 390000, NULL, NULL, NULL, NOW(), 2028, NULL, 2017, 0),
+    (NULL, NULL, 0, NULL, '', '', '카자노브 샴페인', '', '이마트 와인장터 2021년 하반기', 50000, NULL, NULL, NULL, NOW(), NULL, NULL, 2007, 0),
+    (NULL, NULL, 0, 2029, '', '', '세냐', '', '이마트 와인장터 2021년 하반기', 170000, NULL, NULL, NULL, NOW(), 2020, NULL, 2017, 0),
+    (NULL, NULL, 0, 2027, '', '', '라포스톨 알렉상드레 까쇼', '', '이마트 와인장터 2021년 하반기', 30000, NULL, NULL, NULL, NOW(), 2022, NULL, 2019, 0),
+    (NULL, NULL, 0, 2033, '', '', '산 귀도 귀달베르토', '', '와인앤모어', 59900, NULL, NULL, NULL, NOW(), 2023, NULL, 2019, 0),
+    (NULL, '2021-10-23', 0, 2029, '', '', '케이머스', '', '코스트코 광명', 129900, NULL, NULL, '미국', NOW(), 2022, NULL, 2019, 0),
+    (NULL, '2021-10-23', 0, 2044, '', '', '샤또 린쉬 바쥐', '', '코스트코 광명', 179900, NULL, NULL, NULL, NOW(), 2025, NULL, 2017, 0),
+    (NULL, '2023-05-19', 0, 2028, '', '', '트라피체 싱글빈야드 말벡 암브로시아', '', '이마트 와인장터 2023년 상반기', 35000, NULL, NULL, NULL, NOW(), 2021, NULL, 2018, 0),
+    (NULL, '2023-05-20', 0, 2031, '', '', '알타이르', '', '이마트 와인장터 2023년 상반기', 89000, NULL, NULL, NULL, NOW(), 2023, NULL, 2019, 0),
+    (NULL, '2023-05-20', 0, 2031, '', '', '케이머스', '', '이마트 와인장터 2023년 상반기', 118000, NULL, NULL, NULL, NOW(), 2024, NULL, 2020, 0),
+    (NULL, '2023-05-20', 0, NULL, '', '', '알렉스 감발 피노누아 뀌베 레 두 빠삐', '', '이마트 와인장터 2023년 상반기', 49800, NULL, NULL, NULL, NOW(), NULL, NULL, 2020, 0)"; expected "[, ::, AT, FORMAT, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+insert into WINE
+values
+    (null, '2021-06-17', 0, 2025, '', '', '파머스 립 페서웨이 쉬라즈', '', '와인앤모어 행사', 19000, null, null, '호주', now(), 2022, null, 2016, 0),
+    (null, '2021-05-13', 0, 2026, '', '', '루피노 모두스', '', '이마트 와인장터 2021년 상반기', 55000, null, null, '이탈리아', now(), 2022, null, 2017, 0),
+    (null, '2021-05-13', 0, 2027, '', '', '플라네타 샤르도네', '', '이마트 와인장터 2021년 상반기', 39000, null, null, '이탈리아', now(), 2022, null, 2019, 0),
+    (null, '2021-05-15', 0, 2028, '', '', '킬리카눈 킬러맨스 런 쉬라즈', '', '이마트 와인장터 2021년 상반기', 25000, null, null, '호주', now(), 2022, null, 2018, 0),
+    (null, '2021-06-12', 0, 2030, '', '', '커클랜드 시그니춰 바롤로', '', '코스트코', 29990, null, null, '이탈리아', now(), 2022, null, 2016, 0),
+    (null, '2021-05-14', 0, 2031, '', '', '바디아 파시아노', '', '이마트 와인장터 2021년 상반기', 65000, null, null, '이탈리아', now(), 2022, null, 2017, 0),
+    (null, '2021-05-24', 0, 2031, '', '', '반피 BDM', '', '이마트', 75000, null, null, '이탈리아', now(), 2022, null, 2015, 0),
+    (null, '2021-06-17', 0, 2031, '', '', '투핸즈 벨라스 쉬라즈', '', '와인앤모어 행사', 159000, null, null, null, now(), 2022, null, 2018, 0),
+    (null, '2021-05-31', 0, 2032, '', '', '트리플씨', '', '세븐일레븐(머지포인트)', 29600, null, null, '칠레', now(), 2022, null, 2017, 0),
+    (null, '2021-05-08', 0, 2044, '', '', '루이 로드레 크리스탈', '', '제주 면세점', 315800, null, null, '프랑스', now(), 2022, null, 2012, 0),
+    (null, '2021-05-17', 0, 2027, '', '', '도멘 레미 세겡 쥬브레 샹베르탱', '', '이마트 와인장터 2021년 상반기', 60000, null, null, '프랑스', now(), 2023, null, 2018, 0),
+    (null, '2021-04-28', 0, 2030, '', '', '토마시 아마로네', '', '참작', 60900, null, null, '이탈리아', now(), 2023, null, 2016, 0),
+    (null, '2021-06-05', 0, 2031, '', '', '카스텔 지오콘도 BDM', '', '이마트', 105600, null, null, '이탈리아', now(), 2023, null, 2015, 0),
+    (null, '2021-06-05', 0, 2032, '', '', '이기갈 샤또뇌프 뒤 파프 ', '', '이마트', 59840, null, null, '프랑스', now(), 2023, null, 2016, 0),
+    (null, '2021-06-26', 0, 2033, '', '', '라 포데리나 브루넬로 디 몬탈치노', '', '이마트', 71840, null, null, '이탈리아', now(), 2023, null, 2015, 0),
+    (null, '2021-06-17', 0, 2043, '', '', '콜로레', '', '와인앤모어 행사', 350000, null, null, '이탈리아', now(), 2023, null, 2018, 0),
+    (null, '2021-05-14', 0, 2029, '', '', '라포스톨 뀌베 까르미네르', '', '이마트 와인장터 2021년 상반기', 30000, null, null, '칠레', now(), 2024, null, 2019, 0),
+    (null, '2021-06-18', 0, 2039, '', '', '테스타마타', '', '와인앤모어 행사', 130000, null, null, null, now(), 2024, null, 2018, 0),
+    (null, null, 0, 2030, '', '', '라콜롬비나 브루넬로 디 몬탈치노', '', '뱅가드 와인 머천트', 78000, null, null, '이탈리아', now(), 2025, null, 2015, 0),
+    (null, '2021-05-13', 0, 2047, '', '', '샤또 레방질', '', '이마트 와인장터 2021년 상반기', 450000, null, null, '프랑스', now(), 2027, null, 2015, 0),
+    (null, '2021-05-20', 0, 2042, '', '', '샤또 딸보', '', '제주와인창고', 110000, null, null, '프랑스', now(), 2028, null, 2018, 0),
+    (null, '2021-06-17', 0, 2042, '', '', '샤또 딸보', '', '와인앤모어 행사', 159000, null, null, null, now(), 2028, null, 2018, 0),
+    (null, '2021-06-17', 0, 2044, '', '', '샤또 지스꾸르', '', '와인앤모어 행사', 85000, null, null, '프랑스', now(), 2028, null, 2020, 0),
+    (null, '2021-06-18', 0, 2045, '', '', '샤또 오브리옹', '', '와인앤모어 행사', 799000, null, null, '프랑스', now(), 2028, null, 2017, 0),
+    (null, '2021-05-13', 0, 2049, '', '', '샤또 뽕떼 까네', '', '이마트 와인장터 2021년 상반기', 180000, null, null, '프랑스', now(), 2028, null, 2018, 0),
+    (null, '2021-06-17', 0, 2052, '', '', '샤또 마고', '', '와인앤모어 행사', 899000, null, null, '프랑스', now(), 2030, null, 2017, 0),
+    (null, '2021-05-13', 0, 2025, '', '', '퀘르체토 치날레', '', '이마트 와인장터 2021년 상반기', 99000, null, null, '이탈리아', now(), 2020, null, 2015, 0),
+    (null, '2021-05-13', 0, 2028, '', '', '산 펠리체, 키안티 클라시코 리제르바 '일 그리지오'', '', '이마트 와인장터 2021년 상반기', 29800, null, null, '이탈리아', now(), 2021, null, 2017, 0),
+    (null, '2021-05-13', 0, 2026, '', '', '지라드, 까베르네 소비뇽', '', '이마트 와인장터 2021년 상반기', 65000, null, null, '미국', now(), 2019, null, 2017, 0),
+    (null, '2021-05-14', 0, 2030, '', '', '투핸즈, 엔젤스 쉐어 쉬라즈', '', '이마트 와인장터 2021년 상반기', 32000, null, null, '호주', now(), 2021, null, 2020, 0),
+    (null, '2021-05-15', 0, 2026, '', '', '톨라이니 알 파쏘', '', '이마트 와인장터 2021년 상반기', 30000, null, null, '이탈리아', now(), 2021, null, 2017, 0),
+    (null, null, 0, 2021, '', '', '커클랜드 말보로 쇼비뇽블랑', '', '코스트코', 9790, null, null, '뉴질랜드', now(), 2020, null, 2020, 0),
+    (null, '2021-04-23', 0, 2026, '', '', '자리스', '', '참작', 29900, null, null, '스페인', now(), 2020, null, 2016, 0),
+    (null, null, 0, 2025, '', '', '라 브라체스카, 비노 노빌레 디 몬테풀치아노', '', '비노솔', 0, null, null, '이탈리아', now(), 2020, null, 2017, 0),
+    (null, null, 0, 2029, '', '', '폰토디, 키안티 클라시코', '', '이마트 와인장터 2020년 하반기', 40000, null, null, '이탈리아', now(), 2021, null, 2017, 0),
+    (null, '2021-05-17', 0, 2025, '', '', '도멘 레미 세겡 쥬브레 샹베르탱', '', '이마트 와인장터 2021년 상반기', 60000, null, null, '프랑스', now(), 2021, null, 2017, 0),
+    (null, '2021-05-24', 0, 2024, '', '', '생콤 꼬뜨드론', '', '코스트코', 18990, null, null, '프랑스', now(), 2021, null, 2020, 0),
+    (null, '2021-05-24', 0, 2038, '', '', '돔페리뇽 p2', '', '제주 면세점', 383020, null, null, '프랑스', now(), 2021, null, 2002, 0),
+    (null, '2021-06-05', 0, 2024, '', '', '도그 포인트 소비뇽', '', '이마트', 34240, null, null, '뉴질랜드', now(), 2020, null, 2019, 0),
+    (null, '2021-06-10', 0, 2023, '', '', '루이자도 부르고뉴 샤도네이 (하프)', '', '이마트', 12800, null, null, '프랑스', now(), 2021, null, 2019, 0),
+    (null, '2021-06-10', 0, 2024, '', '', '이기갈 꼬뜨 뒤 론 루즈(하프)', '', '이마트', 9900, null, null, '프랑스', now(), 2019, null, 2017, 0),
+    (null, '2021-06-12', 0, 2023, '', '', '루이라뚜르 피노누아', '', '코스트코', 26990, null, null, '프랑스', now(), 2021, null, 2019, 0),
+    (null, '2021-06-17', 0, 2023, '', '', '드보 뀌베 디 브륏', '', '와인앤모어 행사', 49900, null, null, '프랑스', now(), 2020, null, 20null, 0),
+    (null, '2021-06-18', 0, 2048, '', '', '샤또 디켐', '', '와인앤모어 행사', 490000, null, null, '프랑스', now(), 2015, null, 2007, 0),
+    (null, '2021-05-13', 0, null, '', '', '스택스 캐년랜취 스택', '', '이마트 와인장터 2021년 상반기', 80000, null, null, '미국', now(), null, null, 2016, 0),
+    (null, '2021-05-13', 0, 2025, '', '', '란 리제르바', '', '이마트 와인장터 2021년 상반기', 35000, null, null, '스페인', now(), 2021, null, 2014, 0),
+    (null, null, 0, 2027, '', '', '플라네타 샤르도네', '', '이마트 와인장터 2020년 하반기', 39800, null, null, '이탈리아', now(), 2022, null, null, 0),
+    (null, '2021-05-13', 0, 2023, '', '', '그랑 파씨오네', '', '이마트 와인장터 2021년 상반기', 15000, null, null, '이탈리아', now(), 2022, null, null, 0),
+    (null, '2021-05-14', 0, null, '', '', '피치니 메모로 로쏘', '', '이마트 와인장터 2021년 상반기', 10000, null, null, '이탈리아', now(), null, null, 2019, 0),
+    (null, '2021-05-14', 0, 2024, '', '', '디아블로 리제르바', '', '이마트 와인장터 2021년 상반기', 19900, null, null, '칠레', now(), 2022, null, 2018, 0),
+    (null, '2021-05-15', 0, 2023, '', '', '콜럼비아 크레스트', '', '이마트 와인장터 2021년 상반기', 29000, null, null, '미국', now(), 2021, null, 2018, 0),
+    (null, '2021-05-15', 0, 2024, '', '', '689 레드 나파밸리', '', '이마트 와인장터 2021년 상반기', 25000, null, null, '미국', now(), 2020, null, 2018, 0),
+    (null, '2021-05-15', 0, null, '', '', '에고메이', '', '이마트 와인장터 2021년 상반기', 20000, null, null, '스페인', now(), null, null, 2018, 0),
+    (null, '2021-04-23', 0, null, '', '', '무초 마스 (화이트 레이블)', '', '참작', 21900, null, null, '스페인', now(), null, null, null, 0),
+    (null, '2021-04-23', 0, null, '', '', '무초 마스 (블랙 레이블)', '', '참작', 21900, null, null, '스페인', now(), null, null, null, 0),
+    (null, '2021-02-06', 0, 2024, '', '', '몬테니돌리 베르나차 디 산지미냐노 트라디지오날레', '', '뱅가드 와인 머천트', 114000, null, null, '이탈리아', now(), 2019, null, 2018, 0),
+    (null, '2021-02-06', 0, 2030, '', '', '라콜롬비나 브루넬로 디 몬탈치노', '', '뱅가드 와인 머천트', 114000, null, null, '이탈리아', now(), 2021, null, 2013, 0),
+    (null, null, 0, null, '', '', '까테나 말벡', '', null, 0, null, null, '아르헨티나', now(), null, null, 2018, 0),
+    (null, null, 0, 2021, '', '', '에쎄이 슈냉블랑', '', '뱅가드 와인 머천트', 12900, null, null, '남아공', now(), 2019, null, 2018, 0),
+    (null, null, 0, null, '', '', '에쎄이 까베르네 쇼비뇽', '', '뱅가드 와인 머천트', 12900, null, null, '남아공', now(), null, null, 2018, 0),
+    (null, null, 0, null, '', '', '라 사비나 그랑 리제르바 까베르네 쇼비뇽', '', '비노솔', 38000, null, null, '스페인', now(), null, null, null, 0),
+    (null, null, 0, null, '', '', '아라고니아 셀렉시온 에스페시알', '', '세계주류아울렛.신대방', 0, null, null, '스페인', now(), null, null, null, 0),
+    (null, null, 0, null, '', '', '삐에르 아마디유, 그랑 로마네 지공다스', '', '코스트코', 39990, null, null, '프랑스', now(), null, null, 2017, 0),
+    (null, '2021-05-24', 0, null, '', '', '커클랜드 프로세코', '', '코스트코', 7890, null, null, '이탈리아', now(), null, null, null, 0),
+    (null, '2021-06-02', 0, null, '', '', '카스티요 두카이 블랑코', '', '뱅가드 와인 머천트', 6900, null, null, '스페인', now(), null, null, 2020, 0),
+    (null, '2021-06-02', 0, null, '', '', '카스티요 두카이 틴토', '', '뱅가드 와인 머천트', 5900, null, null, '스페인', now(), null, null, 2019, 0),
+    (null, '2021-06-05', 0, null, '', '', '파이퍼 하이직 브롯', '', '이마트', 52000, null, null, '프랑스', now(), null, null, null, 0),
+    (null, '2021-06-05', 0, 2023, '', '', '콜럼비아 크레스트 H3', '', '이마트', 24000, null, null, '미국', now(), 2021, null, 2018, 0),
+    (null, '2021-06-10', 0, null, '', '', '블랙 매직 쉬라즈', '', '와인공간', 108000, null, null, '호주', now(), null, null, 2017, 0),
+    (null, '2021-06-10', 0, 2023, '', '', '루이자도 부르고뉴 피노누아 (하프)', '', '이마트', 12800, null, null, '프랑스', now(), 2020, null, 2018, 0),
+    (null, '2021-06-12', 0, null, '', '', '라크라사드 시라', '', '코스트코', 8790, null, null, '프랑스', now(), null, null, 2019, 0),
+    (null, '2021-06-12', 0, null, '', '', '꽁데 디 깜피아노 프리미터보 디 만두리아', '', '코스트코', 15990, null, null, '이탈리아', now(), null, null, 2019, 0),
+    (null, '2021-06-12', 0, null, '', '', '집집 락 쉬라즈', '', '코스트코', 15990, null, null, '호주', now(), null, null, 2019, 0),
+    (null, '2021-06-13', 0, null, '', '', '몽제아 뮈네레 르 리베르탱 부르고뉴 빠쓰뚜그랭', '', '쓱닷컴(백화점 수령)', 27000, null, null, '프랑스', now(), null, null, 2018, 0),
+    (null, '2021-06-17', 0, null, '', '', '보히가스 까바 리제르바 브륏', '', '와인앤모어 행사', 22000, null, null, '스페인', now(), null, null, null, 0),
+    (null, '2021-06-26', 0, null, '', '', '로버시 바르바레스코', '', '이마트', 38240, null, null, '이탈리아', now(), null, null, 2016, 0),
+    (null, '2021-06-26', 0, 2028, '', '', '무가', '', '이마트', 40000, null, null, '스페인', now(), 2021, null, 2016, 0),
+    (null, '2021-06-17', 0, null, '', '', '에로이카', '', 'GS25(포인트+쿠폰사용)', 2850, null, null, '프랑스', now(), null, null, 2018, 0),
+    (null, null, 0, 2030, '', '', '안티노리 CCR', '', null, 29000, null, null, null, now(), 2022, null, 2016, 0),
+    (null, null, 0, 2031, '', '', '몬테라포니 끼안티 클라시코 ', '', null, 45000, null, null, null, now(), 2021, null, 2019, 0),
+    (null, null, 0, 2038, '', '', '일포지오네 BDM', '', null, 79000, null, null, null, now(), 2025, null, 2016, 0),
+    (null, null, 0, 2036, '', '', '일포지오네 BDM 리저브', '', null, 140000, null, null, null, now(), 2023, null, 2015, 0),
+    (null, '2021-07-01', 0, 2030, '', '', '킬리카눈 코브넌트 쉬라즈', '', '이마트(머지2만+핀크2만+카드)', 49800, null, null, '호주', now(), 2020, null, 2017, 0),
+    (null, '2021-07-02', 0, 2016, '', '', '샤또 그레이삭 메독 크뤼 부르주아', '', '코스트코', 31990, null, null, '프랑스', now(), 2013, null, 2006, 0),
+    (null, '2021-07-02', 0, 2023, '', '', '페폴리 키안티 클라시코', '', '코스트코', 25950, null, null, '이탈리아', now(), 2020, null, 2019, 0),
+    (null, '2021-07-02', 0, 2020, '', '', '라 마스코타 말벡', '', '코스트코', 25990, null, null, '아르헨티나', now(), 2019, null, 2019, 0),
+    (null, '2021-07-02', 0, 2025, '', '', '베라짜노 키안티 클라시코', '', '코스트코', 29590, null, null, '이탈리아', now(), 2022, null, 2017, 0),
+    (null, '2021-07-02', 0, 2024, '', '', '커클랜드 콜럼비아 밸리 까쇼', '', '코스트코', 15490, null, null, '미국', now(), 2021, null, 2019, 0),
+    (null, '2021-07-02', 0, 2023, '', '', '생미쉘 드라이 리슬링', '', '코스트코', 12990, null, null, '미국', now(), 2020, null, 2020, 0),
+    (null, '2021-07-02', 0, 2024, '', '', '티렐 루퍼스 스톤', '', '코스트코', 33990, null, null, '호주', now(), 2021, null, 2018, 0),
+    (null, '2021-07-02', 0, 2025, '', '', '포스트 마크 나파', '', '코스트코', 29900, null, null, '미국', now(), 2020, null, 2018, 0),
+    (null, '2021-07-03', 0, 2033, '', '', '오린 스위프트 머큐리 헤드', '', '떼루아', 330000, null, null, '미국', now(), 2022, null, 2017, 0),
+    (null, '2021-07-03', 0, null, '', '', '블랙매직 쉬라즈', '', '떼루아', 330000, null, null, '호주', now(), null, null, 2016, 0),
+    (null, '2021-07-14', 0, null, '', '', '루이로드레 브뤼 프리미에', '', '신대방 세계주류', 66500, null, null, '프랑스', now(), null, null, null, 0),
+    (null, '2021-07-14', 0, null, '', '', '폴로저 브뤼 리저브', '', '신대방 세계주류', 74500, null, null, '프랑스', now(), null, null, null, 0),
+    (null, '2021-07-14', 0, null, '', '', '찰스 하이직 브뤼', '', '신대방 세계주류', 85000, null, null, '프랑스', now(), null, null, null, 0),
+    (null, '2021-07-17', 0, 2022, '', '', '푸나무', '', '해피머니 gs25', 22500, null, null, null, now(), 2020, null, 2020, 0),
+    (null, '2021-07-17', 0, 2023, '', '', '루이자도 피노', '', '해피머니 gs25', 22700, null, null, null, now(), 2020, null, 2019, 0),
+    (null, null, 0, 2025, '', '', '루이자도 피노 자코방', '', null, 0, null, null, null, now(), 2021, null, 2019, 0),
+    (null, '2021-07-17', 0, 2038, '', '', '일포지오네 BDM', '', '라빈', 139000, null, null, null, now(), 2025, null, 2016, 0),
+    (null, '2021-07-17', 0, 2034, '', '', '산펠리체 깜뽀지오바니 BDM', '', '라빈', 139000, null, null, null, now(), 2022, null, 2015, 0),
+    (null, '2021-07-31', 0, 2024, '', '', '커클랜드 말벡', '', '코스트코', 10900, null, null, null, now(), 2021, null, 2019, 0),
+    (null, '2021-07-31', 0, 2030, '', '', '투핸즈 엔젤스 쉐어', '', '치즈비노(제로페이)', 67500, null, null, null, now(), 2021, null, 2020, 0),
+    (null, '2021-07-31', 0, 2025, '', '', '몰리두커 더 복서', '', '치즈비노(제로페이)', 67500, null, null, null, now(), 2022, null, 2019, 0),
+    (null, '2021-07-31', 0, null, '', '', '알타이르', '', '신대방 세계주류(제로페이)', 80100, null, null, null, now(), null, null, 2018, 0),
+    (null, '2021-08-03', 0, 2024, '', '', '이기갈 꼬뜨 뒤 론 루즈', '', '이마트24(머지)', 18400, null, null, null, now(), 2019, null, 2017, 0),
+    (null, '2021-08-04', 0, null, '', '', '고스트파인 진판델', '', '홈플러스 머지', 25900, null, null, null, now(), null, null, 2018, 0),
+    (null, '2021-08-04', 0, 2025, '', '', '고스트 파인 멜롯', '', '홈플러스 머지', 25900, null, null, null, now(), 2019, null, 2017, 0),
+    (null, '2021-08-05', 0, 2027, '', '', '킬리카눈 까쇼', '', '세븐일레븐 머지', 22320, null, null, null, now(), 2023, null, 2018, 0),
+    (null, '2021-08-05', 0, 2028, '', '', '킬리카눈 쉬라', '', '세븐일레븐 머지', 22310, null, null, null, now(), 2022, null, 2018, 0),
+    (null, '2021-08-19', 0, 2028, '', '', '까스텔라레 키안띠 클라시코', '', '현대백화점', 30000, null, null, null, now(), 2021, null, 2019, 0),
+    (null, '2021-08-22', 0, 2028, '', '', '몬테스 퍼플 엔젤', '', '신세계백화점', 96000, null, null, null, now(), 2021, null, 2017, 0),
+    (null, '2021-08-22', 0, 2027, '', '', '몬테스 퍼플 엔젤', '', '신세계백화점', 96000, null, null, null, now(), 2021, null, 2018, 0),
+    (null, '2021-08-25', 0, 2037, '', '', '알마비바', '', 'ga25', 324000, null, null, null, now(), 2023, null, 2018, 0),
+    (null, '2021-09-05', 0, 2037, '', '', '포지오디소토 비디엠', '', '와공방', 285000, null, null, null, now(), 2024, null, 2016, 0),
+    (null, '2021-09-05', 0, 2037, '', '', '가야 비디엠', '', '와공방', 96800, null, null, null, now(), 2026, null, 2016, 0),
+    (null, '2021-09-11', 0, null, '', '', '이스까이 매그넘', '', '빅마켓', 89000, null, null, null, now(), null, null, 2018, 0),
+    (null, null, 0, 2031, '', '', '반피 비디엠', '', null, 64900, null, null, null, now(), 2022, null, 2015, 0),
+    (null, null, 0, null, '', '', '기솔피 바롤로', '', null, 39990, null, null, null, now(), null, null, 2017, 0),
+    (null, null, 0, 2025, '', '', '몬테스 알파 피노누아', '', null, 27990, null, null, null, now(), 2021, null, 2019, 0),
+    (null, null, 0, null, '', '', '몬테스 알파 까르미네르', '', null, 26990, null, null, null, now(), null, null, 2019, 0),
+    (null, null, 0, null, '', '', '식스 그레이프', '', null, 39990, null, null, null, now(), null, null, null, 0),
+    (null, null, 0, 2028, '', '', '패블레 부르고뉴 피노누아', '', null, 19990, null, null, null, now(), 2022, null, 2019, 0),
+    (null, null, 0, null, '', '', '멈', '', null, 49900, null, null, null, now(), null, null, null, 0),
+    (null, null, 0, null, '', '', '샤또 라뚜르 피작', '', null, 38990, null, null, null, now(), null, null, 2016, 0),
+    (null, null, 0, null, '', '', '커클랜드 말벡', '', null, 10900, null, null, null, now(), null, null, 2019, 0),
+    (null, null, 0, 2033, '', '', '콜로소르보 비디엠', '', '라비', 88000, null, null, null, now(), 2021, null, 2015, 0),
+    (null, null, 0, 2037, '', '', '프라텔 레벨로 바롤로', '', '라빈', 77000, null, null, null, now(), 2025, null, 2016, 0),
+    (null, null, 0, null, '', '', '필리뽀나', '', '라빈', 75000, null, null, null, now(), null, null, null, 0),
+    (null, null, 0, null, '', '', '떼땅져 리저브 브뤼', '', '이마트 와인장터 2021년 하반기', 60000, null, null, null, now(), null, null, null, 0),
+    (null, null, 0, 2034, '', '', '하이츠셀라 나파 까쇼', '', '이마트 와인장터 2021년 하반기', 95000, null, null, null, now(), 2021, null, null, 0),
+    (null, null, 0, 2028, '', '', '산타리타 트리플씨', '', '이마트 와인장터 2021년 하반기', 35000, null, null, null, now(), 2023, null, 2018, 0),
+    (null, null, 0, 2028, '', '', '페리에주에 벨에포크', '', '이마트 와인장터 2021년 하반기', 178000, null, null, null, now(), 2023, null, null, 0),
+    (null, null, 0, 2030, '', '', '몬테스 알파 M', '', '이마트 와인장터 2021년 하반기', 118000, null, null, null, now(), 2023, null, 2018, 0),
+    (null, null, 0, null, '', '', '그롱네 샴페인', '', '이마트 와인장터 2021년 하반기', 40000, null, null, null, now(), null, null, null, 0),
+    (null, null, 0, null, '', '', '에스쿠도 로호 ', '', '이마트 와인장터 2021년 하반기', 19800, null, null, null, now(), null, null, 2019, 0),
+    (null, null, 0, 2043, '', '', '샤또 피숑 롱그빌 꼼떼스 드 라랑드', '', '이마트 와인장터 2021년 하반기', 190000, null, null, null, now(), 2025, null, 2017, 0),
+    (null, null, 0, 2033, '', '', '샤또 라퐁 로쉐', '', '이마트 와인장터 2021년 하반기', 68000, null, null, null, now(), 2021, null, 2014, 0),
+    (null, null, 0, 2040, '', '', '테스타마타', '', '이마트 와인장터 2021년 하반기', 99000, null, null, null, now(), 2024, null, 2018, 0),
+    (null, null, 0, 2034, '', '', '라포스톨 아팔타', '', '이마트 와인장터 2021년 하반기', 19800, null, null, null, now(), 2023, null, 2017, 0),
+    (null, null, 0, 2050, '', '', '샤또 팔머', '', '이마트 와인장터 2021년 하반기', 390000, null, null, null, now(), 2028, null, 2017, 0),
+    (null, null, 0, null, '', '', '카자노브 샴페인', '', '이마트 와인장터 2021년 하반기', 50000, null, null, null, now(), null, null, 2007, 0),
+    (null, null, 0, 2029, '', '', '세냐', '', '이마트 와인장터 2021년 하반기', 170000, null, null, null, now(), 2020, null, 2017, 0),
+    (null, null, 0, 2027, '', '', '라포스톨 알렉상드레 까쇼', '', '이마트 와인장터 2021년 하반기', 30000, null, null, null, now(), 2022, null, 2019, 0),
+    (null, null, 0, 2033, '', '', '산 귀도 귀달베르토', '', '와인앤모어', 59900, null, null, null, now(), 2023, null, 2019, 0),
+    (null, '2021-10-23', 0, 2029, '', '', '케이머스', '', '코스트코 광명', 129900, null, null, '미국', now(), 2022, null, 2019, 0),
+    (null, '2021-10-23', 0, 2044, '', '', '샤또 린쉬 바쥐', '', '코스트코 광명', 179900, null, null, null, now(), 2025, null, 2017, 0),
+    (null, '2023-05-19', 0, 2028, '', '', '트라피체 싱글빈야드 말벡 암브로시아', '', '이마트 와인장터 2023년 상반기', 35000, null, null, null, now(), 2021, null, 2018, 0),
+    (null, '2023-05-20', 0, 2031, '', '', '알타이르', '', '이마트 와인장터 2023년 상반기', 89000, null, null, null, now(), 2023, null, 2019, 0),
+    (null, '2023-05-20', 0, 2031, '', '', '케이머스', '', '이마트 와인장터 2023년 상반기', 118000, null, null, null, now(), 2024, null, 2020, 0),
+    (null, '2023-05-20', 0, null, '', '', '알렉스 감발 피노누아 뀌베 레 두 빠삐', '', '이마트 와인장터 2023년 상반기', 49800, null, null, null, now(), null, null, 2020, 0) [42001-200]
+2023-05-24 14:56:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO WINE
+VALUES
+    (NULL, '2021-06-17', 0, 2025, '', '', '파머스 립 페서웨이 쉬라즈', '', '와인앤모어 행사', 19000, NULL, NULL, '호주', NOW(), 2022, NULL, 2016, 0),
+    (NULL, '2021-05-13', 0, 2026, '', '', '루피노 모두스', '', '이마트 와인장터 2021년 상반기', 55000, NULL, NULL, '이탈리아', NOW(), 2022, NULL, 2017, 0),
+    (NULL, '2021-05-13', 0, 2027, '', '', '플라네타 샤르도네', '', '이마트 와인장터 2021년 상반기', 39000, NULL, NULL, '이탈리아', NOW(), 2022, NULL, 2019, 0),
+    (NULL, '2021-05-15', 0, 2028, '', '', '킬리카눈 킬러맨스 런 쉬라즈', '', '이마트 와인장터 2021년 상반기', 25000, NULL, NULL, '호주', NOW(), 2022, NULL, 2018, 0),
+    (NULL, '2021-06-12', 0, 2030, '', '', '커클랜드 시그니춰 바롤로', '', '코스트코', 29990, NULL, NULL, '이탈리아', NOW(), 2022, NULL, 2016, 0),
+    (NULL, '2021-05-14', 0, 2031, '', '', '바디아 파시아노', '', '이마트 와인장터 2021년 상반기', 65000, NULL, NULL, '이탈리아', NOW(), 2022, NULL, 2017, 0),
+    (NULL, '2021-05-24', 0, 2031, '', '', '반피 BDM', '', '이마트', 75000, NULL, NULL, '이탈리아', NOW(), 2022, NULL, 2015, 0),
+    (NULL, '2021-06-17', 0, 2031, '', '', '투핸즈 벨라스 쉬라즈', '', '와인앤모어 행사', 159000, NULL, NULL, NULL, NOW(), 2022, NULL, 2018, 0),
+    (NULL, '2021-05-31', 0, 2032, '', '', '트리플씨', '', '세븐일레븐(머지포인트)', 29600, NULL, NULL, '칠레', NOW(), 2022, NULL, 2017, 0),
+    (NULL, '2021-05-08', 0, 2044, '', '', '루이 로드레 크리스탈', '', '제주 면세점', 315800, NULL, NULL, '프랑스', NOW(), 2022, NULL, 2012, 0),
+    (NULL, '2021-05-17', 0, 2027, '', '', '도멘 레미 세겡 쥬브레 샹베르탱', '', '이마트 와인장터 2021년 상반기', 60000, NULL, NULL, '프랑스', NOW(), 2023, NULL, 2018, 0),
+    (NULL, '2021-04-28', 0, 2030, '', '', '토마시 아마로네', '', '참작', 60900, NULL, NULL, '이탈리아', NOW(), 2023, NULL, 2016, 0),
+    (NULL, '2021-06-05', 0, 2031, '', '', '카스텔 지오콘도 BDM', '', '이마트', 105600, NULL, NULL, '이탈리아', NOW(), 2023, NULL, 2015, 0),
+    (NULL, '2021-06-05', 0, 2032, '', '', '이기갈 샤또뇌프 뒤 파프 ', '', '이마트', 59840, NULL, NULL, '프랑스', NOW(), 2023, NULL, 2016, 0),
+    (NULL, '2021-06-26', 0, 2033, '', '', '라 포데리나 브루넬로 디 몬탈치노', '', '이마트', 71840, NULL, NULL, '이탈리아', NOW(), 2023, NULL, 2015, 0),
+    (NULL, '2021-06-17', 0, 2043, '', '', '콜로레', '', '와인앤모어 행사', 350000, NULL, NULL, '이탈리아', NOW(), 2023, NULL, 2018, 0),
+    (NULL, '2021-05-14', 0, 2029, '', '', '라포스톨 뀌베 까르미네르', '', '이마트 와인장터 2021년 상반기', 30000, NULL, NULL, '칠레', NOW(), 2024, NULL, 2019, 0),
+    (NULL, '2021-06-18', 0, 2039, '', '', '테스타마타', '', '와인앤모어 행사', 130000, NULL, NULL, NULL, NOW(), 2024, NULL, 2018, 0),
+    (NULL, NULL, 0, 2030, '', '', '라콜롬비나 브루넬로 디 몬탈치노', '', '뱅가드 와인 머천트', 78000, NULL, NULL, '이탈리아', NOW(), 2025, NULL, 2015, 0),
+    (NULL, '2021-05-13', 0, 2047, '', '', '샤또 레방질', '', '이마트 와인장터 2021년 상반기', 450000, NULL, NULL, '프랑스', NOW(), 2027, NULL, 2015, 0),
+    (NULL, '2021-05-20', 0, 2042, '', '', '샤또 딸보', '', '제주와인창고', 110000, NULL, NULL, '프랑스', NOW(), 2028, NULL, 2018, 0),
+    (NULL, '2021-06-17', 0, 2042, '', '', '샤또 딸보', '', '와인앤모어 행사', 159000, NULL, NULL, NULL, NOW(), 2028, NULL, 2018, 0),
+    (NULL, '2021-06-17', 0, 2044, '', '', '샤또 지스꾸르', '', '와인앤모어 행사', 85000, NULL, NULL, '프랑스', NOW(), 2028, NULL, 2020, 0),
+    (NULL, '2021-06-18', 0, 2045, '', '', '샤또 오브리옹', '', '와인앤모어 행사', 799000, NULL, NULL, '프랑스', NOW(), 2028, NULL, 2017, 0),
+    (NULL, '2021-05-13', 0, 2049, '', '', '샤또 뽕떼 까네', '', '이마트 와인장터 2021년 상반기', 180000, NULL, NULL, '프랑스', NOW(), 2028, NULL, 2018, 0),
+    (NULL, '2021-06-17', 0, 2052, '', '', '샤또 마고', '', '와인앤모어 행사', 899000, NULL, NULL, '프랑스', NOW(), 2030, NULL, 2017, 0),
+    (NULL, '2021-05-13', 0, 2025, '', '', '퀘르체토 치날레', '', '이마트 와인장터 2021년 상반기', 99000, NULL, NULL, '이탈리아', NOW(), 2020, NULL, 2015, 0),
+    (NULL, '2021-05-13', 0, 2028, '', '', '산 펠리체, 키안티 클라시코 리제르바 일 그리지오', '', '이마트 와인장터 2021년 상반기', 29800, NULL, NULL, '이탈리아', NOW(), 2021, NULL, 2017, 0),
+    (NULL, '2021-05-13', 0, 2026, '', '', '지라드, 까베르네 소비뇽', '', '이마트 와인장터 2021년 상반기', 65000, NULL, NULL, '미국', NOW(), 2019, NULL, 2017, 0),
+    (NULL, '2021-05-14', 0, 2030, '', '', '투핸즈, 엔젤스 쉐어 쉬라즈', '', '이마트 와인장터 2021년 상반기', 32000, NULL, NULL, '호주', NOW(), 2021, NULL, 2020, 0),
+    (NULL, '2021-05-15', 0, 2026, '', '', '톨라이니 알 파쏘', '', '이마트 와인장터 2021년 상반기', 30000, NULL, NULL, '이탈리아', NOW(), 2021, NULL, 2017, 0),
+    (NULL, NULL, 0, 2021, '', '', '커클랜드 말보로 쇼비뇽블랑', '', '코스트코', 9790, NULL, NULL, '뉴질랜드', NOW(), 2020, NULL, 2020, 0),
+    (NULL, '2021-04-23', 0, 2026, '', '', '자리스', '', '참작', 29900, NULL, NULL, '스페인', NOW(), 2020, NULL, 2016, 0),
+    (NULL, NULL, 0, 2025, '', '', '라 브라체스카, 비노 노빌레 디 몬테풀치아노', '', '비노솔', 0, NULL, NULL, '이탈리아', NOW(), 2020, NULL, 2017, 0),
+    (NULL, NULL, 0, 2029, '', '', '폰토디, 키안티 클라시코', '', '이마트 와인장터 2020년 하반기', 40000, NULL, NULL, '이탈리아', NOW(), 2021, NULL, 2017, 0),
+    (NULL, '2021-05-17', 0, 2025, '', '', '도멘 레미 세겡 쥬브레 샹베르탱', '', '이마트 와인장터 2021년 상반기', 60000, NULL, NULL, '프랑스', NOW(), 2021, NULL, 2017, 0),
+    (NULL, '2021-05-24', 0, 2024, '', '', '생콤 꼬뜨드론', '', '코스트코', 18990, NULL, NULL, '프랑스', NOW(), 2021, NULL, 2020, 0),
+    (NULL, '2021-05-24', 0, 2038, '', '', '돔페리뇽 p2', '', '제주 면세점', 383020, NULL, NULL, '프랑스', NOW(), 2021, NULL, 2002, 0),
+    (NULL, '2021-06-05', 0, 2024, '', '', '도그 포인트 소비뇽', '', '이마트', 34240, NULL, NULL, '뉴질랜드', NOW(), 2020, NULL, 2019, 0),
+    (NULL, '2021-06-10', 0, 2023, '', '', '루이자도 부르고뉴 샤도네이 (하프)', '', '이마트', 12800, NULL, NULL, '프랑스', NOW(), 2021, NULL, 2019, 0),
+    (NULL, '2021-06-10', 0, 2024, '', '', '이기갈 꼬뜨 뒤 론 루즈(하프)', '', '이마트', 9900, NULL, NULL, '프랑스', NOW(), 2019, NULL, 2017, 0),
+    (NULL, '2021-06-12', 0, 2023, '', '', '루이라뚜르 피노누아', '', '코스트코', 26990, NULL, NULL, '프랑스', NOW(), 2021, NULL, 2019, 0),
+    (NULL, '2021-06-17', 0, 2023, '', '', '드보 뀌베 디 브륏', '', '와인앤모어 행사', 49900, NULL, NULL, '프랑스', NOW(), 2020, NULL, 20NULL[*], 0),
+    (NULL, '2021-06-18', 0, 2048, '', '', '샤또 디켐', '', '와인앤모어 행사', 490000, NULL, NULL, '프랑스', NOW(), 2015, NULL, 2007, 0),
+    (NULL, '2021-05-13', 0, NULL, '', '', '스택스 캐년랜취 스택', '', '이마트 와인장터 2021년 상반기', 80000, NULL, NULL, '미국', NOW(), NULL, NULL, 2016, 0),
+    (NULL, '2021-05-13', 0, 2025, '', '', '란 리제르바', '', '이마트 와인장터 2021년 상반기', 35000, NULL, NULL, '스페인', NOW(), 2021, NULL, 2014, 0),
+    (NULL, NULL, 0, 2027, '', '', '플라네타 샤르도네', '', '이마트 와인장터 2020년 하반기', 39800, NULL, NULL, '이탈리아', NOW(), 2022, NULL, NULL, 0),
+    (NULL, '2021-05-13', 0, 2023, '', '', '그랑 파씨오네', '', '이마트 와인장터 2021년 상반기', 15000, NULL, NULL, '이탈리아', NOW(), 2022, NULL, NULL, 0),
+    (NULL, '2021-05-14', 0, NULL, '', '', '피치니 메모로 로쏘', '', '이마트 와인장터 2021년 상반기', 10000, NULL, NULL, '이탈리아', NOW(), NULL, NULL, 2019, 0),
+    (NULL, '2021-05-14', 0, 2024, '', '', '디아블로 리제르바', '', '이마트 와인장터 2021년 상반기', 19900, NULL, NULL, '칠레', NOW(), 2022, NULL, 2018, 0),
+    (NULL, '2021-05-15', 0, 2023, '', '', '콜럼비아 크레스트', '', '이마트 와인장터 2021년 상반기', 29000, NULL, NULL, '미국', NOW(), 2021, NULL, 2018, 0),
+    (NULL, '2021-05-15', 0, 2024, '', '', '689 레드 나파밸리', '', '이마트 와인장터 2021년 상반기', 25000, NULL, NULL, '미국', NOW(), 2020, NULL, 2018, 0),
+    (NULL, '2021-05-15', 0, NULL, '', '', '에고메이', '', '이마트 와인장터 2021년 상반기', 20000, NULL, NULL, '스페인', NOW(), NULL, NULL, 2018, 0),
+    (NULL, '2021-04-23', 0, NULL, '', '', '무초 마스 (화이트 레이블)', '', '참작', 21900, NULL, NULL, '스페인', NOW(), NULL, NULL, NULL, 0),
+    (NULL, '2021-04-23', 0, NULL, '', '', '무초 마스 (블랙 레이블)', '', '참작', 21900, NULL, NULL, '스페인', NOW(), NULL, NULL, NULL, 0),
+    (NULL, '2021-02-06', 0, 2024, '', '', '몬테니돌리 베르나차 디 산지미냐노 트라디지오날레', '', '뱅가드 와인 머천트', 114000, NULL, NULL, '이탈리아', NOW(), 2019, NULL, 2018, 0),
+    (NULL, '2021-02-06', 0, 2030, '', '', '라콜롬비나 브루넬로 디 몬탈치노', '', '뱅가드 와인 머천트', 114000, NULL, NULL, '이탈리아', NOW(), 2021, NULL, 2013, 0),
+    (NULL, NULL, 0, NULL, '', '', '까테나 말벡', '', NULL, 0, NULL, NULL, '아르헨티나', NOW(), NULL, NULL, 2018, 0),
+    (NULL, NULL, 0, 2021, '', '', '에쎄이 슈냉블랑', '', '뱅가드 와인 머천트', 12900, NULL, NULL, '남아공', NOW(), 2019, NULL, 2018, 0),
+    (NULL, NULL, 0, NULL, '', '', '에쎄이 까베르네 쇼비뇽', '', '뱅가드 와인 머천트', 12900, NULL, NULL, '남아공', NOW(), NULL, NULL, 2018, 0),
+    (NULL, NULL, 0, NULL, '', '', '라 사비나 그랑 리제르바 까베르네 쇼비뇽', '', '비노솔', 38000, NULL, NULL, '스페인', NOW(), NULL, NULL, NULL, 0),
+    (NULL, NULL, 0, NULL, '', '', '아라고니아 셀렉시온 에스페시알', '', '세계주류아울렛.신대방', 0, NULL, NULL, '스페인', NOW(), NULL, NULL, NULL, 0),
+    (NULL, NULL, 0, NULL, '', '', '삐에르 아마디유, 그랑 로마네 지공다스', '', '코스트코', 39990, NULL, NULL, '프랑스', NOW(), NULL, NULL, 2017, 0),
+    (NULL, '2021-05-24', 0, NULL, '', '', '커클랜드 프로세코', '', '코스트코', 7890, NULL, NULL, '이탈리아', NOW(), NULL, NULL, NULL, 0),
+    (NULL, '2021-06-02', 0, NULL, '', '', '카스티요 두카이 블랑코', '', '뱅가드 와인 머천트', 6900, NULL, NULL, '스페인', NOW(), NULL, NULL, 2020, 0),
+    (NULL, '2021-06-02', 0, NULL, '', '', '카스티요 두카이 틴토', '', '뱅가드 와인 머천트', 5900, NULL, NULL, '스페인', NOW(), NULL, NULL, 2019, 0),
+    (NULL, '2021-06-05', 0, NULL, '', '', '파이퍼 하이직 브롯', '', '이마트', 52000, NULL, NULL, '프랑스', NOW(), NULL, NULL, NULL, 0),
+    (NULL, '2021-06-05', 0, 2023, '', '', '콜럼비아 크레스트 H3', '', '이마트', 24000, NULL, NULL, '미국', NOW(), 2021, NULL, 2018, 0),
+    (NULL, '2021-06-10', 0, NULL, '', '', '블랙 매직 쉬라즈', '', '와인공간', 108000, NULL, NULL, '호주', NOW(), NULL, NULL, 2017, 0),
+    (NULL, '2021-06-10', 0, 2023, '', '', '루이자도 부르고뉴 피노누아 (하프)', '', '이마트', 12800, NULL, NULL, '프랑스', NOW(), 2020, NULL, 2018, 0),
+    (NULL, '2021-06-12', 0, NULL, '', '', '라크라사드 시라', '', '코스트코', 8790, NULL, NULL, '프랑스', NOW(), NULL, NULL, 2019, 0),
+    (NULL, '2021-06-12', 0, NULL, '', '', '꽁데 디 깜피아노 프리미터보 디 만두리아', '', '코스트코', 15990, NULL, NULL, '이탈리아', NOW(), NULL, NULL, 2019, 0),
+    (NULL, '2021-06-12', 0, NULL, '', '', '집집 락 쉬라즈', '', '코스트코', 15990, NULL, NULL, '호주', NOW(), NULL, NULL, 2019, 0),
+    (NULL, '2021-06-13', 0, NULL, '', '', '몽제아 뮈네레 르 리베르탱 부르고뉴 빠쓰뚜그랭', '', '쓱닷컴(백화점 수령)', 27000, NULL, NULL, '프랑스', NOW(), NULL, NULL, 2018, 0),
+    (NULL, '2021-06-17', 0, NULL, '', '', '보히가스 까바 리제르바 브륏', '', '와인앤모어 행사', 22000, NULL, NULL, '스페인', NOW(), NULL, NULL, NULL, 0),
+    (NULL, '2021-06-26', 0, NULL, '', '', '로버시 바르바레스코', '', '이마트', 38240, NULL, NULL, '이탈리아', NOW(), NULL, NULL, 2016, 0),
+    (NULL, '2021-06-26', 0, 2028, '', '', '무가', '', '이마트', 40000, NULL, NULL, '스페인', NOW(), 2021, NULL, 2016, 0),
+    (NULL, '2021-06-17', 0, NULL, '', '', '에로이카', '', 'GS25(포인트+쿠폰사용)', 2850, NULL, NULL, '프랑스', NOW(), NULL, NULL, 2018, 0),
+    (NULL, NULL, 0, 2030, '', '', '안티노리 CCR', '', NULL, 29000, NULL, NULL, NULL, NOW(), 2022, NULL, 2016, 0),
+    (NULL, NULL, 0, 2031, '', '', '몬테라포니 끼안티 클라시코 ', '', NULL, 45000, NULL, NULL, NULL, NOW(), 2021, NULL, 2019, 0),
+    (NULL, NULL, 0, 2038, '', '', '일포지오네 BDM', '', NULL, 79000, NULL, NULL, NULL, NOW(), 2025, NULL, 2016, 0),
+    (NULL, NULL, 0, 2036, '', '', '일포지오네 BDM 리저브', '', NULL, 140000, NULL, NULL, NULL, NOW(), 2023, NULL, 2015, 0),
+    (NULL, '2021-07-01', 0, 2030, '', '', '킬리카눈 코브넌트 쉬라즈', '', '이마트(머지2만+핀크2만+카드)', 49800, NULL, NULL, '호주', NOW(), 2020, NULL, 2017, 0),
+    (NULL, '2021-07-02', 0, 2016, '', '', '샤또 그레이삭 메독 크뤼 부르주아', '', '코스트코', 31990, NULL, NULL, '프랑스', NOW(), 2013, NULL, 2006, 0),
+    (NULL, '2021-07-02', 0, 2023, '', '', '페폴리 키안티 클라시코', '', '코스트코', 25950, NULL, NULL, '이탈리아', NOW(), 2020, NULL, 2019, 0),
+    (NULL, '2021-07-02', 0, 2020, '', '', '라 마스코타 말벡', '', '코스트코', 25990, NULL, NULL, '아르헨티나', NOW(), 2019, NULL, 2019, 0),
+    (NULL, '2021-07-02', 0, 2025, '', '', '베라짜노 키안티 클라시코', '', '코스트코', 29590, NULL, NULL, '이탈리아', NOW(), 2022, NULL, 2017, 0),
+    (NULL, '2021-07-02', 0, 2024, '', '', '커클랜드 콜럼비아 밸리 까쇼', '', '코스트코', 15490, NULL, NULL, '미국', NOW(), 2021, NULL, 2019, 0),
+    (NULL, '2021-07-02', 0, 2023, '', '', '생미쉘 드라이 리슬링', '', '코스트코', 12990, NULL, NULL, '미국', NOW(), 2020, NULL, 2020, 0),
+    (NULL, '2021-07-02', 0, 2024, '', '', '티렐 루퍼스 스톤', '', '코스트코', 33990, NULL, NULL, '호주', NOW(), 2021, NULL, 2018, 0),
+    (NULL, '2021-07-02', 0, 2025, '', '', '포스트 마크 나파', '', '코스트코', 29900, NULL, NULL, '미국', NOW(), 2020, NULL, 2018, 0),
+    (NULL, '2021-07-03', 0, 2033, '', '', '오린 스위프트 머큐리 헤드', '', '떼루아', 330000, NULL, NULL, '미국', NOW(), 2022, NULL, 2017, 0),
+    (NULL, '2021-07-03', 0, NULL, '', '', '블랙매직 쉬라즈', '', '떼루아', 330000, NULL, NULL, '호주', NOW(), NULL, NULL, 2016, 0),
+    (NULL, '2021-07-14', 0, NULL, '', '', '루이로드레 브뤼 프리미에', '', '신대방 세계주류', 66500, NULL, NULL, '프랑스', NOW(), NULL, NULL, NULL, 0),
+    (NULL, '2021-07-14', 0, NULL, '', '', '폴로저 브뤼 리저브', '', '신대방 세계주류', 74500, NULL, NULL, '프랑스', NOW(), NULL, NULL, NULL, 0),
+    (NULL, '2021-07-14', 0, NULL, '', '', '찰스 하이직 브뤼', '', '신대방 세계주류', 85000, NULL, NULL, '프랑스', NOW(), NULL, NULL, NULL, 0),
+    (NULL, '2021-07-17', 0, 2022, '', '', '푸나무', '', '해피머니 gs25', 22500, NULL, NULL, NULL, NOW(), 2020, NULL, 2020, 0),
+    (NULL, '2021-07-17', 0, 2023, '', '', '루이자도 피노', '', '해피머니 gs25', 22700, NULL, NULL, NULL, NOW(), 2020, NULL, 2019, 0),
+    (NULL, NULL, 0, 2025, '', '', '루이자도 피노 자코방', '', NULL, 0, NULL, NULL, NULL, NOW(), 2021, NULL, 2019, 0),
+    (NULL, '2021-07-17', 0, 2038, '', '', '일포지오네 BDM', '', '라빈', 139000, NULL, NULL, NULL, NOW(), 2025, NULL, 2016, 0),
+    (NULL, '2021-07-17', 0, 2034, '', '', '산펠리체 깜뽀지오바니 BDM', '', '라빈', 139000, NULL, NULL, NULL, NOW(), 2022, NULL, 2015, 0),
+    (NULL, '2021-07-31', 0, 2024, '', '', '커클랜드 말벡', '', '코스트코', 10900, NULL, NULL, NULL, NOW(), 2021, NULL, 2019, 0),
+    (NULL, '2021-07-31', 0, 2030, '', '', '투핸즈 엔젤스 쉐어', '', '치즈비노(제로페이)', 67500, NULL, NULL, NULL, NOW(), 2021, NULL, 2020, 0),
+    (NULL, '2021-07-31', 0, 2025, '', '', '몰리두커 더 복서', '', '치즈비노(제로페이)', 67500, NULL, NULL, NULL, NOW(), 2022, NULL, 2019, 0),
+    (NULL, '2021-07-31', 0, NULL, '', '', '알타이르', '', '신대방 세계주류(제로페이)', 80100, NULL, NULL, NULL, NOW(), NULL, NULL, 2018, 0),
+    (NULL, '2021-08-03', 0, 2024, '', '', '이기갈 꼬뜨 뒤 론 루즈', '', '이마트24(머지)', 18400, NULL, NULL, NULL, NOW(), 2019, NULL, 2017, 0),
+    (NULL, '2021-08-04', 0, NULL, '', '', '고스트파인 진판델', '', '홈플러스 머지', 25900, NULL, NULL, NULL, NOW(), NULL, NULL, 2018, 0),
+    (NULL, '2021-08-04', 0, 2025, '', '', '고스트 파인 멜롯', '', '홈플러스 머지', 25900, NULL, NULL, NULL, NOW(), 2019, NULL, 2017, 0),
+    (NULL, '2021-08-05', 0, 2027, '', '', '킬리카눈 까쇼', '', '세븐일레븐 머지', 22320, NULL, NULL, NULL, NOW(), 2023, NULL, 2018, 0),
+    (NULL, '2021-08-05', 0, 2028, '', '', '킬리카눈 쉬라', '', '세븐일레븐 머지', 22310, NULL, NULL, NULL, NOW(), 2022, NULL, 2018, 0),
+    (NULL, '2021-08-19', 0, 2028, '', '', '까스텔라레 키안띠 클라시코', '', '현대백화점', 30000, NULL, NULL, NULL, NOW(), 2021, NULL, 2019, 0),
+    (NULL, '2021-08-22', 0, 2028, '', '', '몬테스 퍼플 엔젤', '', '신세계백화점', 96000, NULL, NULL, NULL, NOW(), 2021, NULL, 2017, 0),
+    (NULL, '2021-08-22', 0, 2027, '', '', '몬테스 퍼플 엔젤', '', '신세계백화점', 96000, NULL, NULL, NULL, NOW(), 2021, NULL, 2018, 0),
+    (NULL, '2021-08-25', 0, 2037, '', '', '알마비바', '', 'ga25', 324000, NULL, NULL, NULL, NOW(), 2023, NULL, 2018, 0),
+    (NULL, '2021-09-05', 0, 2037, '', '', '포지오디소토 비디엠', '', '와공방', 285000, NULL, NULL, NULL, NOW(), 2024, NULL, 2016, 0),
+    (NULL, '2021-09-05', 0, 2037, '', '', '가야 비디엠', '', '와공방', 96800, NULL, NULL, NULL, NOW(), 2026, NULL, 2016, 0),
+    (NULL, '2021-09-11', 0, NULL, '', '', '이스까이 매그넘', '', '빅마켓', 89000, NULL, NULL, NULL, NOW(), NULL, NULL, 2018, 0),
+    (NULL, NULL, 0, 2031, '', '', '반피 비디엠', '', NULL, 64900, NULL, NULL, NULL, NOW(), 2022, NULL, 2015, 0),
+    (NULL, NULL, 0, NULL, '', '', '기솔피 바롤로', '', NULL, 39990, NULL, NULL, NULL, NOW(), NULL, NULL, 2017, 0),
+    (NULL, NULL, 0, 2025, '', '', '몬테스 알파 피노누아', '', NULL, 27990, NULL, NULL, NULL, NOW(), 2021, NULL, 2019, 0),
+    (NULL, NULL, 0, NULL, '', '', '몬테스 알파 까르미네르', '', NULL, 26990, NULL, NULL, NULL, NOW(), NULL, NULL, 2019, 0),
+    (NULL, NULL, 0, NULL, '', '', '식스 그레이프', '', NULL, 39990, NULL, NULL, NULL, NOW(), NULL, NULL, NULL, 0),
+    (NULL, NULL, 0, 2028, '', '', '패블레 부르고뉴 피노누아', '', NULL, 19990, NULL, NULL, NULL, NOW(), 2022, NULL, 2019, 0),
+    (NULL, NULL, 0, NULL, '', '', '멈', '', NULL, 49900, NULL, NULL, NULL, NOW(), NULL, NULL, NULL, 0),
+    (NULL, NULL, 0, NULL, '', '', '샤또 라뚜르 피작', '', NULL, 38990, NULL, NULL, NULL, NOW(), NULL, NULL, 2016, 0),
+    (NULL, NULL, 0, NULL, '', '', '커클랜드 말벡', '', NULL, 10900, NULL, NULL, NULL, NOW(), NULL, NULL, 2019, 0),
+    (NULL, NULL, 0, 2033, '', '', '콜로소르보 비디엠', '', '라비', 88000, NULL, NULL, NULL, NOW(), 2021, NULL, 2015, 0),
+    (NULL, NULL, 0, 2037, '', '', '프라텔 레벨로 바롤로', '', '라빈', 77000, NULL, NULL, NULL, NOW(), 2025, NULL, 2016, 0),
+    (NULL, NULL, 0, NULL, '', '', '필리뽀나', '', '라빈', 75000, NULL, NULL, NULL, NOW(), NULL, NULL, NULL, 0),
+    (NULL, NULL, 0, NULL, '', '', '떼땅져 리저브 브뤼', '', '이마트 와인장터 2021년 하반기', 60000, NULL, NULL, NULL, NOW(), NULL, NULL, NULL, 0),
+    (NULL, NULL, 0, 2034, '', '', '하이츠셀라 나파 까쇼', '', '이마트 와인장터 2021년 하반기', 95000, NULL, NULL, NULL, NOW(), 2021, NULL, NULL, 0),
+    (NULL, NULL, 0, 2028, '', '', '산타리타 트리플씨', '', '이마트 와인장터 2021년 하반기', 35000, NULL, NULL, NULL, NOW(), 2023, NULL, 2018, 0),
+    (NULL, NULL, 0, 2028, '', '', '페리에주에 벨에포크', '', '이마트 와인장터 2021년 하반기', 178000, NULL, NULL, NULL, NOW(), 2023, NULL, NULL, 0),
+    (NULL, NULL, 0, 2030, '', '', '몬테스 알파 M', '', '이마트 와인장터 2021년 하반기', 118000, NULL, NULL, NULL, NOW(), 2023, NULL, 2018, 0),
+    (NULL, NULL, 0, NULL, '', '', '그롱네 샴페인', '', '이마트 와인장터 2021년 하반기', 40000, NULL, NULL, NULL, NOW(), NULL, NULL, NULL, 0),
+    (NULL, NULL, 0, NULL, '', '', '에스쿠도 로호 ', '', '이마트 와인장터 2021년 하반기', 19800, NULL, NULL, NULL, NOW(), NULL, NULL, 2019, 0),
+    (NULL, NULL, 0, 2043, '', '', '샤또 피숑 롱그빌 꼼떼스 드 라랑드', '', '이마트 와인장터 2021년 하반기', 190000, NULL, NULL, NULL, NOW(), 2025, NULL, 2017, 0),
+    (NULL, NULL, 0, 2033, '', '', '샤또 라퐁 로쉐', '', '이마트 와인장터 2021년 하반기', 68000, NULL, NULL, NULL, NOW(), 2021, NULL, 2014, 0),
+    (NULL, NULL, 0, 2040, '', '', '테스타마타', '', '이마트 와인장터 2021년 하반기', 99000, NULL, NULL, NULL, NOW(), 2024, NULL, 2018, 0),
+    (NULL, NULL, 0, 2034, '', '', '라포스톨 아팔타', '', '이마트 와인장터 2021년 하반기', 19800, NULL, NULL, NULL, NOW(), 2023, NULL, 2017, 0),
+    (NULL, NULL, 0, 2050, '', '', '샤또 팔머', '', '이마트 와인장터 2021년 하반기', 390000, NULL, NULL, NULL, NOW(), 2028, NULL, 2017, 0),
+    (NULL, NULL, 0, NULL, '', '', '카자노브 샴페인', '', '이마트 와인장터 2021년 하반기', 50000, NULL, NULL, NULL, NOW(), NULL, NULL, 2007, 0),
+    (NULL, NULL, 0, 2029, '', '', '세냐', '', '이마트 와인장터 2021년 하반기', 170000, NULL, NULL, NULL, NOW(), 2020, NULL, 2017, 0),
+    (NULL, NULL, 0, 2027, '', '', '라포스톨 알렉상드레 까쇼', '', '이마트 와인장터 2021년 하반기', 30000, NULL, NULL, NULL, NOW(), 2022, NULL, 2019, 0),
+    (NULL, NULL, 0, 2033, '', '', '산 귀도 귀달베르토', '', '와인앤모어', 59900, NULL, NULL, NULL, NOW(), 2023, NULL, 2019, 0),
+    (NULL, '2021-10-23', 0, 2029, '', '', '케이머스', '', '코스트코 광명', 129900, NULL, NULL, '미국', NOW(), 2022, NULL, 2019, 0),
+    (NULL, '2021-10-23', 0, 2044, '', '', '샤또 린쉬 바쥐', '', '코스트코 광명', 179900, NULL, NULL, NULL, NOW(), 2025, NULL, 2017, 0),
+    (NULL, '2023-05-19', 0, 2028, '', '', '트라피체 싱글빈야드 말벡 암브로시아', '', '이마트 와인장터 2023년 상반기', 35000, NULL, NULL, NULL, NOW(), 2021, NULL, 2018, 0),
+    (NULL, '2023-05-20', 0, 2031, '', '', '알타이르', '', '이마트 와인장터 2023년 상반기', 89000, NULL, NULL, NULL, NOW(), 2023, NULL, 2019, 0),
+    (NULL, '2023-05-20', 0, 2031, '', '', '케이머스', '', '이마트 와인장터 2023년 상반기', 118000, NULL, NULL, NULL, NOW(), 2024, NULL, 2020, 0),
+    (NULL, '2023-05-20', 0, NULL, '', '', '알렉스 감발 피노누아 뀌베 레 두 빠삐', '', '이마트 와인장터 2023년 상반기', 49800, NULL, NULL, NULL, NOW(), NULL, NULL, 2020, 0)"; expected "[, ::, AT, FORMAT, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+insert into WINE
+values
+    (null, '2021-06-17', 0, 2025, '', '', '파머스 립 페서웨이 쉬라즈', '', '와인앤모어 행사', 19000, null, null, '호주', now(), 2022, null, 2016, 0),
+    (null, '2021-05-13', 0, 2026, '', '', '루피노 모두스', '', '이마트 와인장터 2021년 상반기', 55000, null, null, '이탈리아', now(), 2022, null, 2017, 0),
+    (null, '2021-05-13', 0, 2027, '', '', '플라네타 샤르도네', '', '이마트 와인장터 2021년 상반기', 39000, null, null, '이탈리아', now(), 2022, null, 2019, 0),
+    (null, '2021-05-15', 0, 2028, '', '', '킬리카눈 킬러맨스 런 쉬라즈', '', '이마트 와인장터 2021년 상반기', 25000, null, null, '호주', now(), 2022, null, 2018, 0),
+    (null, '2021-06-12', 0, 2030, '', '', '커클랜드 시그니춰 바롤로', '', '코스트코', 29990, null, null, '이탈리아', now(), 2022, null, 2016, 0),
+    (null, '2021-05-14', 0, 2031, '', '', '바디아 파시아노', '', '이마트 와인장터 2021년 상반기', 65000, null, null, '이탈리아', now(), 2022, null, 2017, 0),
+    (null, '2021-05-24', 0, 2031, '', '', '반피 BDM', '', '이마트', 75000, null, null, '이탈리아', now(), 2022, null, 2015, 0),
+    (null, '2021-06-17', 0, 2031, '', '', '투핸즈 벨라스 쉬라즈', '', '와인앤모어 행사', 159000, null, null, null, now(), 2022, null, 2018, 0),
+    (null, '2021-05-31', 0, 2032, '', '', '트리플씨', '', '세븐일레븐(머지포인트)', 29600, null, null, '칠레', now(), 2022, null, 2017, 0),
+    (null, '2021-05-08', 0, 2044, '', '', '루이 로드레 크리스탈', '', '제주 면세점', 315800, null, null, '프랑스', now(), 2022, null, 2012, 0),
+    (null, '2021-05-17', 0, 2027, '', '', '도멘 레미 세겡 쥬브레 샹베르탱', '', '이마트 와인장터 2021년 상반기', 60000, null, null, '프랑스', now(), 2023, null, 2018, 0),
+    (null, '2021-04-28', 0, 2030, '', '', '토마시 아마로네', '', '참작', 60900, null, null, '이탈리아', now(), 2023, null, 2016, 0),
+    (null, '2021-06-05', 0, 2031, '', '', '카스텔 지오콘도 BDM', '', '이마트', 105600, null, null, '이탈리아', now(), 2023, null, 2015, 0),
+    (null, '2021-06-05', 0, 2032, '', '', '이기갈 샤또뇌프 뒤 파프 ', '', '이마트', 59840, null, null, '프랑스', now(), 2023, null, 2016, 0),
+    (null, '2021-06-26', 0, 2033, '', '', '라 포데리나 브루넬로 디 몬탈치노', '', '이마트', 71840, null, null, '이탈리아', now(), 2023, null, 2015, 0),
+    (null, '2021-06-17', 0, 2043, '', '', '콜로레', '', '와인앤모어 행사', 350000, null, null, '이탈리아', now(), 2023, null, 2018, 0),
+    (null, '2021-05-14', 0, 2029, '', '', '라포스톨 뀌베 까르미네르', '', '이마트 와인장터 2021년 상반기', 30000, null, null, '칠레', now(), 2024, null, 2019, 0),
+    (null, '2021-06-18', 0, 2039, '', '', '테스타마타', '', '와인앤모어 행사', 130000, null, null, null, now(), 2024, null, 2018, 0),
+    (null, null, 0, 2030, '', '', '라콜롬비나 브루넬로 디 몬탈치노', '', '뱅가드 와인 머천트', 78000, null, null, '이탈리아', now(), 2025, null, 2015, 0),
+    (null, '2021-05-13', 0, 2047, '', '', '샤또 레방질', '', '이마트 와인장터 2021년 상반기', 450000, null, null, '프랑스', now(), 2027, null, 2015, 0),
+    (null, '2021-05-20', 0, 2042, '', '', '샤또 딸보', '', '제주와인창고', 110000, null, null, '프랑스', now(), 2028, null, 2018, 0),
+    (null, '2021-06-17', 0, 2042, '', '', '샤또 딸보', '', '와인앤모어 행사', 159000, null, null, null, now(), 2028, null, 2018, 0),
+    (null, '2021-06-17', 0, 2044, '', '', '샤또 지스꾸르', '', '와인앤모어 행사', 85000, null, null, '프랑스', now(), 2028, null, 2020, 0),
+    (null, '2021-06-18', 0, 2045, '', '', '샤또 오브리옹', '', '와인앤모어 행사', 799000, null, null, '프랑스', now(), 2028, null, 2017, 0),
+    (null, '2021-05-13', 0, 2049, '', '', '샤또 뽕떼 까네', '', '이마트 와인장터 2021년 상반기', 180000, null, null, '프랑스', now(), 2028, null, 2018, 0),
+    (null, '2021-06-17', 0, 2052, '', '', '샤또 마고', '', '와인앤모어 행사', 899000, null, null, '프랑스', now(), 2030, null, 2017, 0),
+    (null, '2021-05-13', 0, 2025, '', '', '퀘르체토 치날레', '', '이마트 와인장터 2021년 상반기', 99000, null, null, '이탈리아', now(), 2020, null, 2015, 0),
+    (null, '2021-05-13', 0, 2028, '', '', '산 펠리체, 키안티 클라시코 리제르바 일 그리지오', '', '이마트 와인장터 2021년 상반기', 29800, null, null, '이탈리아', now(), 2021, null, 2017, 0),
+    (null, '2021-05-13', 0, 2026, '', '', '지라드, 까베르네 소비뇽', '', '이마트 와인장터 2021년 상반기', 65000, null, null, '미국', now(), 2019, null, 2017, 0),
+    (null, '2021-05-14', 0, 2030, '', '', '투핸즈, 엔젤스 쉐어 쉬라즈', '', '이마트 와인장터 2021년 상반기', 32000, null, null, '호주', now(), 2021, null, 2020, 0),
+    (null, '2021-05-15', 0, 2026, '', '', '톨라이니 알 파쏘', '', '이마트 와인장터 2021년 상반기', 30000, null, null, '이탈리아', now(), 2021, null, 2017, 0),
+    (null, null, 0, 2021, '', '', '커클랜드 말보로 쇼비뇽블랑', '', '코스트코', 9790, null, null, '뉴질랜드', now(), 2020, null, 2020, 0),
+    (null, '2021-04-23', 0, 2026, '', '', '자리스', '', '참작', 29900, null, null, '스페인', now(), 2020, null, 2016, 0),
+    (null, null, 0, 2025, '', '', '라 브라체스카, 비노 노빌레 디 몬테풀치아노', '', '비노솔', 0, null, null, '이탈리아', now(), 2020, null, 2017, 0),
+    (null, null, 0, 2029, '', '', '폰토디, 키안티 클라시코', '', '이마트 와인장터 2020년 하반기', 40000, null, null, '이탈리아', now(), 2021, null, 2017, 0),
+    (null, '2021-05-17', 0, 2025, '', '', '도멘 레미 세겡 쥬브레 샹베르탱', '', '이마트 와인장터 2021년 상반기', 60000, null, null, '프랑스', now(), 2021, null, 2017, 0),
+    (null, '2021-05-24', 0, 2024, '', '', '생콤 꼬뜨드론', '', '코스트코', 18990, null, null, '프랑스', now(), 2021, null, 2020, 0),
+    (null, '2021-05-24', 0, 2038, '', '', '돔페리뇽 p2', '', '제주 면세점', 383020, null, null, '프랑스', now(), 2021, null, 2002, 0),
+    (null, '2021-06-05', 0, 2024, '', '', '도그 포인트 소비뇽', '', '이마트', 34240, null, null, '뉴질랜드', now(), 2020, null, 2019, 0),
+    (null, '2021-06-10', 0, 2023, '', '', '루이자도 부르고뉴 샤도네이 (하프)', '', '이마트', 12800, null, null, '프랑스', now(), 2021, null, 2019, 0),
+    (null, '2021-06-10', 0, 2024, '', '', '이기갈 꼬뜨 뒤 론 루즈(하프)', '', '이마트', 9900, null, null, '프랑스', now(), 2019, null, 2017, 0),
+    (null, '2021-06-12', 0, 2023, '', '', '루이라뚜르 피노누아', '', '코스트코', 26990, null, null, '프랑스', now(), 2021, null, 2019, 0),
+    (null, '2021-06-17', 0, 2023, '', '', '드보 뀌베 디 브륏', '', '와인앤모어 행사', 49900, null, null, '프랑스', now(), 2020, null, 20null, 0),
+    (null, '2021-06-18', 0, 2048, '', '', '샤또 디켐', '', '와인앤모어 행사', 490000, null, null, '프랑스', now(), 2015, null, 2007, 0),
+    (null, '2021-05-13', 0, null, '', '', '스택스 캐년랜취 스택', '', '이마트 와인장터 2021년 상반기', 80000, null, null, '미국', now(), null, null, 2016, 0),
+    (null, '2021-05-13', 0, 2025, '', '', '란 리제르바', '', '이마트 와인장터 2021년 상반기', 35000, null, null, '스페인', now(), 2021, null, 2014, 0),
+    (null, null, 0, 2027, '', '', '플라네타 샤르도네', '', '이마트 와인장터 2020년 하반기', 39800, null, null, '이탈리아', now(), 2022, null, null, 0),
+    (null, '2021-05-13', 0, 2023, '', '', '그랑 파씨오네', '', '이마트 와인장터 2021년 상반기', 15000, null, null, '이탈리아', now(), 2022, null, null, 0),
+    (null, '2021-05-14', 0, null, '', '', '피치니 메모로 로쏘', '', '이마트 와인장터 2021년 상반기', 10000, null, null, '이탈리아', now(), null, null, 2019, 0),
+    (null, '2021-05-14', 0, 2024, '', '', '디아블로 리제르바', '', '이마트 와인장터 2021년 상반기', 19900, null, null, '칠레', now(), 2022, null, 2018, 0),
+    (null, '2021-05-15', 0, 2023, '', '', '콜럼비아 크레스트', '', '이마트 와인장터 2021년 상반기', 29000, null, null, '미국', now(), 2021, null, 2018, 0),
+    (null, '2021-05-15', 0, 2024, '', '', '689 레드 나파밸리', '', '이마트 와인장터 2021년 상반기', 25000, null, null, '미국', now(), 2020, null, 2018, 0),
+    (null, '2021-05-15', 0, null, '', '', '에고메이', '', '이마트 와인장터 2021년 상반기', 20000, null, null, '스페인', now(), null, null, 2018, 0),
+    (null, '2021-04-23', 0, null, '', '', '무초 마스 (화이트 레이블)', '', '참작', 21900, null, null, '스페인', now(), null, null, null, 0),
+    (null, '2021-04-23', 0, null, '', '', '무초 마스 (블랙 레이블)', '', '참작', 21900, null, null, '스페인', now(), null, null, null, 0),
+    (null, '2021-02-06', 0, 2024, '', '', '몬테니돌리 베르나차 디 산지미냐노 트라디지오날레', '', '뱅가드 와인 머천트', 114000, null, null, '이탈리아', now(), 2019, null, 2018, 0),
+    (null, '2021-02-06', 0, 2030, '', '', '라콜롬비나 브루넬로 디 몬탈치노', '', '뱅가드 와인 머천트', 114000, null, null, '이탈리아', now(), 2021, null, 2013, 0),
+    (null, null, 0, null, '', '', '까테나 말벡', '', null, 0, null, null, '아르헨티나', now(), null, null, 2018, 0),
+    (null, null, 0, 2021, '', '', '에쎄이 슈냉블랑', '', '뱅가드 와인 머천트', 12900, null, null, '남아공', now(), 2019, null, 2018, 0),
+    (null, null, 0, null, '', '', '에쎄이 까베르네 쇼비뇽', '', '뱅가드 와인 머천트', 12900, null, null, '남아공', now(), null, null, 2018, 0),
+    (null, null, 0, null, '', '', '라 사비나 그랑 리제르바 까베르네 쇼비뇽', '', '비노솔', 38000, null, null, '스페인', now(), null, null, null, 0),
+    (null, null, 0, null, '', '', '아라고니아 셀렉시온 에스페시알', '', '세계주류아울렛.신대방', 0, null, null, '스페인', now(), null, null, null, 0),
+    (null, null, 0, null, '', '', '삐에르 아마디유, 그랑 로마네 지공다스', '', '코스트코', 39990, null, null, '프랑스', now(), null, null, 2017, 0),
+    (null, '2021-05-24', 0, null, '', '', '커클랜드 프로세코', '', '코스트코', 7890, null, null, '이탈리아', now(), null, null, null, 0),
+    (null, '2021-06-02', 0, null, '', '', '카스티요 두카이 블랑코', '', '뱅가드 와인 머천트', 6900, null, null, '스페인', now(), null, null, 2020, 0),
+    (null, '2021-06-02', 0, null, '', '', '카스티요 두카이 틴토', '', '뱅가드 와인 머천트', 5900, null, null, '스페인', now(), null, null, 2019, 0),
+    (null, '2021-06-05', 0, null, '', '', '파이퍼 하이직 브롯', '', '이마트', 52000, null, null, '프랑스', now(), null, null, null, 0),
+    (null, '2021-06-05', 0, 2023, '', '', '콜럼비아 크레스트 H3', '', '이마트', 24000, null, null, '미국', now(), 2021, null, 2018, 0),
+    (null, '2021-06-10', 0, null, '', '', '블랙 매직 쉬라즈', '', '와인공간', 108000, null, null, '호주', now(), null, null, 2017, 0),
+    (null, '2021-06-10', 0, 2023, '', '', '루이자도 부르고뉴 피노누아 (하프)', '', '이마트', 12800, null, null, '프랑스', now(), 2020, null, 2018, 0),
+    (null, '2021-06-12', 0, null, '', '', '라크라사드 시라', '', '코스트코', 8790, null, null, '프랑스', now(), null, null, 2019, 0),
+    (null, '2021-06-12', 0, null, '', '', '꽁데 디 깜피아노 프리미터보 디 만두리아', '', '코스트코', 15990, null, null, '이탈리아', now(), null, null, 2019, 0),
+    (null, '2021-06-12', 0, null, '', '', '집집 락 쉬라즈', '', '코스트코', 15990, null, null, '호주', now(), null, null, 2019, 0),
+    (null, '2021-06-13', 0, null, '', '', '몽제아 뮈네레 르 리베르탱 부르고뉴 빠쓰뚜그랭', '', '쓱닷컴(백화점 수령)', 27000, null, null, '프랑스', now(), null, null, 2018, 0),
+    (null, '2021-06-17', 0, null, '', '', '보히가스 까바 리제르바 브륏', '', '와인앤모어 행사', 22000, null, null, '스페인', now(), null, null, null, 0),
+    (null, '2021-06-26', 0, null, '', '', '로버시 바르바레스코', '', '이마트', 38240, null, null, '이탈리아', now(), null, null, 2016, 0),
+    (null, '2021-06-26', 0, 2028, '', '', '무가', '', '이마트', 40000, null, null, '스페인', now(), 2021, null, 2016, 0),
+    (null, '2021-06-17', 0, null, '', '', '에로이카', '', 'GS25(포인트+쿠폰사용)', 2850, null, null, '프랑스', now(), null, null, 2018, 0),
+    (null, null, 0, 2030, '', '', '안티노리 CCR', '', null, 29000, null, null, null, now(), 2022, null, 2016, 0),
+    (null, null, 0, 2031, '', '', '몬테라포니 끼안티 클라시코 ', '', null, 45000, null, null, null, now(), 2021, null, 2019, 0),
+    (null, null, 0, 2038, '', '', '일포지오네 BDM', '', null, 79000, null, null, null, now(), 2025, null, 2016, 0),
+    (null, null, 0, 2036, '', '', '일포지오네 BDM 리저브', '', null, 140000, null, null, null, now(), 2023, null, 2015, 0),
+    (null, '2021-07-01', 0, 2030, '', '', '킬리카눈 코브넌트 쉬라즈', '', '이마트(머지2만+핀크2만+카드)', 49800, null, null, '호주', now(), 2020, null, 2017, 0),
+    (null, '2021-07-02', 0, 2016, '', '', '샤또 그레이삭 메독 크뤼 부르주아', '', '코스트코', 31990, null, null, '프랑스', now(), 2013, null, 2006, 0),
+    (null, '2021-07-02', 0, 2023, '', '', '페폴리 키안티 클라시코', '', '코스트코', 25950, null, null, '이탈리아', now(), 2020, null, 2019, 0),
+    (null, '2021-07-02', 0, 2020, '', '', '라 마스코타 말벡', '', '코스트코', 25990, null, null, '아르헨티나', now(), 2019, null, 2019, 0),
+    (null, '2021-07-02', 0, 2025, '', '', '베라짜노 키안티 클라시코', '', '코스트코', 29590, null, null, '이탈리아', now(), 2022, null, 2017, 0),
+    (null, '2021-07-02', 0, 2024, '', '', '커클랜드 콜럼비아 밸리 까쇼', '', '코스트코', 15490, null, null, '미국', now(), 2021, null, 2019, 0),
+    (null, '2021-07-02', 0, 2023, '', '', '생미쉘 드라이 리슬링', '', '코스트코', 12990, null, null, '미국', now(), 2020, null, 2020, 0),
+    (null, '2021-07-02', 0, 2024, '', '', '티렐 루퍼스 스톤', '', '코스트코', 33990, null, null, '호주', now(), 2021, null, 2018, 0),
+    (null, '2021-07-02', 0, 2025, '', '', '포스트 마크 나파', '', '코스트코', 29900, null, null, '미국', now(), 2020, null, 2018, 0),
+    (null, '2021-07-03', 0, 2033, '', '', '오린 스위프트 머큐리 헤드', '', '떼루아', 330000, null, null, '미국', now(), 2022, null, 2017, 0),
+    (null, '2021-07-03', 0, null, '', '', '블랙매직 쉬라즈', '', '떼루아', 330000, null, null, '호주', now(), null, null, 2016, 0),
+    (null, '2021-07-14', 0, null, '', '', '루이로드레 브뤼 프리미에', '', '신대방 세계주류', 66500, null, null, '프랑스', now(), null, null, null, 0),
+    (null, '2021-07-14', 0, null, '', '', '폴로저 브뤼 리저브', '', '신대방 세계주류', 74500, null, null, '프랑스', now(), null, null, null, 0),
+    (null, '2021-07-14', 0, null, '', '', '찰스 하이직 브뤼', '', '신대방 세계주류', 85000, null, null, '프랑스', now(), null, null, null, 0),
+    (null, '2021-07-17', 0, 2022, '', '', '푸나무', '', '해피머니 gs25', 22500, null, null, null, now(), 2020, null, 2020, 0),
+    (null, '2021-07-17', 0, 2023, '', '', '루이자도 피노', '', '해피머니 gs25', 22700, null, null, null, now(), 2020, null, 2019, 0),
+    (null, null, 0, 2025, '', '', '루이자도 피노 자코방', '', null, 0, null, null, null, now(), 2021, null, 2019, 0),
+    (null, '2021-07-17', 0, 2038, '', '', '일포지오네 BDM', '', '라빈', 139000, null, null, null, now(), 2025, null, 2016, 0),
+    (null, '2021-07-17', 0, 2034, '', '', '산펠리체 깜뽀지오바니 BDM', '', '라빈', 139000, null, null, null, now(), 2022, null, 2015, 0),
+    (null, '2021-07-31', 0, 2024, '', '', '커클랜드 말벡', '', '코스트코', 10900, null, null, null, now(), 2021, null, 2019, 0),
+    (null, '2021-07-31', 0, 2030, '', '', '투핸즈 엔젤스 쉐어', '', '치즈비노(제로페이)', 67500, null, null, null, now(), 2021, null, 2020, 0),
+    (null, '2021-07-31', 0, 2025, '', '', '몰리두커 더 복서', '', '치즈비노(제로페이)', 67500, null, null, null, now(), 2022, null, 2019, 0),
+    (null, '2021-07-31', 0, null, '', '', '알타이르', '', '신대방 세계주류(제로페이)', 80100, null, null, null, now(), null, null, 2018, 0),
+    (null, '2021-08-03', 0, 2024, '', '', '이기갈 꼬뜨 뒤 론 루즈', '', '이마트24(머지)', 18400, null, null, null, now(), 2019, null, 2017, 0),
+    (null, '2021-08-04', 0, null, '', '', '고스트파인 진판델', '', '홈플러스 머지', 25900, null, null, null, now(), null, null, 2018, 0),
+    (null, '2021-08-04', 0, 2025, '', '', '고스트 파인 멜롯', '', '홈플러스 머지', 25900, null, null, null, now(), 2019, null, 2017, 0),
+    (null, '2021-08-05', 0, 2027, '', '', '킬리카눈 까쇼', '', '세븐일레븐 머지', 22320, null, null, null, now(), 2023, null, 2018, 0),
+    (null, '2021-08-05', 0, 2028, '', '', '킬리카눈 쉬라', '', '세븐일레븐 머지', 22310, null, null, null, now(), 2022, null, 2018, 0),
+    (null, '2021-08-19', 0, 2028, '', '', '까스텔라레 키안띠 클라시코', '', '현대백화점', 30000, null, null, null, now(), 2021, null, 2019, 0),
+    (null, '2021-08-22', 0, 2028, '', '', '몬테스 퍼플 엔젤', '', '신세계백화점', 96000, null, null, null, now(), 2021, null, 2017, 0),
+    (null, '2021-08-22', 0, 2027, '', '', '몬테스 퍼플 엔젤', '', '신세계백화점', 96000, null, null, null, now(), 2021, null, 2018, 0),
+    (null, '2021-08-25', 0, 2037, '', '', '알마비바', '', 'ga25', 324000, null, null, null, now(), 2023, null, 2018, 0),
+    (null, '2021-09-05', 0, 2037, '', '', '포지오디소토 비디엠', '', '와공방', 285000, null, null, null, now(), 2024, null, 2016, 0),
+    (null, '2021-09-05', 0, 2037, '', '', '가야 비디엠', '', '와공방', 96800, null, null, null, now(), 2026, null, 2016, 0),
+    (null, '2021-09-11', 0, null, '', '', '이스까이 매그넘', '', '빅마켓', 89000, null, null, null, now(), null, null, 2018, 0),
+    (null, null, 0, 2031, '', '', '반피 비디엠', '', null, 64900, null, null, null, now(), 2022, null, 2015, 0),
+    (null, null, 0, null, '', '', '기솔피 바롤로', '', null, 39990, null, null, null, now(), null, null, 2017, 0),
+    (null, null, 0, 2025, '', '', '몬테스 알파 피노누아', '', null, 27990, null, null, null, now(), 2021, null, 2019, 0),
+    (null, null, 0, null, '', '', '몬테스 알파 까르미네르', '', null, 26990, null, null, null, now(), null, null, 2019, 0),
+    (null, null, 0, null, '', '', '식스 그레이프', '', null, 39990, null, null, null, now(), null, null, null, 0),
+    (null, null, 0, 2028, '', '', '패블레 부르고뉴 피노누아', '', null, 19990, null, null, null, now(), 2022, null, 2019, 0),
+    (null, null, 0, null, '', '', '멈', '', null, 49900, null, null, null, now(), null, null, null, 0),
+    (null, null, 0, null, '', '', '샤또 라뚜르 피작', '', null, 38990, null, null, null, now(), null, null, 2016, 0),
+    (null, null, 0, null, '', '', '커클랜드 말벡', '', null, 10900, null, null, null, now(), null, null, 2019, 0),
+    (null, null, 0, 2033, '', '', '콜로소르보 비디엠', '', '라비', 88000, null, null, null, now(), 2021, null, 2015, 0),
+    (null, null, 0, 2037, '', '', '프라텔 레벨로 바롤로', '', '라빈', 77000, null, null, null, now(), 2025, null, 2016, 0),
+    (null, null, 0, null, '', '', '필리뽀나', '', '라빈', 75000, null, null, null, now(), null, null, null, 0),
+    (null, null, 0, null, '', '', '떼땅져 리저브 브뤼', '', '이마트 와인장터 2021년 하반기', 60000, null, null, null, now(), null, null, null, 0),
+    (null, null, 0, 2034, '', '', '하이츠셀라 나파 까쇼', '', '이마트 와인장터 2021년 하반기', 95000, null, null, null, now(), 2021, null, null, 0),
+    (null, null, 0, 2028, '', '', '산타리타 트리플씨', '', '이마트 와인장터 2021년 하반기', 35000, null, null, null, now(), 2023, null, 2018, 0),
+    (null, null, 0, 2028, '', '', '페리에주에 벨에포크', '', '이마트 와인장터 2021년 하반기', 178000, null, null, null, now(), 2023, null, null, 0),
+    (null, null, 0, 2030, '', '', '몬테스 알파 M', '', '이마트 와인장터 2021년 하반기', 118000, null, null, null, now(), 2023, null, 2018, 0),
+    (null, null, 0, null, '', '', '그롱네 샴페인', '', '이마트 와인장터 2021년 하반기', 40000, null, null, null, now(), null, null, null, 0),
+    (null, null, 0, null, '', '', '에스쿠도 로호 ', '', '이마트 와인장터 2021년 하반기', 19800, null, null, null, now(), null, null, 2019, 0),
+    (null, null, 0, 2043, '', '', '샤또 피숑 롱그빌 꼼떼스 드 라랑드', '', '이마트 와인장터 2021년 하반기', 190000, null, null, null, now(), 2025, null, 2017, 0),
+    (null, null, 0, 2033, '', '', '샤또 라퐁 로쉐', '', '이마트 와인장터 2021년 하반기', 68000, null, null, null, now(), 2021, null, 2014, 0),
+    (null, null, 0, 2040, '', '', '테스타마타', '', '이마트 와인장터 2021년 하반기', 99000, null, null, null, now(), 2024, null, 2018, 0),
+    (null, null, 0, 2034, '', '', '라포스톨 아팔타', '', '이마트 와인장터 2021년 하반기', 19800, null, null, null, now(), 2023, null, 2017, 0),
+    (null, null, 0, 2050, '', '', '샤또 팔머', '', '이마트 와인장터 2021년 하반기', 390000, null, null, null, now(), 2028, null, 2017, 0),
+    (null, null, 0, null, '', '', '카자노브 샴페인', '', '이마트 와인장터 2021년 하반기', 50000, null, null, null, now(), null, null, 2007, 0),
+    (null, null, 0, 2029, '', '', '세냐', '', '이마트 와인장터 2021년 하반기', 170000, null, null, null, now(), 2020, null, 2017, 0),
+    (null, null, 0, 2027, '', '', '라포스톨 알렉상드레 까쇼', '', '이마트 와인장터 2021년 하반기', 30000, null, null, null, now(), 2022, null, 2019, 0),
+    (null, null, 0, 2033, '', '', '산 귀도 귀달베르토', '', '와인앤모어', 59900, null, null, null, now(), 2023, null, 2019, 0),
+    (null, '2021-10-23', 0, 2029, '', '', '케이머스', '', '코스트코 광명', 129900, null, null, '미국', now(), 2022, null, 2019, 0),
+    (null, '2021-10-23', 0, 2044, '', '', '샤또 린쉬 바쥐', '', '코스트코 광명', 179900, null, null, null, now(), 2025, null, 2017, 0),
+    (null, '2023-05-19', 0, 2028, '', '', '트라피체 싱글빈야드 말벡 암브로시아', '', '이마트 와인장터 2023년 상반기', 35000, null, null, null, now(), 2021, null, 2018, 0),
+    (null, '2023-05-20', 0, 2031, '', '', '알타이르', '', '이마트 와인장터 2023년 상반기', 89000, null, null, null, now(), 2023, null, 2019, 0),
+    (null, '2023-05-20', 0, 2031, '', '', '케이머스', '', '이마트 와인장터 2023년 상반기', 118000, null, null, null, now(), 2024, null, 2020, 0),
+    (null, '2023-05-20', 0, null, '', '', '알렉스 감발 피노누아 뀌베 레 두 빠삐', '', '이마트 와인장터 2023년 상반기', 49800, null, null, null, now(), null, null, 2020, 0) [42001-200]
+2023-05-24 14:59:34 jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:470)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-05-24 14:59:36 jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:470)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-05-24 14:59:48 jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:470)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-05-24 14:59:51 jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:470)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-05-25 00:00:47 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:/Users/user/workspace/pinotnoir/src/main/resources/static/data/winedb.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.lambda$h2Console$0(H2ConsoleAutoConfiguration.java:67)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.ifAvailable(DefaultListableBeanFactory.java:2035)
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.h2Console(H2ConsoleAutoConfiguration.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:212)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:203)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:97)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:86)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:260)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:234)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:53)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5219)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:486)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:450)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:199)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:182)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:160)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.wine.pinotnoir.PinotnoirApplication.main(PinotnoirApplication.java:12)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:/Users/user/workspace/pinotnoir/src/main/resources/static/data/winedb.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 91 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/Users/user/workspace/pinotnoir/src/main/resources/static/data/winedb.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 85 more
+2023-05-25 00:00:48 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:/Users/user/workspace/pinotnoir/src/main/resources/static/data/winedb.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.wine.pinotnoir.PinotnoirApplication.main(PinotnoirApplication.java:12)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:/Users/user/workspace/pinotnoir/src/main/resources/static/data/winedb.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 68 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/Users/user/workspace/pinotnoir/src/main/resources/static/data/winedb.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 62 more
+2023-05-25 00:00:50 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:/Users/user/workspace/pinotnoir/src/main/resources/static/data/winedb.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:60)
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:40)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:65)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:59)
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:155)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:96)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.wine.pinotnoir.PinotnoirApplication.main(PinotnoirApplication.java:12)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:/Users/user/workspace/pinotnoir/src/main/resources/static/data/winedb.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 66 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:/Users/user/workspace/pinotnoir/src/main/resources/static/data/winedb.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 60 more
